@@ -18,6 +18,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 TODAY = '2026-09-23'
+ECI_LATEST = TODAY   # дата самого свежего замера в данных Epoch (уточняется при загрузке)
 
 COMPANIES = [
     {'id': 'openai', 'name': 'OpenAI', 'products': 'ChatGPT, GPT, o-серия', 'legend': 'OpenAI · ChatGPT', 'color': '#19aa8e', 'main': True},
@@ -72,7 +73,7 @@ MAP = {
     'Claude Mythos Preview': {'none': True, 'note': 'закрытый доступ для партнёров, публичных замеров нет'},
     'Claude Mythos 5': {'drop': True},
     'Claude Mythos 5.1': {'drop': True},
-    'Claude Opus 5.5': {'val': 165.0, 'note': 'вышла 22.09.2026 — замера ECI ещё нет; по заявлению Anthropic — уровень Claude Fable 5.1'},
+    'Claude Opus 5.5': {'none': True, 'note': 'вышла 22.09.2026 — замеров ещё нет'},
     # ---------- Google ----------
     'Bard': {'none': True, 'note': 'Bard на LaMDA — замеров нет'},
     'PaLM 2': {'eci': 'PaLM 2-L'},
@@ -194,8 +195,10 @@ def norm(s):
 
 
 def main():
+    global ECI_LATEST
     eci_file = sorted((ROOT / 'data' / 'scores').glob('eci_epoch_*.json'))[-1]
     eci_data = json.load(open(eci_file))
+    ECI_LATEST = max(m['date'] for m in eci_data['models'] if m.get('date'))
     eci_exact = {m['model']: m for m in eci_data['models']}
     eci_norm = {}
     for m in eci_data['models']:
@@ -231,7 +234,9 @@ def main():
             else:
                 problems.append(f"не сопоставлено: {r['name']} ({r['company']}, {r['date']})")
         show = m.get('show', True)
-        default_hidden = (not show) or r.get('tier') == 'minor' or score is None or bool(r.get('limited'))
+        # свежие релизы, которые Epoch ещё не успела измерить, показываем «пунктиром» — они реально вышли
+        fresh = score is None and r['date'] > ECI_LATEST and r.get('tier') in ('flagship', 'major')
+        default_hidden = (not show) or r.get('tier') == 'minor' or (score is None and not fresh) or bool(r.get('limited'))
         item = {
             'company': r['company'],
             'name': name,

@@ -2220,7 +2220,6 @@ window.TABLO_DATA = {
    "date": "2026-09-11",
    "tier": "major",
    "scoreNote": "вышла 11.09.2026 — замеров ещё нет",
-   "defaultHidden": true,
    "about": "Closed mid-tier model in Kimi Code / Kimi Work with 1M context and low/high/max thinking effort - the first K2-series model shipped without open weights.",
    "source": "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html#k2-8-preview-september-11-2026"
   },
@@ -2230,7 +2229,6 @@ window.TABLO_DATA = {
    "date": "2026-09-21",
    "tier": "flagship",
    "scoreNote": "вышла 21.09.2026 — замеров ещё нет",
-   "defaultHidden": true,
    "about": "New flagship (~2.1T params per reports) for coding and knowledge work, same $2/$6 pricing, live in app, API, Cursor and Grok Build; Grok 4.8 is only teased",
    "source": "https://decrypt.co/378824/xai-launches-grok-4-7"
   },
@@ -2239,9 +2237,7 @@ window.TABLO_DATA = {
    "name": "Claude Opus 5.5",
    "date": "2026-09-22",
    "tier": "flagship",
-   "score": 165.0,
-   "scoreEst": true,
-   "scoreNote": "вышла 22.09.2026 — замера ECI ещё нет; по заявлению Anthropic — уровень Claude Fable 5.1",
+   "scoreNote": "вышла 22.09.2026 — замеров ещё нет",
    "about": "First model of the Claude 5.5 family: Fable 5.1-level performance on most work at about 40% lower running cost than Opus 5 ($4/$20) and 30%+ faster output.",
    "source": "https://www.anthropic.com/claude-opus-5-5"
   },
@@ -2251,7 +2247,6 @@ window.TABLO_DATA = {
    "date": "2026-09-22",
    "tier": "major",
    "scoreNote": "вышла 22.09.2026 — замеров ещё нет",
-   "defaultHidden": true,
    "about": "Быстрая и дешёвая модель поколения GPT-6 ($0.10/$0.50 за 1M токенов)",
    "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
   },
@@ -2261,7 +2256,6 @@ window.TABLO_DATA = {
    "date": "2026-09-22",
    "tier": "major",
    "scoreNote": "вышла 22.09.2026 — замеров ещё нет",
-   "defaultHidden": true,
    "about": "Рабочая модель GPT-6 для кода и повседневных задач: вдвое меньше ошибок, чем у GPT-5.6 Sol, и вдвое дешевле",
    "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
   }
