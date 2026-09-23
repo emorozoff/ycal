@@ -132,7 +132,7 @@ input[type="range"] { accent-color: var(--text); width: 140px; }
 .company .name { font-weight: 500; }
 .company .name small { display: block; color: var(--text-3); font-weight: 400; font-size: 12px; }
 .company .count { color: var(--text-3); font: 12px var(--mono); }
-.company.main { border-color: var(--line-2); }
+.company.is-main { border-color: var(--line-2); }
 .list { display: flex; flex-direction: column; gap: 8px; }
 
 .switch { position: relative; width: 34px; height: 20px; flex: none; }

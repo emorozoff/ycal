@@ -341,7 +341,7 @@
     box.innerHTML = '';
     for (const c of tl.companies) {
       const row = document.createElement('label');
-      row.className = 'company' + (c.main ? ' main' : '');
+      row.className = 'company' + (c.main ? ' is-main' : '');
       row.innerHTML = `<span class="sw" style="background:${c.color}"></span>
         <span class="name">${c.name}<small>${c.products || ''}</small></span>
         <span class="count">${n[c.id] || 0}</span>
