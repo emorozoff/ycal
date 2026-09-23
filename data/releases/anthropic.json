@@ -1,0 +1,465 @@
+[
+  {
+    "company": "anthropic",
+    "name": "Claude 1",
+    "date": "2023-03-14",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "limited": false,
+    "note": "Anthropic's first public model (API plus partners like Notion, Quora Poe, DuckDuckGo); Constitutional-AI-trained ChatGPT rival launched the same day as GPT-4.",
+    "sources": [
+      "https://www.anthropic.com/news/introducing-claude",
+      "https://github.com/jqueryscript/anthropic-claude-timeline"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude Instant",
+    "date": "2023-03-14",
+    "announced": null,
+    "tier": "major",
+    "kind": "chat",
+    "limited": false,
+    "note": "Faster, cheaper sibling released alongside Claude 1, the start of Anthropic's multi-tier lineup (ancestor of the Haiku line).",
+    "sources": [
+      "https://www.anthropic.com/news/introducing-claude",
+      "https://github.com/jqueryscript/anthropic-claude-timeline"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude 2",
+    "date": "2023-07-11",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "limited": false,
+    "note": "Launched claude.ai as a public beta (US/UK), Claude's consumer debut; 100K context and big gains in coding and math.",
+    "sources": [
+      "https://www.anthropic.com/news/claude-2",
+      "https://github.com/jqueryscript/anthropic-claude-timeline"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude Instant 1.2",
+    "date": "2023-08-09",
+    "announced": null,
+    "tier": "minor",
+    "kind": "chat",
+    "limited": false,
+    "note": "API-only refresh of the fast/cheap model with Claude 2-era gains in math, coding and fewer hallucinations.",
+    "sources": [
+      "https://www.anthropic.com/news/releasing-claude-instant-1-2",
+      "https://github.com/jqueryscript/anthropic-claude-timeline"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude 2.1",
+    "date": "2023-11-21",
+    "announced": null,
+    "tier": "major",
+    "kind": "chat",
+    "limited": false,
+    "note": "200K-token context (largest on the market then), about 2x fewer hallucinations, system prompts and beta tool use.",
+    "sources": [
+      "https://www.anthropic.com/news/claude-2-1",
+      "https://github.com/jqueryscript/anthropic-claude-timeline"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude 3 Opus",
+    "date": "2024-03-04",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "limited": false,
+    "note": "First Claude to beat GPT-4 on most standard benchmarks; the Claude 3 family added image input and a 200K context.",
+    "sources": [
+      "https://www.anthropic.com/news/claude-3-family",
+      "https://github.com/jqueryscript/anthropic-claude-timeline"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude 3 Sonnet",
+    "date": "2024-03-04",
+    "announced": null,
+    "tier": "major",
+    "kind": "chat",
+    "limited": false,
+    "note": "Balanced mid-tier Claude 3 model that powered the free claude.ai experience.",
+    "sources": [
+      "https://www.anthropic.com/news/claude-3-family",
+      "https://github.com/jqueryscript/anthropic-claude-timeline"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude 3 Haiku",
+    "date": "2024-03-13",
+    "announced": "2024-03-04",
+    "tier": "major",
+    "kind": "chat",
+    "limited": false,
+    "note": "Fastest and cheapest Claude 3 model ($0.25/$1.25 per M tokens); shipped nine days after Opus and Sonnet.",
+    "sources": [
+      "https://www.anthropic.com/news/claude-3-haiku",
+      "https://x.com/AnthropicAI/status/1768018310615151002"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude 3.5 Sonnet",
+    "date": "2024-06-20",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "limited": false,
+    "note": "Mid-tier model that beat Claude 3 Opus at twice the speed and a fifth of the price; debuted Artifacts and became developers' favorite coding model.",
+    "sources": [
+      "https://www.anthropic.com/news/claude-3-5-sonnet",
+      "https://www.cnbc.com/2024/06/20/anthropic-claude-3point5-sonnet-ai-announced.html"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude 3.5 Sonnet (new)",
+    "date": "2024-10-22",
+    "announced": null,
+    "tier": "major",
+    "kind": "chat",
+    "limited": false,
+    "note": "Upgraded 3.5 Sonnet (nicknamed '3.6'): big coding gains and the first frontier model offering computer use (public beta).",
+    "sources": [
+      "https://www.anthropic.com/news/3-5-models-and-computer-use",
+      "https://github.com/jqueryscript/anthropic-claude-timeline"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude 3.5 Haiku",
+    "date": "2024-11-04",
+    "announced": "2024-10-22",
+    "tier": "major",
+    "kind": "chat",
+    "limited": false,
+    "note": "Fast model rivaling Claude 3 Opus that beat GPT-4o on SWE-bench Verified; announced Oct 22, released to API/Bedrock/Vertex on Nov 4 (text-only).",
+    "sources": [
+      "https://www.anthropic.com/news/3-5-models-and-computer-use",
+      "https://x.com/AnthropicAI/status/1853498267612438873",
+      "https://aws.amazon.com/about-aws/whats-new/2024/11/anthropics-claude-3-5-haiku-model-amazon-bedrock"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude 3.7 Sonnet",
+    "date": "2025-02-24",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "hybrid",
+    "limited": false,
+    "note": "First hybrid reasoning model: instant answers or visible step-by-step extended thinking in one model; shipped with the Claude Code research preview.",
+    "sources": [
+      "https://www.anthropic.com/news/claude-3-7-sonnet",
+      "https://github.com/jqueryscript/anthropic-claude-timeline"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude Opus 4",
+    "date": "2025-05-22",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "hybrid",
+    "limited": false,
+    "note": "Claude 4 generation: billed as the world's best coding model, able to work for hours on agentic tasks; first model shipped under ASL-3 safeguards.",
+    "sources": [
+      "https://www.anthropic.com/news/claude-4",
+      "https://github.com/jqueryscript/anthropic-claude-timeline"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude Sonnet 4",
+    "date": "2025-05-22",
+    "announced": null,
+    "tier": "major",
+    "kind": "hybrid",
+    "limited": false,
+    "note": "Claude 4 mid-tier successor to 3.7 Sonnet, available to free users; chosen to power GitHub Copilot's new coding agent.",
+    "sources": [
+      "https://www.anthropic.com/news/claude-4",
+      "https://github.com/jqueryscript/anthropic-claude-timeline"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude Opus 4.1",
+    "date": "2025-08-05",
+    "announced": null,
+    "tier": "major",
+    "kind": "hybrid",
+    "limited": false,
+    "note": "Drop-in upgrade to Opus 4 for agentic tasks and real-world coding (74.5% SWE-bench Verified).",
+    "sources": [
+      "https://www.anthropic.com/news/claude-opus-4-1",
+      "https://github.com/jqueryscript/anthropic-claude-timeline"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude Sonnet 4.5",
+    "date": "2025-09-29",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "hybrid",
+    "limited": false,
+    "note": "Anthropic's frontier model at launch ('best coding model in the world'), outperforming Opus 4.1 at Sonnet prices and working autonomously for 30+ hours.",
+    "sources": [
+      "https://www.anthropic.com/news/claude-sonnet-4-5",
+      "https://www.anthropic.com/news/claude-haiku-4-5",
+      "https://github.com/jqueryscript/anthropic-claude-timeline"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude Haiku 4.5",
+    "date": "2025-10-15",
+    "announced": null,
+    "tier": "major",
+    "kind": "hybrid",
+    "limited": false,
+    "note": "Small model with Sonnet 4-level coding at a third of the cost ($1/$5) and over twice the speed; first Haiku with extended thinking.",
+    "sources": [
+      "https://www.anthropic.com/news/claude-haiku-4-5",
+      "https://github.com/jqueryscript/anthropic-claude-timeline"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude Opus 4.5",
+    "date": "2025-11-24",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "hybrid",
+    "limited": false,
+    "note": "Opus price cut by two-thirds ($5/$25) with state-of-the-art coding; first model above 80% on SWE-bench Verified.",
+    "sources": [
+      "https://www.anthropic.com/news/claude-opus-4-5",
+      "https://github.com/jqueryscript/anthropic-claude-timeline"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude Opus 4.6",
+    "date": "2026-02-05",
+    "announced": null,
+    "tier": "major",
+    "kind": "hybrid",
+    "limited": false,
+    "note": "Upgrade to the top model: first Opus with a 1M-token context (beta), adaptive thinking with effort levels, and agent teams in Claude Code.",
+    "sources": [
+      "https://www.anthropic.com/news/claude-opus-4-6",
+      "https://x.com/claudeai/status/2019467372609040752",
+      "https://github.com/jqueryscript/anthropic-claude-timeline"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude Sonnet 4.6",
+    "date": "2026-02-17",
+    "announced": null,
+    "tier": "major",
+    "kind": "hybrid",
+    "limited": false,
+    "note": "Near-Opus coding and computer use at Sonnet price ($3/$15); became the default for Free and Pro users; 1M context (beta).",
+    "sources": [
+      "https://www.anthropic.com/news/claude-sonnet-4-6",
+      "https://simonwillison.net/2026/Feb/17/claude-sonnet-46/",
+      "https://github.com/jqueryscript/anthropic-claude-timeline"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude Mythos Preview",
+    "date": "2026-04-07",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "hybrid",
+    "limited": true,
+    "note": "LIMITED ACCESS: new tier above Opus, withheld from general release because it finds and exploits software vulnerabilities better than nearly all humans; available only to Project Glasswing partners (AWS, Apple, Google, Microsoft, NVIDIA and others); system card published.",
+    "sources": [
+      "https://www.anthropic.com/glasswing",
+      "https://red.anthropic.com/2026/mythos-preview/",
+      "https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/",
+      "https://x.com/AnthropicAI/status/2041578392852517128"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude Opus 4.7",
+    "date": "2026-04-16",
+    "announced": null,
+    "tier": "major",
+    "kind": "hybrid",
+    "limited": false,
+    "note": "Opus upgrade: SWE-bench Verified up from 80.8% to 87.6%, higher-resolution vision, and a new 'xhigh' effort level; Claude Design launched alongside it.",
+    "sources": [
+      "https://www.anthropic.com/news/claude-opus-4-7",
+      "https://github.blog/changelog/2026-04-16-claude-opus-4-7-is-generally-available/",
+      "https://x.com/claudeai/status/2044785261393977612"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude Opus 4.8",
+    "date": "2026-05-28",
+    "announced": null,
+    "tier": "major",
+    "kind": "hybrid",
+    "limited": false,
+    "note": "Incremental Opus upgrade six weeks after 4.7: more honest about its own progress, lowest hallucination rate, longer independent work; fast mode made 3x cheaper.",
+    "sources": [
+      "https://www.anthropic.com/news/claude-opus-4-8",
+      "https://simonwillison.net/2026/May/28/claude-opus-4-8/",
+      "https://www.axios.com/2026/05/28/anthropic-opus-release-mythos"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude Fable 5",
+    "date": "2026-06-09",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "hybrid",
+    "limited": false,
+    "note": "First Mythos-class model made safe for general use (Claude 5 generation, SOTA on nearly all benchmarks, $10/$50); a US export-control directive forced a worldwide suspension from Jun 12 to Jul 1, 2026.",
+    "sources": [
+      "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "https://techcrunch.com/2026/06/09/anthropics-claude-fable-5-is-a-version-of-mythos-the-public-can-access-today/",
+      "https://www.anthropic.com/news/fable-mythos-access",
+      "https://www.cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude Mythos 5",
+    "date": "2026-06-09",
+    "announced": null,
+    "tier": "major",
+    "kind": "hybrid",
+    "limited": true,
+    "note": "LIMITED ACCESS: same underlying model as Fable 5 with some safeguards (cyber) lifted; restricted to Project Glasswing and trusted-access partners.",
+    "sources": [
+      "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "https://en.wikipedia.org/wiki/Claude_Mythos"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude Sonnet 5",
+    "date": "2026-06-30",
+    "announced": null,
+    "tier": "major",
+    "kind": "hybrid",
+    "limited": false,
+    "note": "Most agentic Sonnet yet, close to Opus 4.8 performance at a lower price ($2/$10, later made permanent); new default model for Free and Pro.",
+    "sources": [
+      "https://www.anthropic.com/news/claude-sonnet-5",
+      "https://x.com/claudeai/status/2072017450611142835"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude Opus 5",
+    "date": "2026-07-24",
+    "announced": null,
+    "tier": "major",
+    "kind": "hybrid",
+    "limited": false,
+    "note": "Near-Fable 5 intelligence at Opus speed and price ($5/$25), about half the cost per task; 1M context with adaptive thinking by default.",
+    "sources": [
+      "https://www.anthropic.com/news/claude-opus-5",
+      "https://www.axios.com/2026/07/24/anthropic-releases-new-model-opus-5",
+      "https://fortune.com/2026/07/24/anthropic-debuts-claude-opus-5-with-feature-that-lets-users-toggle-between-cost-and-capability/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude Fable 5.1",
+    "date": "2026-09-01",
+    "announced": null,
+    "tier": "major",
+    "kind": "hybrid",
+    "limited": false,
+    "note": "Upgrade of the top generally available model, billed as the world's most advanced for coding and knowledge work, with big gains in scientific research and long agentic runs; cache reads 75% cheaper.",
+    "sources": [
+      "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "https://x.com/claudeai/status/2094848572143407483",
+      "https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude Mythos 5.1",
+    "date": "2026-09-01",
+    "announced": null,
+    "tier": "major",
+    "kind": "hybrid",
+    "limited": true,
+    "note": "LIMITED ACCESS: restricted counterpart of Fable 5.1 (same model, fewer safeguards) for vetted US cybersecurity and life-sciences organizations via trusted-access programs.",
+    "sources": [
+      "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "https://platform.claude.com/docs/en/models/mythos-5-1/overview"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "anthropic",
+    "name": "Claude Opus 5.5",
+    "date": "2026-09-22",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "hybrid",
+    "limited": false,
+    "note": "First model of the Claude 5.5 family: Fable 5.1-level performance on most work at about 40% lower running cost than Opus 5 ($4/$20) and 30%+ faster output.",
+    "sources": [
+      "https://www.anthropic.com/claude-opus-5-5",
+      "https://9to5mac.com/2026/09/22/anthropic-upgrades-claude-with-new-opus-5-5-model-details-here/",
+      "https://www.macrumors.com/2026/09/22/anthropic-claude-opus-5-5/"
+    ],
+    "confidence": "high"
+  }
+]

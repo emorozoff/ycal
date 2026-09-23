@@ -1,0 +1,765 @@
+[
+  {
+    "company": "google",
+    "name": "Bard",
+    "date": "2023-03-21",
+    "announced": "2023-02-06",
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Google's first public chatbot (lightweight LaMDA), early access via US/UK waitlist; announced Feb 6, 2023 for trusted testers only",
+    "sources": [
+      "https://blog.google/technology/ai/try-bard/",
+      "https://techcrunch.com/2023/03/21/google-opens-early-access-to-bard-its-ai-chatbot/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "PaLM 2",
+    "date": "2023-05-10",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Next-gen LLM unveiled at I/O 2023; immediately powered Bard (waitlist dropped, 180 countries) and the PaLM API",
+    "sources": [
+      "https://blog.google/technology/ai/google-palm-2-ai-large-language-model/",
+      "https://techcrunch.com/2023/05/10/google-launches-palm-2-its-next-gen-large-language-model/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "xai",
+    "name": "Grok-1",
+    "date": "2023-11-04",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "xAI's first chatbot/model (314B MoE) with real-time X data and a 'rebellious' tone; early access for limited US users, all US Premium+ from Dec 7, 2023",
+    "sources": [
+      "https://x.ai/news/grok",
+      "https://wccftech.com/meet-grok-elon-musk-answer-to-chatgpt/"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 1.0 (Pro & Nano)",
+    "date": "2023-12-06",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "First Gemini generation: tuned Gemini Pro went live in Bard, Gemini Nano on Pixel 8 Pro the same day (Pro API followed Dec 13); Ultra only announced",
+    "sources": [
+      "https://blog.google/technology/ai/google-gemini-ai/",
+      "https://techcrunch.com/2023/12/06/pixel-8-pro-becomes-the-first-smartphone-powered-by-googles-new-ai-model-gemini/",
+      "https://www.searchenginejournal.com/google-introduces-gemini-as-its-most-capable-multimodal-ai-model/503165/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 1.0 Ultra (Gemini Advanced)",
+    "date": "2024-02-08",
+    "announced": "2023-12-06",
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Bard renamed Gemini; Ultra 1.0 shipped in the paid Gemini Advanced tier (Google One AI Premium, $19.99/mo)",
+    "sources": [
+      "https://blog.google/products/gemini/bard-gemini-advanced-app/",
+      "https://9to5google.com/2024/02/08/google-gemini-advanced/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 1.5 Pro",
+    "date": "2024-02-15",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "MoE model with an experimental 1M-token context (record at the time), ~1.0 Ultra quality; private preview for developers/enterprise (public API preview Apr 9, 2024)",
+    "sources": [
+      "https://developers.googleblog.com/gemini-15-our-next-generation-model-now-available-for-private-preview-in-google-ai-studio/",
+      "https://blog.google/innovation-and-ai/products/google-gemini-next-generation-model-february-2024/",
+      "https://9to5google.com/2024/02/15/gemini-1-5-announcement/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemma",
+    "date": "2024-02-21",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Google's first open-weight LLM family (2B and 7B), built from Gemini research",
+    "sources": [
+      "https://blog.google/technology/developers/gemma-open-models/",
+      "https://techcrunch.com/2024/02/21/google-launches-two-new-open-llms/",
+      "https://huggingface.co/blog/gemma"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "xai",
+    "name": "Grok-1 (open weights)",
+    "date": "2024-03-17",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Weights of the 314B MoE base model released under Apache 2.0, the largest open-weight LLM at the time",
+    "sources": [
+      "https://x.ai/news/grok-os",
+      "https://github.com/xai-org/grok-1"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "CodeGemma",
+    "date": "2024-04-09",
+    "announced": null,
+    "tier": "minor",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Code-specialized Gemma variants (2B/7B) released at Cloud Next alongside RecurrentGemma",
+    "sources": [
+      "https://huggingface.co/blog/codegemma"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 1.5 Flash",
+    "date": "2024-05-14",
+    "announced": null,
+    "tier": "major",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Fast, cheap 1M-context model introduced at I/O 2024 (public preview in API); started the Flash tier",
+    "sources": [
+      "https://www.cnbc.com/2024/05/14/google-announces-lightweight-ai-model-gemini-flash-1point5-at-google-i/o.html",
+      "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-gemma-developer-updates-may-2024/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "xai",
+    "name": "Grok-1.5",
+    "date": "2024-05-15",
+    "announced": "2024-03-28",
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "128K context and much better math/coding; announced Mar 28, 2024, broad rollout to X Premium users around mid-May (exact day unverified)",
+    "sources": [
+      "https://x.ai/news/grok-1.5"
+    ],
+    "confidence": "low"
+  },
+  {
+    "company": "google",
+    "name": "Gemma 2",
+    "date": "2024-06-27",
+    "announced": "2024-05-14",
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "9B and 27B open models; 27B rivaled models twice its size (2B added Jul 31, 2024)",
+    "sources": [
+      "https://blog.google/technology/developers/google-gemma-2/",
+      "https://huggingface.co/blog/gemma2"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "xai",
+    "name": "Grok-2",
+    "date": "2024-08-13",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Grok-2 and Grok-2 mini beta on X; ranked near the top of LMSYS (tested as 'sus-column-r'), brought xAI into the frontier race",
+    "sources": [
+      "https://x.ai/news/grok-2"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 2.0 Flash",
+    "date": "2024-12-11",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Opened the Gemini 2.0 'agentic era': beat 1.5 Pro at 2x speed, native image/audio output (experimental; GA Jan 30 app / Feb 5, 2025 API)",
+    "sources": [
+      "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/google-gemini-ai-update-december-2024/",
+      "https://9to5google.com/2024/12/11/gemini-2-0/",
+      "https://developers.googleblog.com/en/the-next-chapter-of-the-gemini-era-for-developers/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 2.0 Flash Thinking",
+    "date": "2024-12-19",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Google's first reasoning model with visible thoughts (experimental in AI Studio); Google's answer to OpenAI o1",
+    "sources": [
+      "https://techcrunch.com/2024/12/19/google-releases-its-own-reasoning-ai-model",
+      "https://9to5google.com/2024/12/19/gemini-2-0-flash-thinking/",
+      "https://x.com/JeffDean/status/1869789813232341267"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 2.0 Pro",
+    "date": "2025-02-05",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Experimental top model for coding/complex prompts with 2M context; follow-up to gemini-exp-1206 (Dec 6, 2024), its early version",
+    "sources": [
+      "https://blog.google/technology/google-deepmind/gemini-model-updates-february-2025/",
+      "https://developers.googleblog.com/en/gemini-2-family-expands/",
+      "https://simonwillison.net/2024/Dec/6/gemini-exp-1206/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 2.0 Flash-Lite",
+    "date": "2025-02-05",
+    "announced": null,
+    "tier": "minor",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "New cheapest tier (public preview), better than 1.5 Flash at the same price",
+    "sources": [
+      "https://developers.googleblog.com/en/gemini-2-family-expands/",
+      "https://www.neowin.net/news/google-announces-gemini-20-flash-ga-and-gemini-20-flash-lite-public-preview/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "xai",
+    "name": "Grok 3",
+    "date": "2025-02-17",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Trained on the Colossus supercluster; Think (reasoning) and DeepSearch modes plus Grok 3 mini; topped LMArena at launch (API Apr 9, 2025)",
+    "sources": [
+      "https://x.ai/news/grok-3"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemma 3",
+    "date": "2025-03-12",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "1B-27B multimodal open models, 128K context, 140+ languages; 'most capable model on a single GPU' (27B ranked top-10 on LMArena)",
+    "sources": [
+      "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-3/",
+      "https://huggingface.co/blog/gemma3"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 2.5 Pro",
+    "date": "2025-03-25",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "First Gemini built as a thinking model; debuted #1 on LMArena by a wide margin (experimental in AI Studio and Gemini Advanced)",
+    "sources": [
+      "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/",
+      "https://9to5google.com/2025/03/25/gemini-2-5-pro-experimental/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 2.5 Flash",
+    "date": "2025-04-17",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "First fully hybrid reasoning model: thinking on/off with adjustable thinking budget (preview in API and Gemini app)",
+    "sources": [
+      "https://developers.googleblog.com/en/start-building-with-gemini-25-flash/",
+      "https://blog.google/products-and-platforms/products/gemini/gemini-2-5-flash-preview/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemma 3n",
+    "date": "2025-05-20",
+    "announced": null,
+    "tier": "minor",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Mobile-first open model (E2B/E4B) with audio/video input, runs in ~2GB RAM; preview at I/O, full release Jun 26, 2025",
+    "sources": [
+      "https://developers.googleblog.com/en/introducing-gemma-3n/",
+      "https://huggingface.co/blog/gemma3n"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 2.5 Flash-Lite",
+    "date": "2025-06-17",
+    "announced": null,
+    "tier": "minor",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Lowest-cost/lowest-latency 2.5 model (preview, thinking off by default) released with 2.5 Pro/Flash GA; GA Jul 22, 2025",
+    "sources": [
+      "https://www.infoworld.com/article/4009323/google-previews-gemini-2-5-flash-lite.html",
+      "https://developers.googleblog.com/en/gemini-2-5-thinking-model-updates/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "xai",
+    "name": "Grok 4",
+    "date": "2025-07-09",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Launched with multi-agent Grok 4 Heavy and a $300/mo SuperGrok Heavy tier; state-of-the-art on HLE and ARC-AGI-2 at launch",
+    "sources": [
+      "https://x.ai/news/grok-4",
+      "https://techcrunch.com/2025/07/09/elon-musks-xai-launches-grok-4-alongside-a-300-monthly-subscription"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 2.5 Deep Think",
+    "date": "2025-08-01",
+    "announced": "2025-05-20",
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Parallel-thinking mode for AI Ultra subscribers; a variant of the model won IMO 2025 gold",
+    "sources": [
+      "https://blog.google/products-and-platforms/products/gemini/gemini-2-5-deep-think/",
+      "https://techcrunch.com/2025/08/01/google-rolls-out-gemini-deep-think-ai-a-reasoning-model-that-tests-multiple-ideas-in-parallel/",
+      "https://simonwillison.net/2025/Aug/1/deep-think-in-the-gemini-app/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "xai",
+    "name": "Grok 2.5 (open weights)",
+    "date": "2025-08-23",
+    "announced": null,
+    "tier": "minor",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "xAI open-sourced the weights of its late-2024 flagship Grok 2.5 on Hugging Face",
+    "sources": [
+      "https://huggingface.co/xai-org/grok-2"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "xai",
+    "name": "Grok Code Fast 1",
+    "date": "2025-08-28",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Fast, cheap agentic coding model, free at launch in Copilot/Cursor etc.; quickly became the most-used model on OpenRouter",
+    "sources": [
+      "https://x.ai/news/grok-code-fast-1"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "xai",
+    "name": "Grok 4 Fast",
+    "date": "2025-09-19",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Unified reasoning/non-reasoning model with 2M context, near Grok 4 quality at a fraction of the cost; free for all users",
+    "sources": [
+      "https://x.ai/news/grok-4-fast"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 2.5 Computer Use",
+    "date": "2025-10-07",
+    "announced": null,
+    "tier": "minor",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Specialized agent model (preview API) that operates browser/mobile UIs by clicking and typing",
+    "sources": [
+      "https://blog.google/technology/google-deepmind/gemini-computer-use-model/",
+      "https://github.com/sst/models.dev/blob/dev/models/google/gemini-2.5-computer-use-preview-10-2025.toml"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "xai",
+    "name": "Grok 4.1",
+    "date": "2025-11-17",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Took #1 on LMArena text (4.1 Thinking), fewer hallucinations, stronger emotional intelligence and writing; silently A/B-tested Nov 1-14",
+    "sources": [
+      "https://x.ai/news/grok-4-1"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 3 Pro",
+    "date": "2025-11-18",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "New generation: first model over 1500 Elo on LMArena, launched same day in Gemini app, Search, AI Studio and the new Antigravity IDE",
+    "sources": [
+      "https://blog.google/products/gemini/gemini-3/",
+      "https://www.macrumors.com/2025/11/18/google-gemini-3/",
+      "https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-is-available-for-enterprise"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "xai",
+    "name": "Grok 4.1 Fast",
+    "date": "2025-11-19",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Tool-calling model with 2M context, launched with the Agent Tools API ($0.20/$0.50 per M tokens)",
+    "sources": [
+      "https://x.ai/news/grok-4-1-fast",
+      "https://github.com/sst/models.dev/blob/dev/models/xai/grok-4.1-fast.toml"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 3 Deep Think",
+    "date": "2025-12-04",
+    "announced": "2025-11-18",
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Deep Think on Gemini 3 Pro for AI Ultra subscribers: 41% Humanity's Last Exam, 45.1% ARC-AGI-2",
+    "sources": [
+      "https://9to5google.com/2025/12/04/gemini-3-deep-think/",
+      "https://blog.google/products/gemini/gemini-3-deep-think/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 3 Flash",
+    "date": "2025-12-17",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Pro-level reasoning at Flash speed; beat 2.5 Pro and became the default model in the Gemini app and AI Mode in Search",
+    "sources": [
+      "https://blog.google/products/gemini/gemini-3-flash/",
+      "https://9to5google.com/2025/12/17/gemini-3-flash-launch/",
+      "https://www.axios.com/2025/12/17/google-gemini-3-flash-pro-model"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 3 Deep Think (Feb 2026 upgrade)",
+    "date": "2026-02-12",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Major Deep Think upgrade aimed at science: 84.6% ARC-AGI-2, 48.4% HLE, solved 18 open research problems; Ultra app + early API access",
+    "sources": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/",
+      "https://9to5google.com/2026/02/12/gemini-3-deep-think-upgrade/",
+      "https://winbuzzer.com/2026/02/13/google-gemini-3-deep-think-solves-18-research-problems-xcxwbn/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "xai",
+    "name": "Grok 4.20",
+    "date": "2026-02-17",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Public beta ('Grok 4.2 release candidate') built around 4 collaborating agents and weekly improvements; API (grok-4.20-0309) in March",
+    "sources": [
+      "https://x.com/elonmusk/status/2023829664318583105",
+      "https://www.nextbigfuture.com/2026/02/xai-launches-grok-4-20-and-it-has-4-ai-agents-collaborating.html",
+      "https://docs.x.ai/developers/models/grok-4.20"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 3.1 Pro",
+    "date": "2026-02-19",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Preview across Gemini app, API and Vertex; 77.1% ARC-AGI-2 (over double Gemini 3 Pro)",
+    "sources": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+      "https://deepmind.google/models/model-cards/gemini-3-1-pro/",
+      "https://techinformed.com/google-rolls-out-gemini-3-1-pro-preview/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 3.1 Flash-Lite",
+    "date": "2026-03-03",
+    "announced": null,
+    "tier": "minor",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Fastest, cheapest Gemini 3-series model ($0.25/$1.50 per M tokens), preview; GA May 7, 2026",
+    "sources": [
+      "https://siliconangle.com/2026/03/03/google-launches-speedy-gemini-3-1-flash-lite-model-preview/",
+      "https://venturebeat.com/technology/google-releases-gemini-3-1-flash-lite-at-1-8th-the-cost-of-pro",
+      "https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-1-flash-lite-is-now-generally-available"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemma 4",
+    "date": "2026-04-02",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "First Gemma under plain Apache 2.0: E2B, E4B, 26B-A4B MoE and 31B dense, multimodal, up to 256K context, configurable thinking",
+    "sources": [
+      "https://deepmind.google/models/gemma/gemma-4/",
+      "https://huggingface.co/blog/gemma4",
+      "https://ai.google.dev/gemma/docs/core/model_card_4"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "xai",
+    "name": "Grok 4.3",
+    "date": "2026-04-17",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Beta for SuperGrok/Premium+ (API ~Apr 30): 1M context, native video input, low $1.25/$2.50 pricing",
+    "sources": [
+      "https://docs.x.ai/developers/models/grok-4.3",
+      "https://venturebeat.com/technology/xai-launches-grok-4-3-at-an-aggressively-low-price-and-a-new-fast-powerful-voice-cloning-suite",
+      "https://artificialanalysis.ai/articles/xai-launches-grok-4-3-with-improved-agentic-performance-and-lower-pricing"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 3.5 Flash",
+    "date": "2026-05-19",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Opened the Gemini 3.5 series at I/O 2026, beat 3.1 Pro on agentic benchmarks and became the default everywhere; 3.5 Pro promised for June but still unreleased",
+    "sources": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+      "https://www.macrumors.com/2026/05/19/google-io-2026-roundup/",
+      "https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemma 4 12B (Unified)",
+    "date": "2026-06-03",
+    "announced": null,
+    "tier": "minor",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Encoder-free 12B Gemma 4 with native image+audio input; exact day uncertain (Transformers support landed Jun 3, models.dev lists Jun 9)",
+    "sources": [
+      "https://huggingface.co/google/gemma-4-12B",
+      "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/gemma4_unified.md",
+      "https://ai.google.dev/gemma/docs/core/model_card_4"
+    ],
+    "confidence": "low"
+  },
+  {
+    "company": "google",
+    "name": "DiffusionGemma",
+    "date": "2026-06-10",
+    "announced": null,
+    "tier": "minor",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Google's first open-weight text-diffusion LLM (26B-A4B, block diffusion for faster generation); date from Transformers/gemma-library releases",
+    "sources": [
+      "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
+      "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/diffusion_gemma.md",
+      "https://github.com/google-deepmind/gemma/blob/main/CHANGELOG.md"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "xai",
+    "name": "Grok 4.5",
+    "date": "2026-07-08",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Bigger model aimed at coding and cost (Musk: 'roughly comparable to Opus 4.7, but much faster'); EU access Jul 17",
+    "sources": [
+      "https://x.ai/news/grok-4-5",
+      "https://codersera.com/blog/grok-4-5-launch-guide-2026/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 3.6 Flash",
+    "date": "2026-07-21",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Workhorse update: 17% fewer output tokens than 3.5 Flash with cheaper output pricing; shipped without the delayed 3.5 Pro",
+    "sources": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/",
+      "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 3.5 Flash-Lite",
+    "date": "2026-07-21",
+    "announced": null,
+    "tier": "minor",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Fastest 3.5-series model (~350 tokens/s) for high-volume workloads",
+    "sources": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/",
+      "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "xai",
+    "name": "Grok 4.6",
+    "date": "2026-08-12",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Frontier model for long-running agents; 61 on the Artificial Analysis Intelligence Index, tied for 3rd in the world",
+    "sources": [
+      "https://venturebeat.com/technology/spacexai-debuts-grok-4-6-overtaking-kimi-k3s-performance-and-matching-gpt-5-6-sol-for-worlds-third-best-on-artificial-analysis",
+      "https://docs.x.ai/developers/release-notes"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 3.7 Flash",
+    "date": "2026-08-13",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "'Most intelligent workhorse' for coding and agents (65.3% DeepSWE), 23 days after 3.6 Flash, still ahead of 3.5 Pro",
+    "sources": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
+      "https://9to5google.com/2026/08/13/gemini-3-7-flash-launch/",
+      "https://www.axios.com/2026/08/13/google-gemini-37-flash"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "google",
+    "name": "Gemini 3.8 Flash",
+    "date": "2026-09-02",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Google's most intelligent Flash model for long-horizon software engineering and autonomous agents; newest Gemini as of Sep 2026",
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash",
+      "https://github.com/sst/models.dev/blob/dev/models/google/gemini-3.8-flash.toml",
+      "https://github.com/vercel/ai/blob/main/packages/google/CHANGELOG.md"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "xai",
+    "name": "Grok 4.7",
+    "date": "2026-09-21",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "New flagship (~2.1T params per reports) for coding and knowledge work, same $2/$6 pricing, live in app, API, Cursor and Grok Build; Grok 4.8 is only teased",
+    "sources": [
+      "https://decrypt.co/378824/xai-launches-grok-4-7",
+      "https://www.crowdfundinsider.com/2026/09/312007-xai-launches-grok-4-7-for-longer-coding-and-knowledge-work/",
+      "https://docs.x.ai/developers/models/grok-4.7"
+    ],
+    "confidence": "high"
+  }
+]

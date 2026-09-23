@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><title>render</title>
+<link rel="stylesheet" href="../css/fonts.css">
+<style>html,body{margin:0;background:#000}</style>
+</head><body>
+<script src="../js/data.js"></script>
+<script src="../js/engine.js"></script>
+<script src="../js/export.js"></script>
+<script>
+// Страница для tools/render.mjs: кадры автопрогона по одному в PNG.
+window.renderSetup = async function (opts) {
+  await Promise.all(['400', '500', '600', '700'].map((w) => document.fonts.load(w + ' 40px Onest'))
+    .concat(['400', '500', '600'].map((w) => document.fonts.load(w + ' 30px "JetBrains Mono"'))));
+  const T = window.Tablo, X = window.TabloExport;
+  const tl = new T.Timeline(window.TABLO_DATA);
+  const enabled = {};
+  for (const c of tl.companies) enabled[c.id] = opts.onlyMain ? !!c.main : true;
+  const hidden = Object.fromEntries(tl.releases.filter((r) => r.defaultHidden).map((r) => [r.id, true]));
+  const st = Object.assign({ enabled, hidden, speed: 1, span: 420, finale: true, labels: true, scale: true, frontier: true,
+    heights: 'score', others: 'muted', labelCount: 16 }, opts.settings || {});
+  const track = X.autoTrack(tl, st);
+  window.__src = new X.FrameSource(tl, track, { fps: opts.fps || 25, grid: opts.grid || 12, scale: opts.scale || 1 });
+  return { frames: window.__src.frames, duration: track.duration, width: window.__src.canvas.width, height: window.__src.canvas.height };
+};
+window.renderSkip = function (n) { for (let i = 0; i < n; i++) window.__src.next(false); return window.__src.i; };
+window.renderNext = async function () {
+  const c = window.__src.next(true);
+  const blob = await new Promise((r) => c.toBlob(r, 'image/png'));
+  const buf = new Uint8Array(await blob.arrayBuffer());
+  let s = '';
+  for (let i = 0; i < buf.length; i += 0x8000) s += String.fromCharCode.apply(null, buf.subarray(i, i + 0x8000));
+  return btoa(s);
+};
+</script>
+</body></html>

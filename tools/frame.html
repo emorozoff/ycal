@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><title>frame</title>
+<link rel="stylesheet" href="../css/fonts.css">
+<style>html,body{margin:0;background:#07080a}canvas{display:block}</style>
+</head><body>
+<canvas id="c"></canvas>
+<script src="../js/data.js"></script>
+<script src="../js/engine.js"></script>
+<script>
+// Отладочный рендер одного кадра: ?day=2025-08-07&grid=12&span=420
+(async function () {
+  const q = new URLSearchParams(location.search);
+  await Promise.all(['400','500','600','700'].map(w => document.fonts.load(w + ' 40px Onest'))
+    .concat(['400','500','600'].map(w => document.fonts.load(w + ' 30px "JetBrains Mono"'))));
+  const T = window.Tablo;
+  const tl = new T.Timeline(window.TABLO_DATA);
+  const sim = new T.Sim(tl);
+  const rnd = new T.Renderer(tl);
+  const grid = +(q.get('grid') || 12);
+  const cols = 3840 / grid, rows = 2160 / grid, pitch = +(q.get('pitch') || grid);
+  const c = document.getElementById('c');
+  c.width = cols * pitch; c.height = rows * pitch;
+  const ctx = c.getContext('2d');
+  const enabled = {};
+  const only = q.get('only');
+  for (const co of tl.companies) enabled[co.id] = only ? co.main : true;
+  const target = T.dayOf(q.get('day') || '2025-08-10');
+  const hidden = Object.fromEntries(tl.releases.filter(r => r.defaultHidden).map(r => [r.id, true]));
+  const ctl = { now: tl.start, span: +(q.get('span') || 420), cam: 'follow', enabled, hidden, labels: true, scale: true, frontier: true, heights: q.get('heights') || 'score', others: q.get('others') || 'muted', focus: q.get('focus') || null, snap: true };
+  // прогоняем время до нужной даты, чтобы анимации «устоялись»
+  for (let d = tl.start; d <= target; d += 2) { ctl.now = d; sim.step(0.05, ctl); }
+  ctl.now = target; ctl.snap = true;
+  for (let i = 0; i < 60; i++) sim.step(0.05, ctl);
+  for (let i = 0; i < 24; i++) { sim.step(0.05, ctl); rnd.draw(ctx, sim, ctl, cols, rows, pitch); }
+  const t0 = performance.now();
+  for (let i = 0; i < 5; i++) { sim.step(0.04, ctl); rnd.draw(ctx, sim, ctl, cols, rows, pitch); }
+  window.__drawMs = (performance.now() - t0) / 5;
+  window.__ready = true;
+})();
+</script>
+</body></html>

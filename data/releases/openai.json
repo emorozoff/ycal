@@ -1,0 +1,669 @@
+[
+  {
+    "company": "openai",
+    "name": "ChatGPT (GPT-3.5)",
+    "date": "2022-11-30",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Запуск ChatGPT на базе GPT-3.5 (research preview) — старт бума генеративного ИИ",
+    "sources": [
+      "https://openai.com/index/chatgpt/",
+      "https://en.wikipedia.org/wiki/ChatGPT"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-4",
+    "date": "2023-03-14",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Новое поколение: мультимодальный вход (текст+изображения), резкий рост качества; ChatGPT Plus и API (waitlist)",
+    "sources": [
+      "https://openai.com/index/gpt-4-research/",
+      "https://en.wikipedia.org/wiki/GPT-4"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-4 Turbo",
+    "date": "2023-11-06",
+    "announced": null,
+    "tier": "major",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "DevDay: контекст 128K, знания до апреля 2023, в 2–3 раза дешевле GPT-4 (preview в API)",
+    "sources": [
+      "https://openai.com/index/new-models-and-developer-products-announced-at-devday/",
+      "https://en.wikipedia.org/wiki/GPT-4"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-4o",
+    "date": "2024-05-13",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "«Omni»: нативно мультимодальная (текст, аудио, изображения), уровень GPT-4 бесплатно в ChatGPT",
+    "sources": [
+      "https://openai.com/index/hello-gpt-4o/",
+      "https://en.wikipedia.org/wiki/GPT-4o"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-4o mini",
+    "date": "2024-07-18",
+    "announced": null,
+    "tier": "major",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Дешёвая малая модель, заменила GPT-3.5 Turbo в ChatGPT",
+    "sources": [
+      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/",
+      "https://en.wikipedia.org/wiki/GPT-4o"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "o1-preview",
+    "date": "2024-09-12",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Первая «рассуждающая» модель OpenAI (думает цепочкой мыслей перед ответом), проект Strawberry",
+    "sources": [
+      "https://openai.com/index/introducing-openai-o1-preview/",
+      "https://en.wikipedia.org/wiki/OpenAI_o1"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "o1-mini",
+    "date": "2024-09-12",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Быстрая и дешёвая reasoning-модель, сильна в математике и коде",
+    "sources": [
+      "https://openai.com/index/openai-o1-mini-advancing-cost-efficient-reasoning/",
+      "https://en.wikipedia.org/wiki/OpenAI_o1"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "o1",
+    "date": "2024-12-05",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Полная версия o1 вместо preview (понимает изображения); день 1 «12 дней OpenAI»; в API с 17 дек.",
+    "sources": [
+      "https://openai.com/index/introducing-chatgpt-pro/",
+      "https://openai.com/index/openai-o1-system-card/",
+      "https://en.wikipedia.org/wiki/OpenAI_o1"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "o1 pro mode",
+    "date": "2024-12-05",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "o1 с увеличенными вычислениями — только в новом тарифе ChatGPT Pro за $200/мес (API o1-pro с 19.03.2025)",
+    "sources": [
+      "https://openai.com/index/introducing-chatgpt-pro/",
+      "https://en.wikipedia.org/wiki/OpenAI_o1"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "o3-mini",
+    "date": "2025-01-31",
+    "announced": "2024-12-20",
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Малая reasoning-модель нового поколения; впервые рассуждения доступны бесплатным пользователям ChatGPT",
+    "sources": [
+      "https://openai.com/index/openai-o3-mini/",
+      "https://en.wikipedia.org/wiki/OpenAI_o3"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-4.5",
+    "date": "2025-02-27",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Крупнейшая модель без цепочки рассуждений (кодовое имя Orion), research preview для Pro и API",
+    "sources": [
+      "https://openai.com/index/introducing-gpt-4-5/",
+      "https://en.wikipedia.org/wiki/GPT-4.5"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-4.1",
+    "date": "2025-04-14",
+    "announced": null,
+    "tier": "major",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Модель для разработчиков только в API: контекст 1M токенов, сильнее в коде и следовании инструкциям",
+    "sources": [
+      "https://openai.com/index/gpt-4-1/",
+      "https://en.wikipedia.org/wiki/GPT-4.1"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-4.1 mini",
+    "date": "2025-04-14",
+    "announced": null,
+    "tier": "major",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Уменьшенная GPT-4.1 (1M контекст); позже заменила GPT-4o mini в ChatGPT",
+    "sources": [
+      "https://openai.com/index/gpt-4-1/",
+      "https://en.wikipedia.org/wiki/GPT-4.1"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-4.1 nano",
+    "date": "2025-04-14",
+    "announced": null,
+    "tier": "minor",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Самая быстрая и дешёвая модель OpenAI на тот момент (1M контекст, только API)",
+    "sources": [
+      "https://openai.com/index/gpt-4-1/",
+      "https://en.wikipedia.org/wiki/GPT-4.1"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "o3",
+    "date": "2025-04-16",
+    "announced": "2024-12-20",
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Флагманская reasoning-модель: впервые сама использует инструменты (поиск, Python, анализ картинок) в рассуждениях",
+    "sources": [
+      "https://openai.com/index/introducing-o3-and-o4-mini/",
+      "https://en.wikipedia.org/wiki/OpenAI_o3"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "o4-mini",
+    "date": "2025-04-16",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Быстрая и дешёвая reasoning-модель с инструментами, заменила o3-mini",
+    "sources": [
+      "https://openai.com/index/introducing-o3-and-o4-mini/",
+      "https://en.wikipedia.org/wiki/OpenAI_o4-mini"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "codex-1",
+    "date": "2025-05-16",
+    "announced": null,
+    "tier": "major",
+    "kind": "coding",
+    "open_weights": false,
+    "note": "Версия o3 для программирования — движок облачного агента Codex (research preview в ChatGPT)",
+    "sources": [
+      "https://openai.com/index/introducing-codex/",
+      "https://en.wikipedia.org/wiki/Codex_(AI_agent)"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "o3-pro",
+    "date": "2025-06-10",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "o3 с увеличенными вычислениями для Pro/Team в ChatGPT и в API; заменила o1-pro",
+    "sources": [
+      "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "https://github.com/openai/openai-python/blob/main/CHANGELOG.md",
+      "https://en.wikipedia.org/wiki/OpenAI_o3"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "gpt-oss-120b",
+    "date": "2025-08-05",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Первая open-weight LLM OpenAI со времён GPT-2 (Apache 2.0): MoE 117B (5.1B активных), уровень ~o4-mini",
+    "sources": [
+      "https://openai.com/index/introducing-gpt-oss/",
+      "https://github.com/openai/gpt-oss",
+      "https://huggingface.co/openai/gpt-oss-120b"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "gpt-oss-20b",
+    "date": "2025-08-05",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Малая открытая MoE-модель (21B, 3.6B активных), запускается локально в 16 ГБ памяти",
+    "sources": [
+      "https://openai.com/index/introducing-gpt-oss/",
+      "https://github.com/openai/gpt-oss",
+      "https://huggingface.co/openai/gpt-oss-20b"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-5",
+    "date": "2025-08-07",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Единая система с роутером между быстрым и «думающим» режимом; доступна всем, включая бесплатных пользователей",
+    "sources": [
+      "https://openai.com/index/introducing-gpt-5/",
+      "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "https://en.wikipedia.org/wiki/GPT-5"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-5 mini",
+    "date": "2025-08-07",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Уменьшенная GPT-5: в API и как запасная модель ChatGPT при исчерпании лимитов",
+    "sources": [
+      "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "https://en.wikipedia.org/wiki/GPT-5"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-5 nano",
+    "date": "2025-08-07",
+    "announced": null,
+    "tier": "minor",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Самая маленькая и дешёвая модель семейства GPT-5, только API",
+    "sources": [
+      "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "https://en.wikipedia.org/wiki/GPT-5"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-5 pro",
+    "date": "2025-08-07",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "GPT-5 с расширенным параллельным рассуждением для подписчиков Pro (в API с 6 окт. 2025)",
+    "sources": [
+      "https://openai.com/index/introducing-gpt-5/",
+      "https://en.wikipedia.org/wiki/GPT-5"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-5-Codex",
+    "date": "2025-09-15",
+    "announced": null,
+    "tier": "major",
+    "kind": "coding",
+    "open_weights": false,
+    "note": "GPT-5, дообученная для агентного программирования в Codex; способна работать над задачей 7+ часов",
+    "sources": [
+      "https://openai.com/index/introducing-upgrades-to-codex/",
+      "https://github.com/openai/codex/releases/tag/rust-v0.36.0"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-5.1",
+    "date": "2025-11-12",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "GPT-5.1 Instant и Thinking: адаптивное рассуждение, более «тёплый» тон и пресеты личности; API с 13 нояб.",
+    "sources": [
+      "https://openai.com/index/gpt-5-1/",
+      "https://openai.com/index/gpt-5-1-for-developers/",
+      "https://en.wikipedia.org/wiki/GPT-5.1"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-5.1-Codex-Max",
+    "date": "2025-11-19",
+    "announced": null,
+    "tier": "major",
+    "kind": "coding",
+    "open_weights": false,
+    "note": "Агентная модель для кода с «компакцией» контекста — может работать над задачей более 24 часов",
+    "sources": [
+      "https://openai.com/index/gpt-5-1-codex-max/",
+      "https://github.com/openai/codex/releases/tag/rust-v0.59.0"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-5.2",
+    "date": "2025-12-11",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "GPT-5.2 Instant, Thinking и Pro — выпущена после «code red» в ответ на Gemini 3; упор на профессиональные задачи",
+    "sources": [
+      "https://openai.com/index/introducing-gpt-5-2/",
+      "https://en.wikipedia.org/wiki/GPT-5.2"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-5.2-Codex",
+    "date": "2025-12-18",
+    "announced": null,
+    "tier": "major",
+    "kind": "coding",
+    "open_weights": false,
+    "note": "Модель для агентного кодинга на базе GPT-5.2 с усиленными навыками кибербезопасности",
+    "sources": [
+      "https://openai.com/index/introducing-gpt-5-2-codex/",
+      "https://github.com/openai/codex/releases/tag/rust-v0.74.0"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-5.3-Codex",
+    "date": "2026-02-05",
+    "announced": null,
+    "tier": "major",
+    "kind": "coding",
+    "open_weights": false,
+    "note": "Объединила кодинг GPT-5.2-Codex и рассуждения/знания GPT-5.2 в одной модели, на ~25% быстрее",
+    "sources": [
+      "https://openai.com/index/introducing-gpt-5-3-codex/",
+      "https://en.wikipedia.org/wiki/GPT-5.3-Codex",
+      "https://laravel-news.com/gpt-5-3-codex"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-5.3-Codex-Spark",
+    "date": "2026-02-12",
+    "announced": null,
+    "tier": "minor",
+    "kind": "coding",
+    "open_weights": false,
+    "note": "Малая сверхбыстрая (1000+ ток/с) модель для кодинга в реальном времени — первая модель OpenAI на чипах Cerebras",
+    "sources": [
+      "https://openai.com/index/introducing-gpt-5-3-codex-spark/",
+      "https://www.cerebras.ai/blog/openai-codexspark",
+      "https://aibusiness.com/generative-ai/openai-gpt-5-3-codex-spark-shows-what-s-possible-with-cerebras"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-5.3 Instant",
+    "date": "2026-03-03",
+    "announced": null,
+    "tier": "major",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Новая модель ChatGPT по умолчанию: меньше лишних отказов и морализаторства, меньше галлюцинаций",
+    "sources": [
+      "https://openai.com/index/gpt-5-3-instant/",
+      "https://9to5mac.com/2026/03/03/openai-releases-gpt-5-3-instant-update-to-make-chatgpt-less-cringe/",
+      "https://techinformed.com/openai-makes-gpt-5-3-the-new-chatgpt-default-rolls-out-5-3-instant/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-5.4",
+    "date": "2026-03-05",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "GPT-5.4 Thinking и Pro: контекст ~1M, первая универсальная модель OpenAI с нативным управлением компьютером",
+    "sources": [
+      "https://openai.com/index/introducing-gpt-5-4/",
+      "https://en.wikipedia.org/wiki/GPT-5.4",
+      "https://x.com/TechCrunch/status/2029618777504231904"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-5.4 mini",
+    "date": "2026-03-17",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Малая модель уровня GPT-5.4, в 2+ раза быстрее GPT-5 mini; доступна бесплатным пользователям ChatGPT",
+    "sources": [
+      "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+      "https://9to5mac.com/2026/03/17/openai-releases-gpt-5-4-mini-and-nano-its-most-capable-small-models-yet/",
+      "https://en.wikipedia.org/wiki/GPT-5.4"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-5.4 nano",
+    "date": "2026-03-17",
+    "announced": null,
+    "tier": "minor",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Самая дешёвая модель линейки GPT-5.4 ($0.20/1M вход), только API — классификация, извлечение, субагенты",
+    "sources": [
+      "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+      "https://9to5mac.com/2026/03/17/openai-releases-gpt-5-4-mini-and-nano-its-most-capable-small-models-yet/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-5.5",
+    "date": "2026-04-23",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Кодовое имя Spud: агентная модель для кода, исследований и работы с ПО, через 6 недель после GPT-5.4; вместе с GPT-5.5 Pro (API — 24 апр.)",
+    "sources": [
+      "https://openai.com/index/introducing-gpt-5-5/",
+      "https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/",
+      "https://fortune.com/2026/04/23/openai-releases-gpt-5-5/",
+      "https://en.wikipedia.org/wiki/GPT-5.5"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-5.5 Instant",
+    "date": "2026-05-05",
+    "announced": null,
+    "tier": "major",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Новая модель ChatGPT по умолчанию вместо GPT-5.3 Instant; меньше выдуманных ответов в медицине, праве, финансах",
+    "sources": [
+      "https://openai.com/index/gpt-5-5-instant/",
+      "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-5.6 Sol",
+    "date": "2026-07-09",
+    "announced": "2026-06-26",
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Флагман нового семейства Sol/Terra/Luna; 26 июня — закрытое превью для ~20 партнёров по просьбе правительства США",
+    "sources": [
+      "https://openai.com/index/gpt-5-6/",
+      "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "https://www.axios.com/2026/07/09/ai-openai-gpt-release",
+      "https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/",
+      "https://en.wikipedia.org/wiki/GPT-5.6"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-5.6 Terra",
+    "date": "2026-07-09",
+    "announced": "2026-06-26",
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Сбалансированный уровень GPT-5.6: качество около GPT-5.5 примерно вдвое дешевле",
+    "sources": [
+      "https://openai.com/index/gpt-5-6/",
+      "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "https://en.wikipedia.org/wiki/GPT-5.6"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-5.6 Luna",
+    "date": "2026-07-09",
+    "announced": "2026-06-26",
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Быстрый и самый дешёвый уровень GPT-5.6; позже доступ расширен на бесплатных пользователей ChatGPT",
+    "sources": [
+      "https://openai.com/index/gpt-5-6/",
+      "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
+      "https://en.wikipedia.org/wiki/GPT-5.6"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-6 Astra",
+    "date": "2026-09-04",
+    "announced": "2026-09-03",
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Новое поколение GPT-6: первая модель OpenAI с «критическим» уровнем кибервозможностей; основа GPT-6 Pro в ChatGPT",
+    "sources": [
+      "https://openai.com/index/gpt-6-astra/",
+      "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html",
+      "https://en.wikipedia.org/wiki/GPT-6_Astra",
+      "https://x.com/OpenAI/status/2095998532692140283"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-6 Sol",
+    "date": "2026-09-22",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Рабочая модель GPT-6 для кода и повседневных задач: вдвое меньше ошибок, чем у GPT-5.6 Sol, и вдвое дешевле",
+    "sources": [
+      "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
+      "https://github.blog/changelog/2026-09-22-openais-gpt-6-sol-and-gpt-6-luna-now-available/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "openai",
+    "name": "GPT-6 Luna",
+    "date": "2026-09-22",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Быстрая и дешёвая модель поколения GPT-6 ($0.10/$0.50 за 1M токенов)",
+    "sources": [
+      "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
+      "https://9to5mac.com/2026/09/22/openai-upgrading-chatgpt-and-codex-with-two-more-gpt-6-models/"
+    ],
+    "confidence": "high"
+  }
+]

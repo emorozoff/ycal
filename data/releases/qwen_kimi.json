@@ -1,0 +1,883 @@
+[
+  {
+    "company": "alibaba",
+    "name": "Tongyi Qianwen (通义千问)",
+    "date": "2023-04-07",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Alibaba Cloud's first LLM chatbot: invite-only enterprise beta and test site opened Apr 7, formally unveiled Apr 11 at the Alibaba Cloud Summit; opened to the general public Sep 13, 2023 after regulatory filing.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Qwen",
+      "https://technode.com/2023/09/14/alibaba-opens-its-ai-model-tongyi-qianwen-to-the-public/"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen-7B / Qwen-7B-Chat",
+    "date": "2023-08-03",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "First open-weight Qwen release (7B base + chat, free for commercial use) - start of what became the most widely used open model family.",
+    "sources": [
+      "https://github.com/QwenLM/Qwen",
+      "https://qwenlm.github.io/blog/qwen/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen-14B / Qwen-14B-Chat",
+    "date": "2023-09-25",
+    "announced": null,
+    "tier": "minor",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Second open-weight size (14B), released with qwen.cpp and the Qwen-Agent framework.",
+    "sources": [
+      "https://github.com/QwenLM/Qwen"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "moonshot",
+    "name": "Kimi Chat",
+    "date": "2023-10-09",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Moonshot AI's first product: assistant handling 200K Chinese characters of lossless context (far beyond GPT-4 at the time); beta from Oct 9, opened to everyone Nov 16, 2023.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kimi_(chatbot)",
+      "https://www.aibase.com/news/1918"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Tongyi Qianwen 2.0",
+    "date": "2023-10-31",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Hundreds-of-billions-parameter upgrade of the closed flagship unveiled at the Apsara Conference 2023, alongside 8 industry models and the Bailian platform.",
+    "sources": [
+      "https://www.zhihu.com/question/628223929",
+      "https://www.alibabacloud.com/blog/600550"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen-72B",
+    "date": "2023-11-30",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "72B model (3T tokens, 32K context) released with Qwen-1.8B; beat Llama 2-70B on 10 benchmarks. Weights went up Nov 30, press event Dec 1.",
+    "sources": [
+      "https://github.com/QwenLM/Qwen",
+      "https://www.zhihu.com/question/632784220"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen1.5",
+    "date": "2024-02-05",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "New open generation 0.5B-72B (32K context, native HF transformers support, official AWQ/GPTQ quants). Released ~16:00 UTC Feb 5 = around midnight Beijing time Feb 6; blog front-matter says Feb 4.",
+    "sources": [
+      "https://qwenlm.github.io/blog/qwen1.5/",
+      "https://github.com/QwenLM/Qwen3"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "moonshot",
+    "name": "Kimi 2M-character long context",
+    "date": "2024-03-18",
+    "announced": null,
+    "tier": "major",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Kimi became the first consumer assistant to accept 2 million Chinese characters (beta by application), triggering a viral traffic surge and China's 'long-context war'.",
+    "sources": [
+      "https://thenota.com/post/2024/mar/20/moonshot-ai-chatbot-kimi-can-handle-2-million-chinese-characters/"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen1.5-MoE-A2.7B",
+    "date": "2024-03-28",
+    "announced": null,
+    "tier": "minor",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "First Qwen mixture-of-experts model: 14.3B total / 2.7B active, matching 7B dense models at about 1/3 of the activated parameters.",
+    "sources": [
+      "https://qwenlm.github.io/blog/qwen-moe/",
+      "https://github.com/QwenLM/Qwen3"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "CodeQwen1.5-7B",
+    "date": "2024-04-16",
+    "announced": null,
+    "tier": "minor",
+    "kind": "coding",
+    "open_weights": true,
+    "note": "First dedicated Qwen code model (7B, 64K context, 92 programming languages) - ancestor of Qwen2.5-Coder and Qwen3-Coder.",
+    "sources": [
+      "https://qwenlm.github.io/blog/codeqwen1.5/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen1.5-110B",
+    "date": "2024-04-25",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "First 100B+ open Qwen model (dense 110B), competitive with Llama-3-70B.",
+    "sources": [
+      "https://qwenlm.github.io/blog/qwen1.5-110b/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Tongyi Qianwen 2.5 (Qwen-Max-0428)",
+    "date": "2024-05-09",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Closed flagship upgrade announced May 9 claiming parity with GPT-4 Turbo on OpenCompass; API snapshot qwen-max-0428 ranked near the top of LMSYS Chatbot Arena.",
+    "sources": [
+      "https://qwenlm.github.io/blog/qwen-max-0428/",
+      "https://www.zhihu.com/question/655556761"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen2",
+    "date": "2024-06-06",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "New generation 0.5B-72B incl. 57B-A14B MoE, up to 128K context, 29+ languages; Qwen2-72B topped open-model leaderboards. Went live 16:00 UTC Jun 6 = 00:00 Beijing Jun 7 (blog dated Jun 7).",
+    "sources": [
+      "https://qwenlm.github.io/blog/qwen2/",
+      "https://github.com/QwenLM/Qwen3",
+      "https://x.com/huybery/status/1798747031185559921"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen2-Math",
+    "date": "2024-08-08",
+    "announced": null,
+    "tier": "minor",
+    "kind": "reasoning",
+    "open_weights": true,
+    "note": "Math-specialized Qwen2 models (1.5B/7B/72B); the 72B-Instruct beat GPT-4o and Claude 3.5 Sonnet on math benchmarks at release.",
+    "sources": [
+      "https://qwenlm.github.io/blog/qwen2-math/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen2.5",
+    "date": "2024-09-19",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "18T-token open family 0.5B-72B launched at Apsara 2024 together with Qwen2.5-Coder and Qwen2.5-Math; became the default base for fine-tunes (e.g. DeepSeek-R1 distills).",
+    "sources": [
+      "https://qwenlm.github.io/blog/qwen2.5/",
+      "https://github.com/QwenLM/Qwen3"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen2.5-Coder-32B-Instruct",
+    "date": "2024-11-12",
+    "announced": null,
+    "tier": "major",
+    "kind": "coding",
+    "open_weights": true,
+    "note": "Open 32B code model competitive with GPT-4o on coding benchmarks - the go-to local coding model of late 2024.",
+    "sources": [
+      "https://qwenlm.github.io/blog/qwen2.5-coder-family/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "moonshot",
+    "name": "Kimi k0-math",
+    "date": "2024-11-25",
+    "announced": "2024-11-16",
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Moonshot's first o1-style reasoning model (math), claimed to beat o1-mini/o1-preview on several math benchmarks; announced Nov 16, went live as 'Kimi Math' on the web on Nov 25.",
+    "sources": [
+      "https://www.globaltimes.cn/page/202411/1323248.shtml",
+      "https://www.zhihu.com/question/4337072948/answer/40632951349"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "alibaba",
+    "name": "QwQ-32B-Preview",
+    "date": "2024-11-28",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": true,
+    "note": "Alibaba's first open reasoning model (o1-style long chain of thought), one of the first open answers to OpenAI o1.",
+    "sources": [
+      "https://qwenlm.github.io/blog/qwq-32b-preview/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "moonshot",
+    "name": "Kimi k1 (visual thinking)",
+    "date": "2024-12-16",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "RL-trained reasoning model that reasons over images (math, physics, chemistry problems), live in the Kimi app and web the same day.",
+    "sources": [
+      "https://www.aibase.com/zh/news/13971"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "moonshot",
+    "name": "Kimi k1.5",
+    "date": "2025-01-20",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Multimodal reasoning model claimed to match OpenAI o1 in long-CoT mode; tech report published the same day as DeepSeek-R1; gradual rollout from Jan 20, fully launched in apps Jan 31.",
+    "sources": [
+      "https://github.com/MoonshotAI/Kimi-k1.5",
+      "https://arxiv.org/abs/2501.12599",
+      "https://www.aibase.com/zh/news/14864"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen2.5-Max",
+    "date": "2025-01-28",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Large MoE pretrained on 20T+ tokens, released on Lunar New Year's Eve amid the DeepSeek-R1 shock; claimed wins over DeepSeek-V3 and GPT-4o.",
+    "sources": [
+      "https://qwenlm.github.io/blog/qwen2.5-max/",
+      "https://x.com/Alibaba_Qwen/status/1884263157574820053"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "moonshot",
+    "name": "Moonlight-16B-A3B",
+    "date": "2025-02-23",
+    "announced": null,
+    "tier": "minor",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Moonshot's first open-weight LLM: 16B/3B-active MoE proving the Muon optimizer at scale (~2x compute efficiency vs AdamW), precursor of K2's MuonClip.",
+    "sources": [
+      "https://github.com/MoonshotAI/Moonlight",
+      "https://arxiv.org/abs/2502.16982",
+      "https://huggingface.co/moonshotai/Moonlight-16B-A3B-Instruct"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "alibaba",
+    "name": "QwQ-Max-Preview",
+    "date": "2025-02-25",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "'Thinking (QwQ)' mode in Qwen Chat backed by a reasoning model built on Qwen2.5-Max (announced 21:00 UTC Feb 24 = Feb 25 Beijing).",
+    "sources": [
+      "https://qwenlm.github.io/blog/qwq-max-preview/",
+      "https://x.com/Alibaba_Qwen/status/1894130603513319842"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "QwQ-32B",
+    "date": "2025-03-06",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": true,
+    "note": "RL-trained 32B reasoning model claiming parity with the 671B DeepSeek-R1, Apache 2.0 (announced 19:00 UTC Mar 5 = Mar 6 Beijing).",
+    "sources": [
+      "https://qwenlm.github.io/blog/qwq-32b/",
+      "https://x.com/Alibaba_Qwen/status/1897361654763151544"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3 (Qwen3-235B-A22B)",
+    "date": "2025-04-29",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Hybrid thinking/non-thinking family from 0.6B to 235B-A22B MoE, 36T tokens, 119 languages, Apache 2.0 - top open-weight family of spring 2025.",
+    "sources": [
+      "https://qwenlm.github.io/blog/qwen3/",
+      "https://github.com/QwenLM/Qwen3"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "moonshot",
+    "name": "Kimi-Dev-72B",
+    "date": "2025-06-17",
+    "announced": null,
+    "tier": "minor",
+    "kind": "coding",
+    "open_weights": true,
+    "note": "Open 72B software-engineering model (from Qwen2.5-72B) scoring 60.4% on SWE-bench Verified, best among open models at release.",
+    "sources": [
+      "https://github.com/MoonshotAI/Kimi-Dev",
+      "https://huggingface.co/moonshotai/Kimi-Dev-72B"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "moonshot",
+    "name": "Kimi K2",
+    "date": "2025-07-11",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "1T-parameter MoE (32B active) trained with the MuonClip optimizer; top open agentic/coding model of mid-2025 and a 'DeepSeek moment' for Moonshot (Modified MIT).",
+    "sources": [
+      "https://www.kimi.com/blog/kimi-k2",
+      "https://github.com/MoonshotAI/Kimi-K2",
+      "https://huggingface.co/moonshotai/Kimi-K2-Instruct"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3-235B-A22B-Instruct-2507",
+    "date": "2025-07-21",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Update that dropped hybrid thinking for separate Instruct/Thinking models; large quality jump and 256K context (announced 17:14 UTC Jul 21 = Jul 22 Beijing).",
+    "sources": [
+      "https://github.com/QwenLM/Qwen3",
+      "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "https://x.com/Alibaba_Qwen/status/1947344511988076547"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3-Coder (480B-A35B-Instruct)",
+    "date": "2025-07-22",
+    "announced": null,
+    "tier": "major",
+    "kind": "coding",
+    "open_weights": true,
+    "note": "Agentic coding MoE (480B total / 35B active, 256K context extendable to 1M) launched with the open-source Qwen Code CLI; strongest open coding model at release (announced 21:12 UTC Jul 22 = Jul 23 Beijing).",
+    "sources": [
+      "https://qwenlm.github.io/blog/qwen3-coder/",
+      "https://x.com/Alibaba_Qwen/status/1947766835023335516"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3-235B-A22B-Thinking-2507",
+    "date": "2025-07-25",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": true,
+    "note": "Thinking-only update of the 235B model; state-of-the-art among open-weight reasoning models at release.",
+    "sources": [
+      "https://github.com/QwenLM/Qwen3",
+      "https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3-Max",
+    "date": "2025-09-05",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "First 1T+-parameter Qwen and Alibaba's largest model at the time: Qwen3-Max-Preview live in Qwen Chat/API on Sep 5, official Qwen3-Max release at the Apsara Conference on Sep 24.",
+    "sources": [
+      "https://x.com/Alibaba_Qwen/status/1963991502440562976",
+      "https://qwen.ai/blog?id=qwen3-max"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "moonshot",
+    "name": "Kimi K2-Instruct-0905",
+    "date": "2025-09-05",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "K2 update with stronger agentic and front-end coding and context doubled to 256K.",
+    "sources": [
+      "https://huggingface.co/moonshotai/Kimi-K2-Instruct-0905"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3-Next-80B-A3B",
+    "date": "2025-09-11",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Hybrid Gated DeltaNet + gated attention with ultra-sparse MoE (80B total / 3B active): ~10x cheaper training than Qwen3-32B; this architecture became the base of Qwen3.5 and later (announced 17:50 UTC Sep 11 = Sep 12 Beijing).",
+    "sources": [
+      "https://github.com/QwenLM/Qwen3.8",
+      "https://qwen.ai/blog?id=qwen3-next",
+      "https://x.com/Alibaba_Qwen/status/1966197643904000262"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "moonshot",
+    "name": "Kimi Linear (48B-A3B)",
+    "date": "2025-10-30",
+    "announced": null,
+    "tier": "minor",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Hybrid linear-attention model (Kimi Delta Attention) that beats full attention with up to ~6x faster decoding at 1M context; KDA later became the backbone of Kimi K3.",
+    "sources": [
+      "https://github.com/MoonshotAI/Kimi-Linear",
+      "https://arxiv.org/abs/2510.26692"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3-Max-Thinking (preview)",
+    "date": "2025-11-03",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Early intermediate checkpoint of the Max reasoning model in Qwen Chat and Alibaba Cloud API; with tools and test-time scaling it scored 100% on AIME 2025 and HMMT.",
+    "sources": [
+      "https://x.com/Alibaba_Qwen/status/1985347830110970027"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "moonshot",
+    "name": "Kimi K2 Thinking",
+    "date": "2025-11-06",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": true,
+    "note": "Open 'thinking agent' (1T MoE, native INT4, 256K context) running 200-300 sequential tool calls; claimed SOTA on HLE (with tools) and BrowseComp, beating closed frontier models.",
+    "sources": [
+      "https://www.kimi.com/blog/kimi-k2-thinking",
+      "https://huggingface.co/moonshotai/Kimi-K2-Thinking",
+      "https://x.com/Kimi_Moonshot/status/1986449512538513505"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3-Max-Thinking",
+    "date": "2026-01-26",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "Final >1T-parameter reasoning flagship (evening of Jan 26 Beijing) with adaptive tool use and test-time scaling; Alibaba claimed parity with GPT-5.2-Thinking, Claude Opus 4.5 and Gemini 3 Pro on 19 benchmarks (API snapshot qwen3-max-2026-01-23).",
+    "sources": [
+      "https://www.guancha.cn/economy/2026_01_27_805145.shtml",
+      "https://www.stdaily.com/web/gdxw/2026-01/27/content_466432.html",
+      "https://www.infoworld.com/article/4122696/alibabas-qwen3-max-thinking-expands-enterprise-ai-model-choices.html"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "moonshot",
+    "name": "Kimi K2.5",
+    "date": "2026-01-27",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Natively multimodal (text/image/video) 1T MoE with 'Agent Swarm' (up to 100 parallel sub-agents), launched together with the Kimi Code CLI.",
+    "sources": [
+      "https://www.kimi.com/blog/kimi-k2-5",
+      "https://techcrunch.com/2026/01/27/chinas-moonshot-releases-a-new-open-source-model-kimi-k2-5-and-a-coding-agent/",
+      "https://huggingface.co/moonshotai/Kimi-K2.5"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3-Coder-Next",
+    "date": "2026-02-03",
+    "announced": null,
+    "tier": "major",
+    "kind": "coding",
+    "open_weights": true,
+    "note": "80B-total / 3B-active coding-agent model on the Qwen3-Next architecture, trained on 800K verifiable tasks; runs locally in ~46GB (released ~16:00 UTC Feb 3 = midnight Feb 4 Beijing).",
+    "sources": [
+      "https://qwen.ai/blog?id=qwen3-coder-next",
+      "https://x.com/Alibaba_Qwen/status/2018718453570707465",
+      "https://news.ycombinator.com/item?id=46872706"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3.5 (Qwen3.5-397B-A17B / Qwen3.5-Plus)",
+    "date": "2026-02-16",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "New natively multimodal agent generation on Lunar New Year's Eve: 397B total / 17B active hybrid linear-attention MoE, 201 languages, open weights plus hosted Qwen3.5-Plus; beat the 1T Qwen3-Max at a fraction of the cost.",
+    "sources": [
+      "https://github.com/QwenLM/Qwen3.8",
+      "https://qwen.ai/blog?id=qwen3.5",
+      "https://x.com/Alibaba_Qwen/status/2023331062433153103",
+      "https://www.cnbc.com/2026/02/17/china-alibaba-qwen-ai-agent-latest-model.html"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3.5 medium models (122B-A10B, 35B-A3B, 27B)",
+    "date": "2026-02-24",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Mid-size open Qwen3.5 models; the 35B-A3B and 27B became popular local agent/coding models.",
+    "sources": [
+      "https://github.com/QwenLM/Qwen3.8",
+      "https://huggingface.co/collections/Qwen/qwen35"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3.5 small models (0.8B-9B)",
+    "date": "2026-03-02",
+    "announced": null,
+    "tier": "minor",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Small multimodal Qwen3.5 checkpoints (0.8B, 2B, 4B, 9B) for on-device use.",
+    "sources": [
+      "https://github.com/QwenLM/Qwen3.8"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3.5-Max-Preview",
+    "date": "2026-03-19",
+    "announced": null,
+    "tier": "minor",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Max-tier preview offered only on LMArena (entered the top 10-15 of Arena text leaderboards); never received a general API release and was superseded by Qwen3.6.",
+    "sources": [
+      "https://qwen.ai/blog?id=qwen3.5-max-preview",
+      "https://x.com/arena/status/2034658045113065603"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3.6-Plus",
+    "date": "2026-03-30",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Proprietary flagship focused on agentic coding with 1M context: free 'Qwen3.6 Plus Preview' on OpenRouter from Mar 30 (19:35 UTC, i.e. Mar 31 Beijing), official launch Apr 2.",
+    "sources": [
+      "https://x.com/OpenRouter/status/2038701599175196715",
+      "https://x.com/Alibaba_Qwen/status/2039705104723611829",
+      "https://www.caixinglobal.com/2026-04-02/alibaba-releases-qwen-36-plus-ai-model-with-enhanced-coding-capabilities-102430395.html",
+      "https://www.alibabacloud.com/blog/alibaba-unveils-qwen3-6-plus-to-accelerate-agentic-ai-deployment-for-enterprises-and-alibaba%E2%80%99s-ai-applications_603000"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "moonshot",
+    "name": "Kimi K2.6",
+    "date": "2026-04-13",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Long-horizon agentic coding model (4,000+ tool calls, 12h+ runs, 300-agent swarms), open weights; public preview as 'K2.6 Code Preview' in Kimi Code from Apr 13, full release with weights Apr 20.",
+    "sources": [
+      "https://www.kimi.com/blog/kimi-k2-6",
+      "https://huggingface.co/moonshotai/Kimi-K2.6",
+      "https://news.ycombinator.com/item?id=47757774"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3.6-35B-A3B",
+    "date": "2026-04-16",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Open Apache-2.0 agentic-coding MoE (35B / 3B active) bringing Qwen3.6 improvements to local hardware.",
+    "sources": [
+      "https://github.com/QwenLM/Qwen3.8",
+      "https://qwen.ai/blog?id=qwen3.6-35b-a3b"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3.6-Max-Preview",
+    "date": "2026-04-20",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Early preview of the next flagship (~1T MoE, 256K context); Alibaba reported top scores on six coding/agent benchmarks incl. SWE-bench Pro and Terminal-Bench 2.0.",
+    "sources": [
+      "https://qwen.ai/blog?id=qwen3.6-max-preview",
+      "https://x.com/Alibaba_Qwen/status/2046227759475921291"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3.6-27B",
+    "date": "2026-04-22",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Dense 27B open model that surpasses Qwen3.5-397B-A17B on major coding benchmarks.",
+    "sources": [
+      "https://github.com/QwenLM/Qwen3.8",
+      "https://qwen.ai/blog?id=qwen3.6-27b",
+      "https://x.com/Alibaba_Qwen/status/2046939764428009914"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3.7-Max",
+    "date": "2026-05-20",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Agent-era proprietary flagship (1M context) launched at the Alibaba Cloud Summit; ran a 35-hour autonomous kernel-optimization task; #1 Chinese model on Arena. Previews had surfaced on LMArena May 18; the open-weight line skipped 3.7.",
+    "sources": [
+      "https://qwen.ai/blog?id=qwen3.7",
+      "https://36kr.com/newsflashes/3817070340342921",
+      "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+      "https://x.com/Alibaba_Qwen/status/2056403591464984753"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3.7-Plus",
+    "date": "2026-06-02",
+    "announced": null,
+    "tier": "major",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Multimodal agent model unifying vision and language (GUI and CLI operation, coding agent) on Alibaba Cloud Bailian/Model Studio (announced 17:54 UTC Jun 1 = Jun 2 Beijing).",
+    "sources": [
+      "https://x.com/Alibaba_Qwen/status/2061506641120641494",
+      "https://www.marktechpost.com/2026/06/02/alibabas-qwen-team-launches-qwen3-7-plus-adding-vision-deep-reasoning-tool-invocation-and-autonomous-iteration-on-the-bailian-platform/"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "moonshot",
+    "name": "Kimi K2.7 Code",
+    "date": "2026-06-12",
+    "announced": null,
+    "tier": "major",
+    "kind": "coding",
+    "open_weights": true,
+    "note": "Coding-specialized successor of K2.6 (1T/32B active, 256K context) using ~30% fewer thinking tokens; open weights under Modified MIT.",
+    "sources": [
+      "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+      "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "moonshot",
+    "name": "Kimi K3",
+    "date": "2026-07-16",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "2.8T-parameter MoE (104B active) with Kimi Delta Attention + Attention Residuals, native vision, 1M context - largest open-weight model at release, claimed near Claude Fable 5; weights published Jul 27 under a custom Kimi K3 License (announcement 18:58 UTC Jul 16 = Jul 17 Beijing).",
+    "sources": [
+      "https://www.kimi.com/blog/kimi-k3",
+      "https://github.com/MoonshotAI/Kimi-K3",
+      "https://fortune.com/2026/07/16/moonshots-kimi-k3-pushes-chinese-ai-into-fable-level-territory/",
+      "https://restofworld.org/2026/china-moonshot-kimi-k3-free-sovereign-ai/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3.8-Max",
+    "date": "2026-07-19",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "2.4T-parameter MoE (95B active), Alibaba's largest model: preview shown at WAIC and live via Token Plan/Qoder on Jul 19, general availability Aug 3 (#2 on Arena behind Claude); its text-only weights were opened Aug 12 (separate entry).",
+    "sources": [
+      "https://github.com/QwenLM/qwen-code/pull/7199",
+      "https://qwen.ai/blog?id=qwen3.8",
+      "https://www.alibabacloud.com/blog/alibaba-unveils-qwen3-8-max-its-largest-and-most-capable-flagship-model-to-date_603420",
+      "https://36kr.com/newsflashes/3923193948614025"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3.8-2.4T-A95B (open weights of Qwen3.8-Max)",
+    "date": "2026-08-12",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "First Max-class Qwen released as open weights and the largest open Qwen ever (text-only checkpoint under a bespoke, commercially gated license).",
+    "sources": [
+      "https://github.com/QwenLM/Qwen3.8",
+      "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3.8-27B",
+    "date": "2026-08-14",
+    "announced": "2026-08-03",
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Dense 27B multimodal (image/video input) open model under Apache 2.0 - the practical single-GPU Qwen3.8; pre-announced with Qwen3.8-Max.",
+    "sources": [
+      "https://github.com/QwenLM/Qwen3.8",
+      "https://huggingface.co/Qwen/Qwen3.8-27B"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3.8-Flash-Next",
+    "date": "2026-08-26",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Open 125B (+51B n-gram embeddings, 6B active) multimodal MoE released as an early preview of the Qwen4 architecture (Gated DeltaNet + Qwen Sparse Attention, Gated Residual, Muon).",
+    "sources": [
+      "https://github.com/QwenLM/Qwen3.8-Flash-Next",
+      "https://qwen.ai/blog?id=qwen3.8-flash-next",
+      "https://thenewstack.io/qwen38-flash-previews-qwen4/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "alibaba",
+    "name": "Qwen3.8-Max-0902",
+    "date": "2026-09-02",
+    "announced": null,
+    "tier": "minor",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Post-training update snapshot of Qwen3.8-Max (stronger coding, collaborative agents, multimodal document understanding).",
+    "sources": [
+      "https://weibo.com/ttarticle/p/show?id=2309405338660580229122",
+      "https://www.qianwenai.com/models/qwen3.8-max-0902"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "moonshot",
+    "name": "Kimi K2.8 Preview",
+    "date": "2026-09-11",
+    "announced": null,
+    "tier": "major",
+    "kind": "coding",
+    "open_weights": false,
+    "note": "Closed mid-tier model in Kimi Code / Kimi Work with 1M context and low/high/max thinking effort - the first K2-series model shipped without open weights.",
+    "sources": [
+      "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html#k2-8-preview-september-11-2026"
+    ],
+    "confidence": "high"
+  }
+]

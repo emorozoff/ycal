@@ -1,0 +1,1990 @@
+{
+ "source": "Epoch AI — Epoch Capabilities Index (ECI). Snapshot of epoch.ai benchmarked_models data as of 2026-09-23 (mirror: github.com/KonstantinPilz/eci-3d docs/data.json) plus eci_scores.csv from early September 2026 for older models missing in the snapshot. License: CC BY 4.0 (Epoch AI).",
+ "retrieved": "2026-09-23",
+ "models": [
+  {
+   "model": "LLaMA-13B",
+   "org": "Meta AI",
+   "date": "2023-02-24",
+   "eci": 100.09
+  },
+  {
+   "model": "LLaMA-33B",
+   "org": "Meta AI",
+   "date": "2023-02-24",
+   "eci": 107.06
+  },
+  {
+   "model": "LLaMA-65B",
+   "org": "Meta AI",
+   "date": "2023-02-24",
+   "eci": 109.88
+  },
+  {
+   "model": "LLaMA-7B",
+   "org": "Meta AI",
+   "date": "2023-02-24",
+   "eci": 96.12
+  },
+  {
+   "model": "GPT-4 (Mar 2023)",
+   "org": "OpenAI",
+   "date": "2023-03-14",
+   "eci": 125.88
+  },
+  {
+   "model": "Falcon-40B",
+   "org": "Technology Innovation Institute",
+   "date": "2023-03-15",
+   "eci": 104.04
+  },
+  {
+   "model": "Cerebras-GPT-13B",
+   "org": "Cerebras Systems",
+   "date": "2023-03-20",
+   "eci": 82.36
+  },
+  {
+   "model": "Dolly 2.0-12b",
+   "org": "Databricks",
+   "date": "2023-04-11",
+   "eci": 88.94
+  },
+  {
+   "model": "vicuna-13b-v1.1",
+   "org": "",
+   "date": "2023-04-12",
+   "eci": 94.19,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "stablelm-tuned-alpha-7b",
+   "org": "",
+   "date": "2023-04-19",
+   "eci": 54.64,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Falcon-7B",
+   "org": "Technology Innovation Institute",
+   "date": "2023-04-24",
+   "eci": 94.49
+  },
+  {
+   "model": "RedPajama-INCITE-7B-Base",
+   "org": "",
+   "date": "2023-05-04",
+   "eci": 89.87,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "MPT-7B",
+   "org": "MosaicML",
+   "date": "2023-05-05",
+   "eci": 93.97
+  },
+  {
+   "model": "PaLM 2-L",
+   "org": "",
+   "date": "2023-05-17",
+   "eci": 114.88,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "PaLM 2-M",
+   "org": "",
+   "date": "2023-05-17",
+   "eci": 108.04,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "PaLM 2-S",
+   "org": "",
+   "date": "2023-05-17",
+   "eci": 105.88,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Baichuan1-7B",
+   "org": "Baichuan",
+   "date": "2023-06-01",
+   "eci": 89.77
+  },
+  {
+   "model": "open_llama_7b",
+   "org": "",
+   "date": "2023-06-07",
+   "eci": 91.12,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "GPT-3.5 Turbo (Jun 2023)",
+   "org": "OpenAI",
+   "date": "2023-06-13",
+   "eci": 113.19,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "GPT-3.5 Turbo (June 2023)",
+   "org": "OpenAI",
+   "date": "2023-06-13",
+   "eci": 113.14
+  },
+  {
+   "model": "GPT-4 (Jun 2023)",
+   "org": "OpenAI",
+   "date": "2023-06-13",
+   "eci": 123.1
+  },
+  {
+   "model": "MPT-30B",
+   "org": "MosaicML",
+   "date": "2023-06-22",
+   "eci": 100.16
+  },
+  {
+   "model": "chatglm2-6b",
+   "org": "",
+   "date": "2023-06-24",
+   "eci": 98.53,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "XGen-7B",
+   "org": "Salesforce",
+   "date": "2023-06-27",
+   "eci": 92.75
+  },
+  {
+   "model": "internlm-7b",
+   "org": "",
+   "date": "2023-07-05",
+   "eci": 102.53,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Claude 2",
+   "org": "Anthropic",
+   "date": "2023-07-11",
+   "eci": 120.08
+  },
+  {
+   "model": "Llama 2-13B",
+   "org": "Meta AI",
+   "date": "2023-07-18",
+   "eci": 105.8
+  },
+  {
+   "model": "Llama 2-34B",
+   "org": "Meta AI",
+   "date": "2023-07-18",
+   "eci": 104.81
+  },
+  {
+   "model": "Llama 2-70B",
+   "org": "Meta AI",
+   "date": "2023-07-18",
+   "eci": 113.59
+  },
+  {
+   "model": "Llama 2-7B",
+   "org": "Meta AI",
+   "date": "2023-07-18",
+   "eci": 98.54
+  },
+  {
+   "model": "Stable Beluga 2",
+   "org": "Stability AI",
+   "date": "2023-07-20",
+   "eci": 116.97
+  },
+  {
+   "model": "Claude Instant",
+   "org": "Anthropic",
+   "date": "2023-08-09",
+   "eci": 120.2
+  },
+  {
+   "model": "Baichuan2-13B",
+   "org": "Baichuan",
+   "date": "2023-09-06",
+   "eci": 102.76
+  },
+  {
+   "model": "Falcon-180B",
+   "org": "Technology Innovation Institute",
+   "date": "2023-09-06",
+   "eci": 111.89
+  },
+  {
+   "model": "Phi-1.5",
+   "org": "Microsoft",
+   "date": "2023-09-11",
+   "eci": 90.82
+  },
+  {
+   "model": "internlm-20b",
+   "org": "",
+   "date": "2023-09-18",
+   "eci": 111.89,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Baichuan 2-7B",
+   "org": "Baichuan",
+   "date": "2023-09-20",
+   "eci": 95.75
+  },
+  {
+   "model": "Mistral 7B v0.1",
+   "org": "Mistral AI",
+   "date": "2023-09-27",
+   "eci": 112.02,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Qwen-14B",
+   "org": "Alibaba",
+   "date": "2023-09-28",
+   "eci": 112.8
+  },
+  {
+   "model": "Qwen-7B",
+   "org": "Alibaba",
+   "date": "2023-09-28",
+   "eci": 106.47
+  },
+  {
+   "model": "DeepSeek Coder 1.3B",
+   "org": "DeepSeek,Peking University",
+   "date": "2023-11-02",
+   "eci": 62.18
+  },
+  {
+   "model": "DeepSeek Coder 33B",
+   "org": "DeepSeek,Peking University",
+   "date": "2023-11-02",
+   "eci": 95.74
+  },
+  {
+   "model": "DeepSeek Coder 6.7B",
+   "org": "DeepSeek,Peking University",
+   "date": "2023-11-02",
+   "eci": 88.88
+  },
+  {
+   "model": "Yi 6B",
+   "org": "01.AI",
+   "date": "2023-11-02",
+   "eci": 104.37
+  },
+  {
+   "model": "GPT-3.5 Turbo (Nov 2023)",
+   "org": "OpenAI",
+   "date": "2023-11-06",
+   "eci": 118.48
+  },
+  {
+   "model": "GPT-4 Turbo (Nov 2023)",
+   "org": "OpenAI",
+   "date": "2023-11-06",
+   "eci": 126.46
+  },
+  {
+   "model": "GPT-4 Turbo Preview (Nov 2023)",
+   "org": "OpenAI",
+   "date": "2023-11-06",
+   "eci": 126.46
+  },
+  {
+   "model": "Claude 2.1",
+   "org": "Anthropic",
+   "date": "2023-11-21",
+   "eci": 119.22
+  },
+  {
+   "model": "Yi-34B",
+   "org": "01.AI",
+   "date": "2023-11-22",
+   "eci": 117.28
+  },
+  {
+   "model": "DeepSeek LLM 67B",
+   "org": "DeepSeek",
+   "date": "2023-11-29",
+   "eci": 110.54
+  },
+  {
+   "model": "Qwen-1_8B",
+   "org": "",
+   "date": "2023-11-30",
+   "eci": 92.43,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Mixtral 8x7B",
+   "org": "Mistral AI",
+   "date": "2023-12-11",
+   "eci": 118.38
+  },
+  {
+   "model": "Phi-2",
+   "org": "Microsoft",
+   "date": "2023-12-12",
+   "eci": 107.62
+  },
+  {
+   "model": "Gemini 1.0 Pro",
+   "org": "Google DeepMind",
+   "date": "2023-12-13",
+   "eci": 116.97
+  },
+  {
+   "model": "GPT-3.5 Turbo (Jan 2024)",
+   "org": "OpenAI",
+   "date": "2024-01-25",
+   "eci": 115.61
+  },
+  {
+   "model": "GPT-4 Turbo Preview (January 2024)",
+   "org": "OpenAI",
+   "date": "2024-01-25",
+   "eci": 126.46
+  },
+  {
+   "model": "StarCoder 2 15B",
+   "org": "Hugging Face,ServiceNow,NVIDIA,BigCode",
+   "date": "2024-02-20",
+   "eci": 104.61
+  },
+  {
+   "model": "StarCoder 2 7B",
+   "org": "Hugging Face,ServiceNow,NVIDIA,BigCode",
+   "date": "2024-02-20",
+   "eci": 92.92
+  },
+  {
+   "model": "Gemma 2B",
+   "org": "Google DeepMind",
+   "date": "2024-02-21",
+   "eci": 93.57
+  },
+  {
+   "model": "Gemma 7B",
+   "org": "Google DeepMind",
+   "date": "2024-02-21",
+   "eci": 111.74
+  },
+  {
+   "model": "StarCoder 2 3B",
+   "org": "Hugging Face,ServiceNow,NVIDIA,BigCode",
+   "date": "2024-02-22",
+   "eci": 88.01
+  },
+  {
+   "model": "Mistral Large",
+   "org": "Mistral AI",
+   "date": "2024-02-26",
+   "eci": 122.0
+  },
+  {
+   "model": "Nemotron-4 15B",
+   "org": "NVIDIA",
+   "date": "2024-02-26",
+   "eci": 107.38
+  },
+  {
+   "model": "Claude 3 Opus",
+   "org": "Anthropic",
+   "date": "2024-02-29",
+   "eci": 126.91
+  },
+  {
+   "model": "Claude 3 Sonnet",
+   "org": "Anthropic",
+   "date": "2024-02-29",
+   "eci": 120.69
+  },
+  {
+   "model": "Yi-9B",
+   "org": "",
+   "date": "2024-03-01",
+   "eci": 107.35,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Claude 3 Haiku",
+   "org": "Anthropic",
+   "date": "2024-03-07",
+   "eci": 118.3
+  },
+  {
+   "model": "GPT-4 Turbo (Apr 2024)",
+   "org": "OpenAI",
+   "date": "2024-04-09",
+   "eci": 127.25
+  },
+  {
+   "model": "CodeQwen1.5-7B",
+   "org": "",
+   "date": "2024-04-15",
+   "eci": 94.38,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Mixtral 8x22B",
+   "org": "Mistral AI",
+   "date": "2024-04-17",
+   "eci": 122.0
+  },
+  {
+   "model": "Llama 3-70B",
+   "org": "Meta AI",
+   "date": "2024-04-18",
+   "eci": 122.91
+  },
+  {
+   "model": "Llama 3-8B",
+   "org": "Meta AI",
+   "date": "2024-04-18",
+   "eci": 116.33
+  },
+  {
+   "model": "phi-3-medium 14B",
+   "org": "Microsoft",
+   "date": "2024-04-23",
+   "eci": 121.18
+  },
+  {
+   "model": "phi-3-mini 3.8B",
+   "org": "Microsoft",
+   "date": "2024-04-23",
+   "eci": 117.23
+  },
+  {
+   "model": "phi-3-small 7.4B",
+   "org": "Microsoft",
+   "date": "2024-04-23",
+   "eci": 121.79
+  },
+  {
+   "model": "DeepSeek-V2 (MoE-236B)",
+   "org": "DeepSeek",
+   "date": "2024-05-07",
+   "eci": 124.78
+  },
+  {
+   "model": "DeepSeek-V2 (MoE-236B, May 2024)",
+   "org": "DeepSeek",
+   "date": "2024-05-07",
+   "eci": 124.77,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Falcon 2 11B",
+   "org": "Technology Innovation Institute",
+   "date": "2024-05-09",
+   "eci": 109.32,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Falcon 2-11B",
+   "org": "Technology Innovation Institute",
+   "date": "2024-05-09",
+   "eci": 109.25
+  },
+  {
+   "model": "GPT-4o (May 2024)",
+   "org": "OpenAI",
+   "date": "2024-05-13",
+   "eci": 128.97
+  },
+  {
+   "model": "Gemini 1.5 Pro",
+   "org": "Google DeepMind",
+   "date": "2024-05-14",
+   "eci": 126.9
+  },
+  {
+   "model": "Gemini 1.5 Pro (May 2024)",
+   "org": "Google DeepMind",
+   "date": "2024-05-14",
+   "eci": 126.9,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Gemini 1.5 Flash (May 2024)",
+   "org": "Google DeepMind",
+   "date": "2024-05-23",
+   "eci": 122.57
+  },
+  {
+   "model": "Mistral 7B",
+   "org": "Mistral AI",
+   "date": "2024-05-27",
+   "eci": 108.73
+  },
+  {
+   "model": "Mistral 7B v0.3",
+   "org": "Mistral AI",
+   "date": "2024-05-27",
+   "eci": 108.78,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Qwen2-72B",
+   "org": "Alibaba",
+   "date": "2024-06-07",
+   "eci": 125.27
+  },
+  {
+   "model": "DeepSeek-Coder-V2-Lite-Base",
+   "org": "",
+   "date": "2024-06-13",
+   "eci": 108.64,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Claude 3.5 Sonnet",
+   "org": "Anthropic",
+   "date": "2024-06-20",
+   "eci": 130.0,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Claude 3.5 Sonnet (Jun 2024)",
+   "org": "Anthropic",
+   "date": "2024-06-20",
+   "eci": 130.0
+  },
+  {
+   "model": "Gemma 2 27B",
+   "org": "Google DeepMind",
+   "date": "2024-06-24",
+   "eci": 122.06
+  },
+  {
+   "model": "Gemma 2 9B",
+   "org": "Google DeepMind",
+   "date": "2024-06-24",
+   "eci": 119.78
+  },
+  {
+   "model": "GPT-4o mini",
+   "org": "OpenAI",
+   "date": "2024-07-18",
+   "eci": 126.56
+  },
+  {
+   "model": "Mistral NeMo",
+   "org": "Mistral AI",
+   "date": "2024-07-18",
+   "eci": 118.63
+  },
+  {
+   "model": "Llama 3.1-405B",
+   "org": "Meta AI",
+   "date": "2024-07-23",
+   "eci": 128.76
+  },
+  {
+   "model": "Llama 3.1-70B",
+   "org": "Meta AI",
+   "date": "2024-07-23",
+   "eci": 125.91
+  },
+  {
+   "model": "Llama 3.1-8B",
+   "org": "Meta AI",
+   "date": "2024-07-23",
+   "eci": 116.48
+  },
+  {
+   "model": "Mistral Large 2 (Jul 2024)",
+   "org": "Mistral AI",
+   "date": "2024-07-24",
+   "eci": 127.54,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "GPT-4o (Aug 2024)",
+   "org": "OpenAI",
+   "date": "2024-08-06",
+   "eci": 128.77
+  },
+  {
+   "model": "Command R+",
+   "org": "Cohere,Cohere Labs (formerly Cohere for AI)",
+   "date": "2024-08-30",
+   "eci": 119.28
+  },
+  {
+   "model": "o1-mini",
+   "org": "OpenAI",
+   "date": "2024-09-12",
+   "eci": 135.82
+  },
+  {
+   "model": "o1-preview",
+   "org": "OpenAI",
+   "date": "2024-09-12",
+   "eci": 134.78
+  },
+  {
+   "model": "Qwen2.5-32B",
+   "org": "Alibaba",
+   "date": "2024-09-17",
+   "eci": 128.52
+  },
+  {
+   "model": "Qwen2.5-Coder (1.5B)",
+   "org": "Alibaba",
+   "date": "2024-09-18",
+   "eci": 102.56
+  },
+  {
+   "model": "Qwen2.5-Coder (32B)",
+   "org": "Alibaba",
+   "date": "2024-09-18",
+   "eci": 119.41
+  },
+  {
+   "model": "Qwen2.5-Coder (7B)",
+   "org": "Alibaba",
+   "date": "2024-09-18",
+   "eci": 112.93
+  },
+  {
+   "model": "Qwen2.5-Coder-0.5B",
+   "org": "",
+   "date": "2024-09-18",
+   "eci": 87.56,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Qwen2.5-Coder-14B",
+   "org": "",
+   "date": "2024-09-18",
+   "eci": 116.28,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Qwen2.5-Coder-32B",
+   "org": "Alibaba",
+   "date": "2024-09-18",
+   "eci": 119.42,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Qwen2.5-Coder-3B",
+   "org": "",
+   "date": "2024-09-18",
+   "eci": 107.48,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Qwen2.5-72B",
+   "org": "Alibaba",
+   "date": "2024-09-19",
+   "eci": 129.01
+  },
+  {
+   "model": "Qwen2.5-7B",
+   "org": "Alibaba",
+   "date": "2024-09-19",
+   "eci": 118.44
+  },
+  {
+   "model": "Gemini 1.5 Flash",
+   "org": "Google DeepMind",
+   "date": "2024-09-24",
+   "eci": 129.37
+  },
+  {
+   "model": "Gemini 1.5 Flash (Sep 2024)",
+   "org": "Google DeepMind",
+   "date": "2024-09-24",
+   "eci": 129.36,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Gemini 1.5 Pro (Sept 2024)",
+   "org": "Google DeepMind",
+   "date": "2024-09-24",
+   "eci": 131.73,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Llama 3.2 1B",
+   "org": "Meta AI",
+   "date": "2024-09-24",
+   "eci": 101.95
+  },
+  {
+   "model": "Llama 3.2 90B",
+   "org": "Meta AI",
+   "date": "2024-09-24",
+   "eci": 125.5
+  },
+  {
+   "model": "Ministral 3B",
+   "org": "Mistral AI",
+   "date": "2024-10-16",
+   "eci": 118.08
+  },
+  {
+   "model": "Claude 3.5 Haiku",
+   "org": "Anthropic",
+   "date": "2024-10-22",
+   "eci": 127.15,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Claude 3.5 Haiku (Oct 2024)",
+   "org": "Anthropic",
+   "date": "2024-10-22",
+   "eci": 127.15
+  },
+  {
+   "model": "Claude 3.5 Sonnet (Oct 2024)",
+   "org": "Anthropic",
+   "date": "2024-10-22",
+   "eci": 133.55
+  },
+  {
+   "model": "Claude 3.5 Sonnet (October 2024)",
+   "org": "Anthropic",
+   "date": "2024-10-22",
+   "eci": 133.55,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Mistral Large 2",
+   "org": "Mistral AI",
+   "date": "2024-11-18",
+   "eci": 128.52
+  },
+  {
+   "model": "Mistral Large 2 (Nov 2024)",
+   "org": "Mistral AI",
+   "date": "2024-11-18",
+   "eci": 128.52,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "GPT-4o (Nov 2024)",
+   "org": "OpenAI",
+   "date": "2024-11-20",
+   "eci": 128.81
+  },
+  {
+   "model": "INTELLECT-1",
+   "org": "Prime Intellect,Hugging Face,Arcee AI",
+   "date": "2024-11-29",
+   "eci": 100.38
+  },
+  {
+   "model": "Amazon Nova Pro",
+   "org": "Amazon",
+   "date": "2024-12-03",
+   "eci": 123.75
+  },
+  {
+   "model": "Llama 3.3 70B",
+   "org": "Meta AI",
+   "date": "2024-12-06",
+   "eci": 127.32
+  },
+  {
+   "model": "Gemini 2.0 Flash",
+   "org": "Google DeepMind,Google",
+   "date": "2024-12-11",
+   "eci": 134.71
+  },
+  {
+   "model": "Gemini 2.0 Flash (Dec 2024)",
+   "org": "Google DeepMind,Google",
+   "date": "2024-12-11",
+   "eci": 134.71,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Grok-2",
+   "org": "xAI",
+   "date": "2024-12-12",
+   "eci": 130.48
+  },
+  {
+   "model": "Grok-2 (Dec 2024)",
+   "org": "xAI",
+   "date": "2024-12-12",
+   "eci": 130.48,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Phi-4",
+   "org": "Microsoft Research",
+   "date": "2024-12-12",
+   "eci": 130.43
+  },
+  {
+   "model": "o1",
+   "org": "OpenAI",
+   "date": "2024-12-17",
+   "eci": 141.92
+  },
+  {
+   "model": "DeepSeek-V3",
+   "org": "DeepSeek",
+   "date": "2024-12-26",
+   "eci": 132.36
+  },
+  {
+   "model": "DeepSeek-R1",
+   "org": "DeepSeek",
+   "date": "2025-01-20",
+   "eci": 138.98
+  },
+  {
+   "model": "DeepSeek-R1-Distill-Qwen-14B",
+   "org": "DeepSeek",
+   "date": "2025-01-20",
+   "eci": 135.43
+  },
+  {
+   "model": "DeepSeek-R1-Distill-Qwen-32B",
+   "org": "DeepSeek",
+   "date": "2025-01-20",
+   "eci": 137.43
+  },
+  {
+   "model": "Gemini 2.0 Flash Thinking (Jan 2025)",
+   "org": "Google DeepMind,Google",
+   "date": "2025-01-21",
+   "eci": 135.37,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Gemini 2.0 Flash Thinking Exp",
+   "org": "Google DeepMind,Google",
+   "date": "2025-01-21",
+   "eci": 135.36
+  },
+  {
+   "model": "Qwen2.5-Max",
+   "org": "Alibaba",
+   "date": "2025-01-25",
+   "eci": 132.54
+  },
+  {
+   "model": "Mistral Small 3",
+   "org": "Mistral AI",
+   "date": "2025-01-30",
+   "eci": 127.06
+  },
+  {
+   "model": "o3-mini",
+   "org": "OpenAI",
+   "date": "2025-01-31",
+   "eci": 140.35
+  },
+  {
+   "model": "Gemini 2.0 Flash (Feb 2025)",
+   "org": "Google DeepMind,Google",
+   "date": "2025-02-05",
+   "eci": 134.69
+  },
+  {
+   "model": "Gemini 2.0 Pro",
+   "org": "Google DeepMind",
+   "date": "2025-02-05",
+   "eci": 135.06,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Gemini 2.0 Pro Exp (Feb 2025)",
+   "org": "Google DeepMind",
+   "date": "2025-02-05",
+   "eci": 135.06
+  },
+  {
+   "model": "Claude 3.7 Sonnet",
+   "org": "Anthropic",
+   "date": "2025-02-24",
+   "eci": 141.16
+  },
+  {
+   "model": "GPT-4.5",
+   "org": "OpenAI",
+   "date": "2025-02-27",
+   "eci": 136.75,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "GPT-4.5 Preview (Feb 2025)",
+   "org": "OpenAI",
+   "date": "2025-02-27",
+   "eci": 136.74
+  },
+  {
+   "model": "QwQ-32B",
+   "org": "Alibaba",
+   "date": "2025-03-05",
+   "eci": 137.6
+  },
+  {
+   "model": "Gemma 3 12B",
+   "org": "Google DeepMind",
+   "date": "2025-03-12",
+   "eci": 123.49
+  },
+  {
+   "model": "Gemma 3 27B",
+   "org": "Google DeepMind",
+   "date": "2025-03-12",
+   "eci": 130.04
+  },
+  {
+   "model": "Gemma 3 4B",
+   "org": "Google DeepMind",
+   "date": "2025-03-12",
+   "eci": 116.02
+  },
+  {
+   "model": "Mistral Small 3.1",
+   "org": "Mistral AI",
+   "date": "2025-03-17",
+   "eci": 127.48
+  },
+  {
+   "model": "DeepSeek-V3 (Mar 2025)",
+   "org": "DeepSeek",
+   "date": "2025-03-24",
+   "eci": 135.95
+  },
+  {
+   "model": "Gemini 2.5 Pro Exp (Mar 2025)",
+   "org": "Google DeepMind",
+   "date": "2025-03-25",
+   "eci": 144.16
+  },
+  {
+   "model": "Gemini 2.5 Pro (Mar 2025)",
+   "org": "Google DeepMind",
+   "date": "2025-03-31",
+   "eci": 144.16,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Gemini 2.5 Pro Preview (Mar 2025)",
+   "org": "Google DeepMind",
+   "date": "2025-03-31",
+   "eci": 144.16
+  },
+  {
+   "model": "Llama 4 Maverick",
+   "org": "Meta AI",
+   "date": "2025-04-05",
+   "eci": 132.2
+  },
+  {
+   "model": "Llama 4 Maverick (FP8)",
+   "org": "Meta AI",
+   "date": "2025-04-05",
+   "eci": 132.2
+  },
+  {
+   "model": "Llama 4 Scout",
+   "org": "Meta AI",
+   "date": "2025-04-05",
+   "eci": 129.64
+  },
+  {
+   "model": "Grok 3",
+   "org": "xAI",
+   "date": "2025-04-09",
+   "eci": 138.34
+  },
+  {
+   "model": "Grok-3 mini",
+   "org": "xAI",
+   "date": "2025-04-09",
+   "eci": 140.35
+  },
+  {
+   "model": "GPT-4.1",
+   "org": "OpenAI",
+   "date": "2025-04-14",
+   "eci": 136.79
+  },
+  {
+   "model": "GPT-4.1 mini",
+   "org": "OpenAI",
+   "date": "2025-04-14",
+   "eci": 135.01
+  },
+  {
+   "model": "GPT-4.1 nano",
+   "org": "OpenAI",
+   "date": "2025-04-14",
+   "eci": 129.62
+  },
+  {
+   "model": "o3",
+   "org": "OpenAI",
+   "date": "2025-04-16",
+   "eci": 146.88
+  },
+  {
+   "model": "o4-mini",
+   "org": "OpenAI",
+   "date": "2025-04-16",
+   "eci": 145.63
+  },
+  {
+   "model": "Gemini 2.5 Flash (Apr 2025)",
+   "org": "Google DeepMind",
+   "date": "2025-04-17",
+   "eci": 139.97,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Gemini 2.5 Flash Preview (Apr 2025)",
+   "org": "Google DeepMind",
+   "date": "2025-04-17",
+   "eci": 139.96
+  },
+  {
+   "model": "Qwen3-8B",
+   "org": "Alibaba",
+   "date": "2025-04-28",
+   "eci": 136.17
+  },
+  {
+   "model": "Qwen3-14B",
+   "org": "Alibaba",
+   "date": "2025-04-29",
+   "eci": 138.23
+  },
+  {
+   "model": "Qwen3-235B-A22B",
+   "org": "Alibaba",
+   "date": "2025-04-29",
+   "eci": 139.36
+  },
+  {
+   "model": "Qwen3-30B-A3B",
+   "org": "Alibaba",
+   "date": "2025-04-29",
+   "eci": 136.18
+  },
+  {
+   "model": "Qwen3-32B",
+   "org": "Alibaba",
+   "date": "2025-04-29",
+   "eci": 138.51
+  },
+  {
+   "model": "Gemini 2.5 Pro (May 2025)",
+   "org": "Google DeepMind",
+   "date": "2025-05-06",
+   "eci": 142.47,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Mistral Medium 3",
+   "org": "Mistral AI",
+   "date": "2025-05-07",
+   "eci": 134.07
+  },
+  {
+   "model": "Gemini 2.5 Flash (May 2025)",
+   "org": "Google DeepMind",
+   "date": "2025-05-20",
+   "eci": 141.54,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Claude Opus 4",
+   "org": "Anthropic",
+   "date": "2025-05-22",
+   "eci": 142.67
+  },
+  {
+   "model": "Claude Sonnet 4",
+   "org": "Anthropic",
+   "date": "2025-05-22",
+   "eci": 141.69
+  },
+  {
+   "model": "DeepSeek-R1 (May 2025)",
+   "org": "DeepSeek",
+   "date": "2025-05-28",
+   "eci": 141.3
+  },
+  {
+   "model": "Gemini 2.5 Pro Preview (Jun 2025)",
+   "org": "Google DeepMind",
+   "date": "2025-06-05",
+   "eci": 145.32
+  },
+  {
+   "model": "Magistral Small 1.0",
+   "org": "Mistral AI",
+   "date": "2025-06-10",
+   "eci": 133.19
+  },
+  {
+   "model": "o3-pro",
+   "org": "OpenAI",
+   "date": "2025-06-10",
+   "eci": 147.43
+  },
+  {
+   "model": "Gemini 2.5 Flash",
+   "org": "Google DeepMind",
+   "date": "2025-06-17",
+   "eci": 140.8
+  },
+  {
+   "model": "Gemini 2.5 Flash (Jun 2025)",
+   "org": "Google DeepMind",
+   "date": "2025-06-17",
+   "eci": 140.53,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Gemini 2.5 Flash-Lite",
+   "org": "Google DeepMind",
+   "date": "2025-06-17",
+   "eci": 133.93
+  },
+  {
+   "model": "Gemini 2.5 Flash-Lite (Jun 2025)",
+   "org": "Google DeepMind",
+   "date": "2025-06-17",
+   "eci": 133.93,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Gemini 2.5 Pro (Jun 2025)",
+   "org": "Google DeepMind",
+   "date": "2025-06-17",
+   "eci": 145.32
+  },
+  {
+   "model": "gemini-2.5-flash-lite-preview-06-17",
+   "org": "Google DeepMind",
+   "date": "2025-06-17",
+   "eci": 133.93
+  },
+  {
+   "model": "Mistral Small 3.2",
+   "org": "Mistral AI",
+   "date": "2025-06-20",
+   "eci": 131.73
+  },
+  {
+   "model": "Grok 3 mini",
+   "org": "xAI",
+   "date": "2025-06-24",
+   "eci": 140.35
+  },
+  {
+   "model": "Grok 4",
+   "org": "xAI",
+   "date": "2025-07-09",
+   "eci": 146.46
+  },
+  {
+   "model": "Kimi K2",
+   "org": "Moonshot",
+   "date": "2025-07-12",
+   "eci": 140.13
+  },
+  {
+   "model": "Kimi K2 (Jul 2025)",
+   "org": "Moonshot",
+   "date": "2025-07-12",
+   "eci": 140.11,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Kimi K2 Instruct",
+   "org": "Moonshot",
+   "date": "2025-07-12",
+   "eci": 140.13
+  },
+  {
+   "model": "Qwen3-235B-A22B (Jul 2025)",
+   "org": "Alibaba",
+   "date": "2025-07-25",
+   "eci": 143.87
+  },
+  {
+   "model": "Qwen3-235B-A22B-Instruct (Jul 2025)",
+   "org": "Alibaba",
+   "date": "2025-07-25",
+   "eci": 138.92,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Qwen3-235B-A22B-Thinking (Jul 2025)",
+   "org": "Alibaba",
+   "date": "2025-07-25",
+   "eci": 143.88,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Qwen3-235B-A22B-Thinking-2507",
+   "org": "Alibaba",
+   "date": "2025-07-25",
+   "eci": 143.87
+  },
+  {
+   "model": "Qwen3-30B-A3B-Instruct (Jul 2025)",
+   "org": "Alibaba",
+   "date": "2025-07-29",
+   "eci": 137.42,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Qwen3-30B-A3B (Jul 2025)",
+   "org": "Alibaba",
+   "date": "2025-07-30",
+   "eci": 139.63
+  },
+  {
+   "model": "Qwen3-30B-A3B-Thinking (Jul 2025)",
+   "org": "Alibaba",
+   "date": "2025-07-30",
+   "eci": 139.64,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Claude Opus 4.1",
+   "org": "Anthropic",
+   "date": "2025-08-05",
+   "eci": 144.11
+  },
+  {
+   "model": "gpt-oss-120b",
+   "org": "OpenAI",
+   "date": "2025-08-05",
+   "eci": 139.94
+  },
+  {
+   "model": "gpt-oss-20b",
+   "org": "OpenAI",
+   "date": "2025-08-05",
+   "eci": 137.81
+  },
+  {
+   "model": "GPT-5",
+   "org": "OpenAI",
+   "date": "2025-08-07",
+   "eci": 150.0
+  },
+  {
+   "model": "GPT-5 mini",
+   "org": "OpenAI",
+   "date": "2025-08-07",
+   "eci": 145.51
+  },
+  {
+   "model": "GPT-5 nano",
+   "org": "OpenAI",
+   "date": "2025-08-07",
+   "eci": 139.39
+  },
+  {
+   "model": "DeepSeek-V3.1",
+   "org": "DeepSeek",
+   "date": "2025-08-21",
+   "eci": 139.92
+  },
+  {
+   "model": "Magistral Small 1.2",
+   "org": "Mistral AI",
+   "date": "2025-09-18",
+   "eci": 131.41
+  },
+  {
+   "model": "Grok 4 Fast",
+   "org": "xAI",
+   "date": "2025-09-19",
+   "eci": 144.21
+  },
+  {
+   "model": "Qwen3-Max",
+   "org": "Alibaba",
+   "date": "2025-09-24",
+   "eci": 142.43,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Qwen3-Max-Instruct",
+   "org": "Alibaba",
+   "date": "2025-09-24",
+   "eci": 142.41
+  },
+  {
+   "model": "Gemini 2.5 Flash (Sep 2025)",
+   "org": "Google DeepMind",
+   "date": "2025-09-25",
+   "eci": 142.99,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Claude Sonnet 4.5",
+   "org": "Anthropic",
+   "date": "2025-09-29",
+   "eci": 146.84
+  },
+  {
+   "model": "DeepSeek-V3.2-Exp",
+   "org": "DeepSeek",
+   "date": "2025-09-29",
+   "eci": 145.02
+  },
+  {
+   "model": "GLM-4.6",
+   "org": "Z.ai (Zhipu AI),Tsinghua University",
+   "date": "2025-09-30",
+   "eci": 140.78,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "GPT-5 Pro",
+   "org": "OpenAI",
+   "date": "2025-10-07",
+   "eci": 150.26
+  },
+  {
+   "model": "Claude Haiku 4.5",
+   "org": "Anthropic",
+   "date": "2025-10-15",
+   "eci": 142.42
+  },
+  {
+   "model": "Kimi K2 Thinking",
+   "org": "Moonshot",
+   "date": "2025-11-06",
+   "eci": 146.02
+  },
+  {
+   "model": "Kimi K2 Thinking Turbo",
+   "org": "Moonshot",
+   "date": "2025-11-06",
+   "eci": 146.02
+  },
+  {
+   "model": "GPT-5.1",
+   "org": "OpenAI",
+   "date": "2025-11-13",
+   "eci": 149.66
+  },
+  {
+   "model": "Gemini 3 Pro",
+   "org": "Google DeepMind",
+   "date": "2025-11-18",
+   "eci": 153.0,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Gemini 3 Pro Preview",
+   "org": "Google DeepMind",
+   "date": "2025-11-18",
+   "eci": 152.96
+  },
+  {
+   "model": "Claude Opus 4.5",
+   "org": "Anthropic",
+   "date": "2025-11-24",
+   "eci": 150.1
+  },
+  {
+   "model": "DeepSeek-V3.2",
+   "org": "DeepSeek",
+   "date": "2025-12-01",
+   "eci": 146.28
+  },
+  {
+   "model": "GPT-5.2",
+   "org": "OpenAI",
+   "date": "2025-12-11",
+   "eci": 153.45
+  },
+  {
+   "model": "GPT-5.2 Pro",
+   "org": "OpenAI",
+   "date": "2025-12-11",
+   "eci": 155.41
+  },
+  {
+   "model": "Gemini 3 Flash",
+   "org": "Google DeepMind",
+   "date": "2025-12-17",
+   "eci": 151.84,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Gemini 3 Flash Preview",
+   "org": "Google DeepMind",
+   "date": "2025-12-17",
+   "eci": 151.83
+  },
+  {
+   "model": "GLM-4.7",
+   "org": "Z.ai (Zhipu AI)",
+   "date": "2025-12-22",
+   "eci": 143.53
+  },
+  {
+   "model": "Kimi K2.5",
+   "org": "Moonshot",
+   "date": "2026-01-27",
+   "eci": 148.05
+  },
+  {
+   "model": "Claude Opus 4.6",
+   "org": "Anthropic",
+   "date": "2026-02-05",
+   "eci": 155.36
+  },
+  {
+   "model": "GPT-5.3 Codex",
+   "org": "OpenAI",
+   "date": "2026-02-05",
+   "eci": 156.84
+  },
+  {
+   "model": "GLM-5",
+   "org": "Z.ai (Zhipu AI)",
+   "date": "2026-02-11",
+   "eci": 145.84
+  },
+  {
+   "model": "MiniMax-M2.5",
+   "org": "MiniMax",
+   "date": "2026-02-12",
+   "eci": 146.68
+  },
+  {
+   "model": "Qwen3.5 397B-A17B",
+   "org": "Alibaba",
+   "date": "2026-02-13",
+   "eci": 146.64
+  },
+  {
+   "model": "Qwen 3.5 Plus (hosted 397B-A17B)",
+   "org": "Alibaba",
+   "date": "2026-02-16",
+   "eci": 146.73,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Qwen3.5 Plus",
+   "org": "Alibaba",
+   "date": "2026-02-16",
+   "eci": 146.79
+  },
+  {
+   "model": "Claude Sonnet 4.6",
+   "org": "Anthropic",
+   "date": "2026-02-17",
+   "eci": 152.25
+  },
+  {
+   "model": "Grok 4.20",
+   "org": "xAI",
+   "date": "2026-02-17",
+   "eci": 152.01
+  },
+  {
+   "model": "Gemini 3.1 Pro",
+   "org": "Google DeepMind",
+   "date": "2026-02-19",
+   "eci": 155.0,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Gemini 3.1 Pro Preview",
+   "org": "Google DeepMind",
+   "date": "2026-02-19",
+   "eci": 154.92
+  },
+  {
+   "model": "Qwen3.5 9B",
+   "org": "Alibaba",
+   "date": "2026-02-24",
+   "eci": 139.45
+  },
+  {
+   "model": "Qwen3.5-35B-A3B",
+   "org": "Alibaba",
+   "date": "2026-02-24",
+   "eci": 142.52
+  },
+  {
+   "model": "Qwen3.5-9B",
+   "org": "Alibaba",
+   "date": "2026-02-24",
+   "eci": 139.44,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Qwen 3.5 Flash (hosted 35B-A3B)",
+   "org": "Alibaba",
+   "date": "2026-02-25",
+   "eci": 144.0,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Qwen3.5 Flash",
+   "org": "Alibaba",
+   "date": "2026-02-25",
+   "eci": 143.98
+  },
+  {
+   "model": "Gemini 3.1 Flash-Lite",
+   "org": "Google",
+   "date": "2026-03-03",
+   "eci": 144.45
+  },
+  {
+   "model": "GPT-5.4",
+   "org": "OpenAI",
+   "date": "2026-03-05",
+   "eci": 156.92
+  },
+  {
+   "model": "GPT-5.4 Pro",
+   "org": "OpenAI",
+   "date": "2026-03-05",
+   "eci": 159.12
+  },
+  {
+   "model": "GPT-5.4 Mini",
+   "org": "OpenAI",
+   "date": "2026-03-17",
+   "eci": 148.96,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "GPT-5.4 Nano",
+   "org": "OpenAI",
+   "date": "2026-03-17",
+   "eci": 145.85,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "GPT-5.4 mini",
+   "org": "OpenAI",
+   "date": "2026-03-17",
+   "eci": 148.83
+  },
+  {
+   "model": "GPT-5.4 nano",
+   "org": "OpenAI",
+   "date": "2026-03-17",
+   "eci": 145.78
+  },
+  {
+   "model": "MiniMax-M2.7",
+   "org": "MiniMax",
+   "date": "2026-03-18",
+   "eci": 145.84
+  },
+  {
+   "model": "Qwen 3.6 Plus",
+   "org": "Alibaba",
+   "date": "2026-03-31",
+   "eci": 147.67
+  },
+  {
+   "model": "Gemma 4 26B A4B",
+   "org": "Google DeepMind",
+   "date": "2026-04-02",
+   "eci": 141.85
+  },
+  {
+   "model": "Gemma 4 31B IT",
+   "org": "Google DeepMind",
+   "date": "2026-04-02",
+   "eci": 142.74
+  },
+  {
+   "model": "GLM-5.1",
+   "org": "Z.ai (Zhipu AI)",
+   "date": "2026-04-07",
+   "eci": 149.86
+  },
+  {
+   "model": "Muse Spark",
+   "org": "Meta AI",
+   "date": "2026-04-08",
+   "eci": 152.09
+  },
+  {
+   "model": "Qwen 3.6 35B-A3B",
+   "org": "Alibaba",
+   "date": "2026-04-14",
+   "eci": 143.86,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Qwen3.6 35B-A3B",
+   "org": "Alibaba",
+   "date": "2026-04-14",
+   "eci": 143.92
+  },
+  {
+   "model": "Claude Opus 4.7",
+   "org": "Anthropic",
+   "date": "2026-04-16",
+   "eci": 156.39
+  },
+  {
+   "model": "Grok 4.3",
+   "org": "xAI",
+   "date": "2026-04-17",
+   "eci": 149.13
+  },
+  {
+   "model": "Grok 4.3 Beta",
+   "org": "xAI",
+   "date": "2026-04-17",
+   "eci": 149.13
+  },
+  {
+   "model": "Kimi K2.6",
+   "org": "Moonshot",
+   "date": "2026-04-20",
+   "eci": 151.03
+  },
+  {
+   "model": "Qwen 3.6 Max (Preview)",
+   "org": "Alibaba",
+   "date": "2026-04-20",
+   "eci": 149.27
+  },
+  {
+   "model": "Qwen3.6 27B",
+   "org": "Alibaba",
+   "date": "2026-04-22",
+   "eci": 146.47
+  },
+  {
+   "model": "GPT-5.5",
+   "org": "OpenAI",
+   "date": "2026-04-23",
+   "eci": 159.25
+  },
+  {
+   "model": "GPT-5.5 Pro",
+   "org": "OpenAI",
+   "date": "2026-04-23",
+   "eci": 162.45
+  },
+  {
+   "model": "DeepSeek v4",
+   "org": "DeepSeek",
+   "date": "2026-04-24",
+   "eci": 146.1
+  },
+  {
+   "model": "DeepSeek v4 Flash",
+   "org": "DeepSeek",
+   "date": "2026-04-24",
+   "eci": 146.1
+  },
+  {
+   "model": "DeepSeek v4 Pro",
+   "org": "DeepSeek",
+   "date": "2026-04-24",
+   "eci": 149.14
+  },
+  {
+   "model": "DeepSeek-V4-Flash",
+   "org": "DeepSeek",
+   "date": "2026-04-24",
+   "eci": 146.11,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "DeepSeek-V4-Pro",
+   "org": "DeepSeek",
+   "date": "2026-04-24",
+   "eci": 149.09,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Qwen 3.6 Flash",
+   "org": "Alibaba",
+   "date": "2026-04-27",
+   "eci": 143.26
+  },
+  {
+   "model": "Mistral Medium 3.5",
+   "org": "Mistral AI",
+   "date": "2026-04-28",
+   "eci": 141.42
+  },
+  {
+   "model": "GPT-5.5 Instant",
+   "org": "OpenAI",
+   "date": "2026-05-05",
+   "eci": 142.48
+  },
+  {
+   "model": "Gemini 3.5 Flash",
+   "org": "Google DeepMind",
+   "date": "2026-05-19",
+   "eci": 154.55
+  },
+  {
+   "model": "Qwen3.7 Max",
+   "org": "Alibaba",
+   "date": "2026-05-19",
+   "eci": 153.74
+  },
+  {
+   "model": "Qwen3.7-Max",
+   "org": "Alibaba",
+   "date": "2026-05-19",
+   "eci": 153.74
+  },
+  {
+   "model": "Claude Opus 4.8",
+   "org": "Anthropic",
+   "date": "2026-05-28",
+   "eci": 158.3
+  },
+  {
+   "model": "MiniMax-M3",
+   "org": "MiniMax",
+   "date": "2026-06-01",
+   "eci": 147.0
+  },
+  {
+   "model": "Qwen3.7 Plus",
+   "org": "Alibaba",
+   "date": "2026-06-02",
+   "eci": 147.39
+  },
+  {
+   "model": "Qwen3.7-Plus",
+   "org": "Alibaba",
+   "date": "2026-06-02",
+   "eci": 147.41,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Nemotron 3 Ultra",
+   "org": "NVIDIA",
+   "date": "2026-06-04",
+   "eci": 146.2
+  },
+  {
+   "model": "Claude Fable 5",
+   "org": "Anthropic",
+   "date": "2026-06-09",
+   "eci": 163.6
+  },
+  {
+   "model": "Kimi K2.7 Code",
+   "org": "Moonshot",
+   "date": "2026-06-12",
+   "eci": 150.01
+  },
+  {
+   "model": "GLM-5.2",
+   "org": "Z.ai (Zhipu AI)",
+   "date": "2026-06-16",
+   "eci": 151.76
+  },
+  {
+   "model": "Claude Sonnet 5",
+   "org": "Anthropic",
+   "date": "2026-06-30",
+   "eci": 156.34
+  },
+  {
+   "model": "Grok 4.5",
+   "org": "xAI",
+   "date": "2026-07-08",
+   "eci": 154.02
+  },
+  {
+   "model": "GPT-5.6 Luna",
+   "org": "OpenAI",
+   "date": "2026-07-09",
+   "eci": 156.32
+  },
+  {
+   "model": "GPT-5.6 Sol",
+   "org": "OpenAI",
+   "date": "2026-07-09",
+   "eci": 161.99
+  },
+  {
+   "model": "GPT-5.6 Terra",
+   "org": "OpenAI",
+   "date": "2026-07-09",
+   "eci": 159.31
+  },
+  {
+   "model": "Muse Spark 1.1",
+   "org": "Meta AI",
+   "date": "2026-07-09",
+   "eci": 154.32
+  },
+  {
+   "model": "Inkling",
+   "org": "Thinking Machines",
+   "date": "2026-07-15",
+   "eci": 148.6
+  },
+  {
+   "model": "Inkling Small",
+   "org": "Thinking Machines",
+   "date": "2026-07-15",
+   "eci": 150.13
+  },
+  {
+   "model": "Inkling-Small",
+   "org": "Thinking Machines",
+   "date": "2026-07-15",
+   "eci": 150.15,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Kimi K3",
+   "org": "Moonshot",
+   "date": "2026-07-16",
+   "eci": 157.68
+  },
+  {
+   "model": "Gemini 3.5 Flash-Lite",
+   "org": "Google DeepMind",
+   "date": "2026-07-21",
+   "eci": 145.12
+  },
+  {
+   "model": "Gemini 3.6 Flash",
+   "org": "Google DeepMind",
+   "date": "2026-07-21",
+   "eci": 154.36
+  },
+  {
+   "model": "Claude Opus 5",
+   "org": "Anthropic",
+   "date": "2026-07-24",
+   "eci": 162.67
+  },
+  {
+   "model": "Qwen3.7 Flash",
+   "org": "Alibaba",
+   "date": "2026-07-27",
+   "eci": 144.62
+  },
+  {
+   "model": "DeepSeek V4 Flash 0731",
+   "org": "DeepSeek",
+   "date": "2026-07-31",
+   "eci": 154.51
+  },
+  {
+   "model": "Qwen 3.8 Max",
+   "org": "Alibaba",
+   "date": "2026-08-02",
+   "eci": 156.62,
+   "from": "eci_scores.csv (early Sep 2026)"
+  },
+  {
+   "model": "Qwen3.8 Max",
+   "org": "Alibaba",
+   "date": "2026-08-02",
+   "eci": 156.69
+  },
+  {
+   "model": "Muse Spark 1.2",
+   "org": "Meta AI",
+   "date": "2026-08-05",
+   "eci": 155.18
+  },
+  {
+   "model": "Grok 4.6",
+   "org": "xAI",
+   "date": "2026-08-12",
+   "eci": 156.48
+  },
+  {
+   "model": "DeepSeek V4 Pro 0813",
+   "org": "DeepSeek",
+   "date": "2026-08-13",
+   "eci": 155.39
+  },
+  {
+   "model": "Gemini 3.7 Flash",
+   "org": "Google DeepMind",
+   "date": "2026-08-13",
+   "eci": 157.72
+  },
+  {
+   "model": "GLM-5.3",
+   "org": "Z.ai (Zhipu AI)",
+   "date": "2026-08-14",
+   "eci": 155.56
+  },
+  {
+   "model": "Qwen3.8 27B",
+   "org": "Alibaba",
+   "date": "2026-08-14",
+   "eci": 149.38
+  },
+  {
+   "model": "GLM-5.3-Flash",
+   "org": "Z.ai (Zhipu AI)",
+   "date": "2026-08-20",
+   "eci": 151.9
+  },
+  {
+   "model": "Claude Fable 5.1",
+   "org": "Anthropic",
+   "date": "2026-09-01",
+   "eci": 165.0
+  },
+  {
+   "model": "Qwen3.8 Max (0902)",
+   "org": "Alibaba",
+   "date": "2026-09-01",
+   "eci": 155.28
+  },
+  {
+   "model": "Gemini 3.8 Flash",
+   "org": "Google DeepMind",
+   "date": "2026-09-02",
+   "eci": 157.13
+  },
+  {
+   "model": "Muse Spark 1.3",
+   "org": "Meta AI",
+   "date": "2026-09-02",
+   "eci": 156.89
+  },
+  {
+   "model": "GPT-6 Astra",
+   "org": "OpenAI",
+   "date": "2026-09-03",
+   "eci": 166.6
+  },
+  {
+   "model": "DeepSeek V4.1 Flash",
+   "org": "DeepSeek",
+   "date": "2026-09-09",
+   "eci": 155.01
+  }
+ ]
+}

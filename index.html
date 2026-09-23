@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Табло ИИ-релизов</title>
+<meta name="description" content="Пиксельный таймлайн релизов ИИ-моделей с ноября 2022 года: OpenAI, Anthropic и остальные. Пульт для показа и экспорт видео 4K.">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-start" viewBox="0 0 16 16"><path d="M3 2h2v12H3zM14 2v12L6 8z"/></symbol>
+  <symbol id="i-prev" viewBox="0 0 16 16"><path d="M8 3v10L1 8zM15 3v10L8 8z"/></symbol>
+  <symbol id="i-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6z"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 16 16"><path d="M3 2h4v12H3zM9 2h4v12H9z"/></symbol>
+  <symbol id="i-next" viewBox="0 0 16 16"><path d="M1 3v10l7-5zM8 3v10l7-5z"/></symbol>
+  <symbol id="i-end" viewBox="0 0 16 16"><path d="M2 2v12l8-6zM11 2h2v12h-2z"/></symbol>
+  <symbol id="i-rec" viewBox="0 0 16 16"><circle cx="8" cy="8" r="5"/></symbol>
+  <symbol id="i-stop" viewBox="0 0 16 16"><path d="M3 3h10v10H3z"/></symbol>
+  <symbol id="i-full" viewBox="0 0 16 16"><path d="M1 1h5v2H3v3H1zM10 1h5v5h-2V3h-3zM1 10h2v3h3v2H1zM13 10h2v5h-5v-2h3z"/></symbol>
+  <symbol id="i-hide" viewBox="0 0 16 16"><path d="M1 3h14v10H1zm2 2v6h10V5z"/></symbol>
+</svg>
+
+<div class="app">
+  <header class="topbar">
+    <div class="brand">
+      <h1>Табло ИИ-релизов</h1>
+      <span class="meta" id="meta">ноябрь 2022 — сентябрь 2026 · 3840×2160 · 25 к/с</span>
+    </div>
+    <details class="keys">
+      <summary>Клавиши пульта</summary>
+      <dl>
+        <dt>Пробел</dt><dd>пуск / пауза</dd>
+        <dt>← →</dt><dd>предыдущий / следующий релиз</dd>
+        <dt>Shift + ← →</dt><dd>только релизы OpenAI и Anthropic</dd>
+        <dt>[ ]</dt><dd>на месяц назад / вперёд</dd>
+        <dt>↑ ↓</dt><dd>быстрее / медленнее</dd>
+        <dt>+ −  0</dt><dd>приблизить / отдалить / весь период</dd>
+        <dt>O</dt><dd>только OpenAI и Anthropic ↔ все</dd>
+        <dt>L</dt><dd>подписи моделей</dd>
+        <dt>R</dt><dd>запись дубля</dd>
+        <dt>H</dt><dd>спрятать пульт (чистая картинка)</dd>
+        <dt>F</dt><dd>во весь экран</dd>
+        <dt>Home / End</dt><dd>в начало / в конец</dd>
+        <dt>Esc</dt><dd>снять выделение модели</dd>
+      </dl>
+    </details>
+  </header>
+
+  <main class="main">
+    <section class="stage-col" aria-label="Табло">
+      <div class="stage grab" id="stage">
+        <canvas id="screen" role="img" aria-label="Пиксельный таймлайн релизов ИИ-моделей"></canvas>
+        <div class="stage-badge" id="recBadge" hidden>REC <span id="recTime">0:00</span></div>
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+      </div>
+
+      <div class="transport">
+        <div class="scrub" id="scrub" title="Перетащите, чтобы перемотать время">
+          <canvas id="scrubCanvas"></canvas>
+        </div>
+        <div class="row">
+          <div class="group" role="group" aria-label="Воспроизведение">
+            <button class="btn" id="bStart" title="В начало (Home)" aria-label="В начало"><svg><use href="#i-start"/></svg></button>
+            <button class="btn" id="bPrev" title="Предыдущий релиз (←)" aria-label="Предыдущий релиз"><svg><use href="#i-prev"/></svg></button>
+            <button class="btn play" id="bPlay" title="Пуск / пауза (пробел)" aria-label="Пуск"><svg><use href="#i-play"/></svg></button>
+            <button class="btn" id="bNext" title="Следующий релиз (→)" aria-label="Следующий релиз"><svg><use href="#i-next"/></svg></button>
+            <button class="btn" id="bEnd" title="В конец (End)" aria-label="В конец"><svg><use href="#i-end"/></svg></button>
+          </div>
+          <div class="readout" id="readout"><b>—</b></div>
+          <div class="spacer"></div>
+          <div class="group" role="group" aria-label="Скорость">
+            <span class="group-label">Скорость</span>
+            <button class="btn" id="bSlower" title="Медленнее (↓)" aria-label="Медленнее">−</button>
+            <span class="speed-val" id="speedVal">1×</span>
+            <button class="btn" id="bFaster" title="Быстрее (↑)" aria-label="Быстрее">+</button>
+          </div>
+          <div class="group">
+            <label class="group-label" for="zoom">Масштаб</label>
+            <input type="range" id="zoom" min="0" max="1000" step="1">
+            <button class="btn ghost" id="bFit" title="Весь период (0)">Весь период</button>
+          </div>
+          <div class="group">
+            <button class="btn rec" id="bRec" aria-pressed="false" title="Запись дубля (R)"><svg><use href="#i-rec"/></svg><span id="recLabel">Запись</span></button>
+            <button class="btn" id="bPresent" title="Спрятать пульт (H)" aria-label="Спрятать пульт"><svg><use href="#i-hide"/></svg></button>
+            <button class="btn" id="bFull" title="Во весь экран (F)" aria-label="Во весь экран"><svg><use href="#i-full"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="panel" aria-label="Пульт">
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" id="t-companies" aria-controls="p-companies" aria-selected="true">Компании</button>
+        <button class="tab" role="tab" id="t-releases" aria-controls="p-releases" aria-selected="false">Релизы</button>
+        <button class="tab" role="tab" id="t-view" aria-controls="p-view" aria-selected="false">Вид</button>
+        <button class="tab" role="tab" id="t-export" aria-controls="p-export" aria-selected="false">Экспорт</button>
+      </div>
+
+      <div class="pane" id="p-companies" role="tabpanel" aria-labelledby="t-companies">
+        <div class="chips">
+          <button class="btn" id="bAll">Все компании</button>
+          <button class="btn" id="bMainOnly">Только OpenAI и Anthropic</button>
+        </div>
+        <div class="list" id="companyList"></div>
+        <p class="hint">Отключённая компания плавно исчезает с табло, а темп автопрогона пересчитывается без её релизов.</p>
+      </div>
+
+      <div class="pane" id="p-releases" role="tabpanel" aria-labelledby="t-releases" hidden>
+        <input class="search" id="relSearch" type="search" placeholder="Найти модель: GPT-4, Opus, Gemini…" aria-label="Поиск модели">
+        <div class="releases" id="relList"></div>
+        <p class="hint">Клик по названию — перемотать к релизу и выделить модель. Галочка — показывать модель на табло. ≈ — оценка индекса (у модели нет замера ECI).</p>
+      </div>
+
+      <div class="pane" id="p-view" role="tabpanel" aria-labelledby="t-view" hidden>
+        <div class="opt"><label for="oLabels">Подписи моделей</label><span class="switch"><input type="checkbox" id="oLabels"><span></span></span></div>
+        <div class="opt"><label for="oLabelCount">Сколько подписей сразу<small id="oLabelCountVal">16</small></label><input type="range" id="oLabelCount" min="4" max="30" step="1"></div>
+        <div class="opt"><label for="oScale">Шкала индекса слева</label><span class="switch"><input type="checkbox" id="oScale"><span></span></span></div>
+        <div class="opt"><label for="oFrontier">Линия и имя лидера</label><span class="switch"><input type="checkbox" id="oFrontier"><span></span></span></div>
+        <div class="opt"><span>Высота столбиков</span><span class="seg" data-opt="heights"><button data-v="score">По индексу</button><button data-v="equal">Одинаковая</button></span></div>
+        <div class="opt"><span>Цвет остальных<small>приглушённый — серый столбик с цветной верхушкой</small></span><span class="seg" data-opt="others"><button data-v="muted">Приглушённый</button><button data-v="brand">Фирменный</button></span></div>
+        <div class="opt"><span>Размер пикселя<small>в кадре 4K</small></span><span class="seg" data-opt="grid"><button data-v="8">8</button><button data-v="10">10</button><button data-v="12">12</button><button data-v="16">16</button><button data-v="20">20</button></span></div>
+        <div class="opt"><span>Мышь и колёсико листают</span><span class="seg" data-opt="wheel"><button data-v="time">Время</button><button data-v="camera">Камеру</button></span></div>
+        <div class="opt"><label for="oFinale">В конце показать весь период</label><span class="switch"><input type="checkbox" id="oFinale"><span></span></span></div>
+        <button class="btn ghost" id="bReset">Сбросить настройки</button>
+      </div>
+
+      <div class="pane" id="p-export" role="tabpanel" aria-labelledby="t-export" hidden>
+        <h3>Что сохранить</h3>
+        <div class="takes" id="takeList"></div>
+        <div class="opt"><span>Размер</span><span class="seg" data-opt="exportScale"><button data-v="1">4K · 3840×2160</button><button data-v="0.5">Full HD</button></span></div>
+        <div class="opt"><span>Качество<small>битрейт для 4K</small></span><span class="seg" data-opt="bitrate"><button data-v="24">24</button><button data-v="32">32</button><button data-v="48">48 Мбит/с</button></span></div>
+        <div class="chips">
+          <button class="btn primary" id="bExport">Сохранить MP4</button>
+          <button class="btn" id="bPng">Кадр PNG 4K</button>
+        </div>
+        <div class="progress" id="progress" hidden>
+          <div class="bar"><i id="progressBar"></i></div>
+          <div class="readout" id="progressText">Готовлю…</div>
+          <button class="btn ghost" id="bCancel">Отменить</button>
+        </div>
+        <div class="note" id="exportNote">Видео собирается прямо в браузере: 25 кадров в секунду, H.264. Лучше всего работает в Chrome или Edge на компьютере.</div>
+        <p class="hint">Дубль — это запись того, что вы делали пультом: пауза, перемотка, выделение моделей, масштаб. Нажмите «Запись» (R), покажите всё что нужно, остановите — дубль появится здесь.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="foot" id="foot"></footer>
+</div>
+
+<script src="vendor/mp4-muxer.js"></script>
+<script src="js/data.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/export.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

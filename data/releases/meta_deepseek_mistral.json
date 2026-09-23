@@ -1,0 +1,922 @@
+[
+  {
+    "company": "meta",
+    "name": "LLaMA",
+    "date": "2023-02-24",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "7B-65B foundation models for researchers (gated, non-commercial); weights leaked on 2023-03-03 and kicked off the open-source LLM wave (Alpaca, Vicuna, llama.cpp)",
+    "sources": [
+      "https://ai.meta.com/blog/large-language-model-llama-meta-ai/",
+      "https://arxiv.org/abs/2302.13971"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "meta",
+    "name": "Llama 2",
+    "date": "2023-07-18",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "7B/13B/70B incl. Llama-2-Chat; first Llama licensed for commercial use (with Microsoft) - became the default open base model",
+    "sources": [
+      "https://ai.meta.com/blog/llama-2/",
+      "https://about.fb.com/news/2023/07/llama-2/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "meta",
+    "name": "Code Llama",
+    "date": "2023-08-24",
+    "announced": null,
+    "tier": "major",
+    "kind": "coding",
+    "open_weights": true,
+    "note": "7B/13B/34B code models (base, Python, Instruct) built on Llama 2; Meta's first dedicated coding LLM",
+    "sources": [
+      "https://ai.meta.com/blog/code-llama-large-language-model-coding/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "mistral",
+    "name": "Mistral 7B",
+    "date": "2023-09-27",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Debut model released via magnet link, Apache 2.0; beat Llama 2 13B - put the Paris startup on the map",
+    "sources": [
+      "https://mistral.ai/news/announcing-mistral-7b/",
+      "https://huggingface.co/mistralai/Mistral-7B-v0.1"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeek Coder",
+    "date": "2023-11-02",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "coding",
+    "open_weights": true,
+    "note": "DeepSeek's first release: 1.3B-33B code models trained on 2T tokens, free for commercial use; top open code model at launch",
+    "sources": [
+      "https://github.com/deepseek-ai/DeepSeek-Coder",
+      "https://huggingface.co/deepseek-ai/deepseek-coder-33b-instruct"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeek LLM 67B",
+    "date": "2023-11-29",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": true,
+    "note": "First general DeepSeek LLM (7B/67B base+chat, 2T tokens); 67B Chat outperformed Llama 2 70B",
+    "sources": [
+      "https://github.com/deepseek-ai/DeepSeek-LLM",
+      "https://huggingface.co/deepseek-ai/deepseek-llm-67b-chat"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "mistral",
+    "name": "Mixtral 8x7B",
+    "date": "2023-12-08",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Sparse MoE (46.7B total / ~13B active) matching GPT-3.5; torrent dropped 12-08, official blog 12-11 - popularized open MoE",
+    "sources": [
+      "https://mistral.ai/news/mixtral-of-experts/",
+      "https://huggingface.co/mistralai/Mixtral-8x7B-v0.1"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "mistral",
+    "name": "Mistral Medium",
+    "date": "2023-12-11",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "First API-only (closed) prototype model, launched with the La Plateforme beta; Mistral's strongest model until Mistral Large",
+    "sources": [
+      "https://mistral.ai/news/la-plateforme/"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "meta",
+    "name": "Code Llama 70B",
+    "date": "2024-01-29",
+    "announced": null,
+    "tier": "minor",
+    "kind": "coding",
+    "open_weights": true,
+    "note": "Largest Code Llama (70B base/Python/Instruct, 67.8% HumanEval), announced by Zuckerberg",
+    "sources": [
+      "https://ai.meta.com/blog/code-llama-large-language-model-coding/",
+      "https://huggingface.co/codellama/CodeLlama-70b-Instruct-hf"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeekMath 7B",
+    "date": "2024-02-05",
+    "announced": null,
+    "tier": "minor",
+    "kind": "reasoning",
+    "open_weights": true,
+    "note": "7B math model near GPT-4 on MATH; paper introduced GRPO - the RL algorithm later used to train DeepSeek-R1",
+    "sources": [
+      "https://arxiv.org/abs/2402.03300",
+      "https://github.com/deepseek-ai/DeepSeek-Math"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "mistral",
+    "name": "Mistral Large",
+    "date": "2024-02-26",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "First GPT-4-class contender from Europe, launched with Le Chat and the Microsoft Azure partnership",
+    "sources": [
+      "https://mistral.ai/news/mistral-large/",
+      "https://techcrunch.com/2024/02/26/mistral-ai-releases-new-model-to-rival-gpt-4-and-its-own-chat-assistant/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "mistral",
+    "name": "Mixtral 8x22B",
+    "date": "2024-04-10",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "141B MoE (39B active) Apache 2.0; torrent dropped 04-10, official blog/instruct model 04-17",
+    "sources": [
+      "https://mistral.ai/news/mixtral-8x22b/",
+      "https://huggingface.co/mistralai/Mixtral-8x22B-v0.1"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "meta",
+    "name": "Llama 3",
+    "date": "2024-04-18",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "8B and 70B trained on 15T tokens; big quality jump for open models and new engine of the Meta AI assistant",
+    "sources": [
+      "https://ai.meta.com/blog/meta-llama-3/",
+      "https://github.com/meta-llama/llama3/blob/main/MODEL_CARD.md"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeek-V2",
+    "date": "2024-05-06",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": true,
+    "note": "236B MoE (21B active) introducing MLA attention; ultra-low API price that triggered China's LLM price war",
+    "sources": [
+      "https://github.com/deepseek-ai/DeepSeek-V2",
+      "https://arxiv.org/abs/2405.04434"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "mistral",
+    "name": "Codestral",
+    "date": "2024-05-29",
+    "announced": null,
+    "tier": "major",
+    "kind": "coding",
+    "open_weights": true,
+    "note": "Mistral's first code model (22B, 80+ languages, non-production license)",
+    "sources": [
+      "https://mistral.ai/news/codestral/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeek-Coder-V2",
+    "date": "2024-06-17",
+    "announced": null,
+    "tier": "major",
+    "kind": "coding",
+    "open_weights": true,
+    "note": "236B MoE code model (plus 16B Lite); first open model claimed to match GPT-4 Turbo on coding/math benchmarks",
+    "sources": [
+      "https://github.com/deepseek-ai/DeepSeek-Coder-V2",
+      "https://arxiv.org/abs/2406.11931"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "mistral",
+    "name": "Codestral Mamba & Mathstral",
+    "date": "2024-07-16",
+    "announced": null,
+    "tier": "minor",
+    "kind": "coding",
+    "open_weights": true,
+    "note": "7B Mamba-2 (non-Transformer) code model and 7B math model, both Apache 2.0",
+    "sources": [
+      "https://mistral.ai/news/codestral-mamba/",
+      "https://mistral.ai/news/mathstral/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "mistral",
+    "name": "Mistral NeMo",
+    "date": "2024-07-18",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "12B model with 128K context built with NVIDIA, Apache 2.0; popular small open model",
+    "sources": [
+      "https://mistral.ai/news/mistral-nemo/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "meta",
+    "name": "Llama 3.1 (8B/70B/405B)",
+    "date": "2024-07-23",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "405B flagship with 128K context - first open-weight model competitive with GPT-4o-class frontier models",
+    "sources": [
+      "https://ai.meta.com/blog/meta-llama-3-1/",
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "mistral",
+    "name": "Mistral Large 2",
+    "date": "2024-07-24",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": true,
+    "note": "123B model competitive with GPT-4o/Llama 3.1 405B; open weights under research license",
+    "sources": [
+      "https://mistral.ai/news/mistral-large-2407/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeek-V2.5",
+    "date": "2024-09-05",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": true,
+    "note": "Merged DeepSeek-V2-Chat and Coder-V2-Instruct into one general+coding model",
+    "sources": [
+      "https://api-docs.deepseek.com/news/news0905",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V2.5"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "meta",
+    "name": "Llama 3.2",
+    "date": "2024-09-25",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Released at Meta Connect: first multimodal Llamas (11B/90B vision) plus 1B/3B on-device text models",
+    "sources": [
+      "https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/",
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "mistral",
+    "name": "Ministral 3B & 8B",
+    "date": "2024-10-16",
+    "announced": null,
+    "tier": "minor",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "'Les Ministraux' edge/on-device models (8B weights under research license, 3B API-only)",
+    "sources": [
+      "https://mistral.ai/news/ministraux/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeek-R1-Lite-Preview",
+    "date": "2024-11-20",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": false,
+    "note": "First DeepSeek o1-style reasoning model with visible chain of thought (web chat only, weights never released)",
+    "sources": [
+      "https://api-docs.deepseek.com/news/news1120"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "meta",
+    "name": "Llama 3.3 70B",
+    "date": "2024-12-06",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "Text-only 70B delivering roughly Llama 3.1 405B-level quality at a fraction of the cost",
+    "sources": [
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/MODEL_CARD.md",
+      "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeek-V3",
+    "date": "2024-12-26",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": true,
+    "note": "671B MoE (37B active) matching GPT-4o-class models, reportedly trained for ~$5.6M of GPU time",
+    "sources": [
+      "https://api-docs.deepseek.com/news/news1226",
+      "https://github.com/deepseek-ai/DeepSeek-V3"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeek-R1",
+    "date": "2025-01-20",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": true,
+    "note": "MIT-licensed reasoning model on par with OpenAI o1 (+ distilled small models); the 'DeepSeek moment' - #1 on the US App Store and a ~17% one-day Nvidia drop on 2025-01-27",
+    "sources": [
+      "https://api-docs.deepseek.com/news/news250120",
+      "https://github.com/deepseek-ai/DeepSeek-R1"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "mistral",
+    "name": "Mistral Small 3",
+    "date": "2025-01-30",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "24B latency-optimized model under Apache 2.0 rivaling Llama 3.3 70B - Mistral's recommitment to open licenses",
+    "sources": [
+      "https://mistral.ai/news/mistral-small-3/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "mistral",
+    "name": "Mistral Saba",
+    "date": "2025-02-17",
+    "announced": null,
+    "tier": "minor",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "24B regional model specialized for Arabic and South Asian languages",
+    "sources": [
+      "https://mistral.ai/news/mistral-saba/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "mistral",
+    "name": "Mistral Small 3.1",
+    "date": "2025-03-17",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "24B Apache 2.0 update adding image understanding and 128K context",
+    "sources": [
+      "https://mistral.ai/news/mistral-small-3-1/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeek-V3-0324",
+    "date": "2025-03-24",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": true,
+    "note": "Major V3 refresh (much better reasoning/coding, MIT license); weights on HF 03-24, official notice 03-25",
+    "sources": [
+      "https://api-docs.deepseek.com/news/news250325",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V3-0324"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "meta",
+    "name": "Llama 4 Scout & Maverick",
+    "date": "2025-04-05",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "First MoE, natively multimodal Llamas (17B active; Scout 109B total w/ 10M context, Maverick 400B total); Behemoth previewed but never released; launch marred by LMArena benchmark controversy - last Llama generation to date",
+    "sources": [
+      "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeek-Prover-V2",
+    "date": "2025-04-30",
+    "announced": null,
+    "tier": "minor",
+    "kind": "reasoning",
+    "open_weights": true,
+    "note": "671B (and 7B) Lean 4 theorem prover built on V3; state of the art on MiniF2F",
+    "sources": [
+      "https://github.com/deepseek-ai/DeepSeek-Prover-V2",
+      "https://huggingface.co/deepseek-ai/DeepSeek-Prover-V2-671B"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "mistral",
+    "name": "Mistral Medium 3",
+    "date": "2025-05-07",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Closed model claiming ~90% of Claude 3.7 Sonnet quality at ~8x lower cost - 'Medium is the new Large'",
+    "sources": [
+      "https://mistral.ai/news/mistral-medium-3/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "mistral",
+    "name": "Devstral",
+    "date": "2025-05-21",
+    "announced": null,
+    "tier": "major",
+    "kind": "coding",
+    "open_weights": true,
+    "note": "24B Apache 2.0 agentic coding model (with All Hands AI), top open model on SWE-bench Verified at launch",
+    "sources": [
+      "https://mistral.ai/news/devstral/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeek-R1-0528",
+    "date": "2025-05-28",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": true,
+    "note": "R1 upgrade approaching o3 / Gemini 2.5 Pro, fewer hallucinations, function calling; weights on HF 05-28, official notice 05-29",
+    "sources": [
+      "https://api-docs.deepseek.com/news/news250528",
+      "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "mistral",
+    "name": "Magistral (Small & Medium)",
+    "date": "2025-06-10",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": true,
+    "note": "Mistral's first reasoning models: open Magistral Small 24B (Apache 2.0) and closed Magistral Medium",
+    "sources": [
+      "https://mistral.ai/news/magistral/",
+      "https://arxiv.org/abs/2506.10910"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "mistral",
+    "name": "Devstral Medium",
+    "date": "2025-07-10",
+    "announced": null,
+    "tier": "minor",
+    "kind": "coding",
+    "open_weights": false,
+    "note": "API-only larger Devstral (released alongside open Devstral Small 1.1)",
+    "sources": [
+      "https://mistral.ai/news/devstral-2507/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "mistral",
+    "name": "Mistral Medium 3.1",
+    "date": "2025-08-12",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Point update of Mistral's top closed model (better tone, performance and web search)",
+    "sources": [
+      "https://docs.mistral.ai/resources/changelogs"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeek-V3.1",
+    "date": "2025-08-19",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": true,
+    "note": "Hybrid thinking/non-thinking in one model with much stronger agent/tool use; app+web upgraded and base weights out 08-19, official launch 08-21",
+    "sources": [
+      "https://api-docs.deepseek.com/news/news250821",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V3.1"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeek-V3.1-Terminus",
+    "date": "2025-09-22",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": true,
+    "note": "Polished V3.1 (fixed language mixing, better code/search agents); final V3.1 iteration",
+    "sources": [
+      "https://api-docs.deepseek.com/news/news250922",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "meta",
+    "name": "Code World Model (CWM) 32B",
+    "date": "2025-09-24",
+    "announced": null,
+    "tier": "minor",
+    "kind": "coding",
+    "open_weights": true,
+    "note": "FAIR research model trained on code execution traces/agentic trajectories ('world model' for code); non-commercial research license",
+    "sources": [
+      "https://ai.meta.com/research/publications/cwm/",
+      "https://github.com/facebookresearch/cwm"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeek-V3.2-Exp",
+    "date": "2025-09-29",
+    "announced": null,
+    "tier": "major",
+    "kind": "chat",
+    "open_weights": true,
+    "note": "Experimental model introducing DeepSeek Sparse Attention (DSA) for cheap long context; API prices cut 50%+",
+    "sources": [
+      "https://api-docs.deepseek.com/news/news250929",
+      "https://github.com/deepseek-ai/DeepSeek-V3.2-Exp"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeekMath-V2",
+    "date": "2025-11-27",
+    "announced": null,
+    "tier": "minor",
+    "kind": "reasoning",
+    "open_weights": true,
+    "note": "Open self-verifying math reasoning model reaching gold-medal level on IMO 2025 problems",
+    "sources": [
+      "https://github.com/deepseek-ai/DeepSeek-Math-V2",
+      "https://huggingface.co/deepseek-ai/DeepSeek-Math-V2"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeek-V3.2",
+    "date": "2025-12-01",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "reasoning",
+    "open_weights": true,
+    "note": "Official V3.2 with DSA: reasoning-first model built for agents (thinking with tool use), claimed GPT-5-level; MIT",
+    "sources": [
+      "https://api-docs.deepseek.com/news/news251201",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V3.2"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeek-V3.2-Speciale",
+    "date": "2025-12-01",
+    "announced": null,
+    "tier": "major",
+    "kind": "reasoning",
+    "open_weights": true,
+    "note": "Max-reasoning V3.2 variant (gold-level IMO 2025 / IOI 2025); temporary API endpoint plus open weights",
+    "sources": [
+      "https://api-docs.deepseek.com/news/news251201",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Speciale"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "mistral",
+    "name": "Mistral Large 3 (Mistral 3 family)",
+    "date": "2025-12-02",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "675B MoE (41B active) Apache 2.0 flagship plus Ministral 3 (3B/8B/14B); first Mistral MoE since Mixtral",
+    "sources": [
+      "https://mistral.ai/news/mistral-3",
+      "https://www.eweek.com/news/mistral-3-launch/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "mistral",
+    "name": "Devstral 2",
+    "date": "2025-12-09",
+    "announced": null,
+    "tier": "major",
+    "kind": "coding",
+    "open_weights": true,
+    "note": "123B coding model (72.2% SWE-bench Verified) + Devstral Small 2 24B, launched with Mistral Vibe CLI",
+    "sources": [
+      "https://mistral.ai/news/devstral-2-vibe-cli/",
+      "https://venturebeat.com/ai/mistral-launches-powerful-devstral-2-coding-model-including-open-source"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "mistral",
+    "name": "Mistral Small 4",
+    "date": "2026-03-16",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "119B MoE Apache 2.0 model unifying instruct, reasoning (Magistral), vision (Pixtral) and agentic coding (Devstral) in one set of weights, 256K context",
+    "sources": [
+      "https://mistral.ai/news/mistral-small-4/",
+      "https://www.marktechpost.com/2026/03/16/mistral-ai-releases-mistral-small-4-a-119b-parameter-moe-model-that-unifies-instruct-reasoning-and-multimodal-workloads/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "mistral",
+    "name": "Leanstral",
+    "date": "2026-03-16",
+    "announced": null,
+    "tier": "minor",
+    "kind": "coding",
+    "open_weights": true,
+    "note": "Open agent model for Lean 4 formal proof engineering (updated as Leanstral 1.5 around 2026-07-01)",
+    "sources": [
+      "https://webkul.com/blog/mistrals-leanstral/",
+      "https://emelia.io/hub/leanstral-mistral-ai-formal-verification",
+      "https://mistral.ai/news/leanstral-1-5/"
+    ],
+    "confidence": "low"
+  },
+  {
+    "company": "meta",
+    "name": "Muse Spark",
+    "date": "2026-04-08",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "First model from Meta Superintelligence Labs (codename Avocado), successor to Llama 4 and Meta's first frontier model without open weights; launched in meta.ai / Meta AI app, API only as private preview",
+    "sources": [
+      "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/",
+      "https://ai.meta.com/blog/introducing-muse-spark-msl/",
+      "https://www.cnbc.com/2026/04/08/meta-debuts-first-major-ai-model-since-14-billion-deal-to-bring-in-alexandr-wang.html",
+      "https://techcrunch.com/2026/04/08/meta-debuts-the-muse-spark-model-in-a-ground-up-overhaul-of-its-ai/",
+      "https://simonwillison.net/2026/Apr/8/muse-spark/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeek-V4 Preview (V4-Pro & V4-Flash)",
+    "date": "2026-04-24",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": true,
+    "note": "Long-awaited V4 (reportedly planned for mid-Feb): V4-Pro 1.6T MoE (49B active) + V4-Flash 284B (13B active), 1M-token context, MIT weights same day",
+    "sources": [
+      "https://api-docs.deepseek.com/news/news260424/",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "https://www.cnn.com/2026/04/24/tech/chinas-ai-deepseek-v4-intl-hnk",
+      "https://winbuzzer.com/2026/04/27/deepseek-v4-open-weights-launch-xcxwbn/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "mistral",
+    "name": "Mistral Medium 3.5",
+    "date": "2026-04-29",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": true,
+    "note": "128B dense open-weight (modified MIT) unified model with reasoning toggle, 77.6% SWE-bench Verified; replaced Magistral, Devstral 2 and Medium 3.1",
+    "sources": [
+      "https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04",
+      "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B",
+      "https://winbuzzer.com/2026/05/02/mistral-medium-3-5-unified-flagship-chat-reasoning-code-xcxwbn/",
+      "https://datanorth.ai/news/mistral-medium-3-5-release"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "meta",
+    "name": "Muse Spark 1.1",
+    "date": "2026-07-09",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Agentic update (tool/computer use, coding, 1M context) launched with the self-serve Meta Model API public preview - first time outside developers could use and pay for a Muse model",
+    "sources": [
+      "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
+      "https://www.axios.com/2026/07/09/meta-ai-spark-model-update-developer",
+      "https://www.bloomberg.com/news/articles/2026-07-09/meta-starts-charging-for-ai-with-muse-spark-1-1-agentic-model",
+      "https://www.cnbc.com/2026/07/09/meta-jumps-into-ai-coding-market-to-chase-anthropic-and-openai.html"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeek-V4-Flash-0731",
+    "date": "2026-07-31",
+    "announced": null,
+    "tier": "major",
+    "kind": "chat",
+    "open_weights": true,
+    "note": "Official (non-preview) V4-Flash, re-post-trained for coding/agents; DeepSeek says it beats the V4-Pro preview; MIT weights",
+    "sources": [
+      "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731/",
+      "https://datanorth.ai/news/deepseek-releases-deepseek-v4-flash-0731"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "meta",
+    "name": "Muse Spark 1.2",
+    "date": "2026-08-05",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "coding",
+    "open_weights": false,
+    "note": "Coding-centric update shipped with Muse Code, MSL's first terminal coding agent; on 2026-08-10 Meta promised to open its weights 'soon' (not published as of early/mid Sep 2026)",
+    "sources": [
+      "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+      "https://developer.meta.com/ai/resources/blog/build-with-muse-code/",
+      "https://www.marktechpost.com/2026/08/05/meta-superintelligence-labs-releases-muse-code/",
+      "https://www.engadget.com/2231285/meta-introduces-muse-code-its-take-on-a-coding-agent/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "meta",
+    "name": "Muse Glimmer 30B",
+    "date": "2026-08-10",
+    "announced": null,
+    "tier": "major",
+    "kind": "open-weights",
+    "open_weights": true,
+    "note": "30B Apache-2.0 model distilled from Muse Spark for local agentic use on a single GPU/laptop - Meta's return to open weights after Llama 4",
+    "sources": [
+      "https://www.cnbc.com/2026/08/10/meta-muse-glimmer-open-weight-ai.html",
+      "https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/",
+      "https://huggingface.co/meta-models/Muse-Glimmer-30B"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeek-V4-Pro-0813",
+    "date": "2026-08-13",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": true,
+    "note": "V4-Pro leaves preview (GA build focused on agents, thinking/non-thinking modes); weights on HF; listed on OpenRouter 08-12 US time",
+    "sources": [
+      "https://api-docs.deepseek.com/news/news260813/",
+      "https://www.unite.ai/deepseek-ships-v4-pro-as-its-flagship-model-leaves-preview/",
+      "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813/",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeek-V4-Flash-Vision-Exp",
+    "date": "2026-08-21",
+    "announced": null,
+    "tier": "minor",
+    "kind": "chat",
+    "open_weights": true,
+    "note": "Experimental image-understanding version of V4-Flash - DeepSeek's first multimodal V4 model (MIT weights)",
+    "sources": [
+      "https://api-docs.deepseek.com/news/news260821/",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "meta",
+    "name": "Muse Spark 1.3",
+    "date": "2026-09-02",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": false,
+    "note": "Meta's most capable model to date per Meta (multimodal, 1M context), released to developers via Meta Model API and Muse Code; Meta claims near-frontier coding",
+    "sources": [
+      "https://www.bloomberg.com/news/articles/2026-09-02/meta-releases-more-powerful-ai-model-edging-closer-to-rivals",
+      "https://www.techrepublic.com/article/news-meta-muse-spark-1-3-ai-coding-2026/",
+      "https://techcrunch.com/2026/09/03/meta-is-paying-to-peek-at-how-you-use-their-latest-ai-model/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "company": "deepseek",
+    "name": "DeepSeek-V4.1-Flash",
+    "date": "2026-09-08",
+    "announced": null,
+    "tier": "flagship",
+    "kind": "chat",
+    "open_weights": true,
+    "note": "New-architecture, natively multimodal 552B MoE that DeepSeek says beats V4-Pro; 2-day API beta from 09-08, official GA + MIT weights 09-10",
+    "sources": [
+      "https://www.deepseek.com/en/news/deepseek-v4-1-flash/",
+      "https://siliconangle.com/2026/09/10/deepseek-releases-v4-1-flash-says-it-outperforms-flagship-v4-pro/",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "https://api-docs.deepseek.com/updates/"
+    ],
+    "confidence": "medium"
+  }
+]
