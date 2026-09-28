@@ -5,13 +5,13 @@
 </head><body>
 <script src="../js/data.js"></script>
 <script src="../js/engine.js"></script>
-<script src="../js/export.js"></script>
+<script src="../js/track.js"></script>
 <script>
 // Страница для tools/render.mjs: кадры автопрогона по одному в PNG.
 window.renderSetup = async function (opts) {
   await Promise.all(['400', '500', '600', '700'].map((w) => document.fonts.load(w + ' 40px Onest'))
     .concat(['400', '500', '600'].map((w) => document.fonts.load(w + ' 30px "JetBrains Mono"'))));
-  const T = window.Tablo, X = window.TabloExport;
+  const T = window.Tablo, X = window.TabloTrack;
   const tl = new T.Timeline(window.TABLO_DATA);
   const enabled = {};
   for (const c of tl.companies) enabled[c.id] = opts.onlyMain ? !!c.main : true;
