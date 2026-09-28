@@ -1014,9 +1014,9 @@
       if ('filter' in gm) gm.filter = 'none';
       ctx.globalCompositeOperation = 'lighter';
       ctx.imageSmoothingEnabled = true;
-      ctx.globalAlpha = 0.5;
+      ctx.globalAlpha = 0.3;   // слабее, чем раньше: иначе синий пересвечивается в голубой
       ctx.drawImage(this.glowMid, 0, 0, cols * pitch, rows * pitch);
-      ctx.globalAlpha = 0.22;
+      ctx.globalAlpha = 0.1;
       ctx.drawImage(this.pglow, 0, 0, cols * pitch, rows * pitch);
       ctx.restore();
       this.paintText(ctx, sim, ctl, L, (cols * pitch) / UW);
