@@ -17,9 +17,9 @@ window.renderSetup = async function (opts) {
   for (const c of tl.companies) enabled[c.id] = opts.onlyMain ? !!c.main : true;
   const hidden = Object.fromEntries(tl.releases.filter((r) => r.defaultHidden).map((r) => [r.id, true]));
   const st = Object.assign({ enabled, hidden, speed: 1, span: 420, finale: true, labels: true, scale: true, frontier: true,
-    heights: 'score', others: 'muted', labelCount: 16 }, opts.settings || {});
+    heights: 'score', others: 'muted', labelCount: 12, style: opts.style || 'segments', grid: opts.grid || 12 }, opts.settings || {});
   const track = X.autoTrack(tl, st);
-  window.__src = new X.FrameSource(tl, track, { fps: opts.fps || 25, grid: opts.grid || 12, scale: opts.scale || 1 });
+  window.__src = new X.FrameSource(tl, track, { fps: opts.fps || 25, scale: opts.scale || 1 });
   return { frames: window.__src.frames, duration: track.duration, width: window.__src.canvas.width, height: window.__src.canvas.height };
 };
 window.renderSkip = function (n) { for (let i = 0; i < n; i++) window.__src.next(false); return window.__src.i; };

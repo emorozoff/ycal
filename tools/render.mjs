@@ -2,7 +2,7 @@
 /* Рендер автопрогона табло в MP4 (H.264, 25 к/с) без браузерного кодека:
    Chromium рисует кадры → PNG → ffmpeg (libx264). Работает в несколько потоков.
 
-   node tools/render.mjs --out tablo-4k.mp4 [--scale 1|0.5] [--grid 12] [--jobs 3] [--crf 16] [--only-main] [--ffmpeg /path/ffmpeg]
+   node tools/render.mjs --out tablo-4k.mp4 [--scale 1|0.5] [--style segments|smooth|pixel] [--grid 12] [--jobs 3] [--crf 16] [--only-main] [--ffmpeg /path/ffmpeg]
 
    Нужны: Node 18+, пакет playwright (с Chromium) и ffmpeg с libx264. */
 import http from 'node:http';
@@ -33,6 +33,7 @@ const JOBS = Math.max(1, +opt('jobs', String(Math.min(3, os.cpus().length))));
 const CRF = opt('crf', '16');
 const FFMPEG = opt('ffmpeg', process.env.FFMPEG || 'ffmpeg');
 const ONLY_MAIN = flag('only-main');
+const STYLE = opt('style', 'segments');
 const LIMIT = opt('seconds', null);
 
 const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.woff2': 'font/woff2', '.json': 'application/json' };
@@ -50,7 +51,7 @@ async function openPage() {
   const page = await browser.newPage();
   page.on('pageerror', (e) => console.error('[page]', e.message));
   await page.goto(base);
-  const info = await page.evaluate((o) => window.renderSetup(o), { grid: GRID, scale: SCALE, fps: 25, onlyMain: ONLY_MAIN });
+  const info = await page.evaluate((o) => window.renderSetup(o), { grid: GRID, scale: SCALE, fps: 25, onlyMain: ONLY_MAIN, style: STYLE });
   return { page, info };
 }
 

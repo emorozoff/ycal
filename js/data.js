@@ -19,7 +19,7 @@ window.TABLO_DATA = {
    "name": "OpenAI",
    "products": "ChatGPT, GPT, o-серия",
    "legend": "OpenAI · ChatGPT",
-   "color": "#19aa8e",
+   "color": "#3b8ef0",
    "main": true
   },
   {
@@ -35,7 +35,7 @@ window.TABLO_DATA = {
    "name": "Google",
    "products": "Bard, PaLM, Gemini, Gemma",
    "legend": "Google · Gemini",
-   "color": "#4f8ef7"
+   "color": "#b067e0"
   },
   {
    "id": "xai",
@@ -49,35 +49,35 @@ window.TABLO_DATA = {
    "name": "Meta",
    "products": "Llama, Muse",
    "legend": "Meta · Llama",
-   "color": "#2fb7e0"
+   "color": "#3fae6a"
   },
   {
    "id": "deepseek",
    "name": "DeepSeek",
    "products": "V- и R-серии",
    "legend": "DeepSeek",
-   "color": "#7c6cf5"
+   "color": "#2fb3c6"
   },
   {
    "id": "alibaba",
    "name": "Alibaba",
    "products": "Qwen, Tongyi",
    "legend": "Alibaba · Qwen",
-   "color": "#c07af2"
+   "color": "#d65b9e"
   },
   {
    "id": "moonshot",
    "name": "Moonshot AI",
    "products": "Kimi",
    "legend": "Moonshot · Kimi",
-   "color": "#f0659a"
+   "color": "#93b83a"
   },
   {
    "id": "mistral",
    "name": "Mistral AI",
    "products": "Mistral, Mixtral, Magistral",
    "legend": "Mistral",
-   "color": "#f3b43c"
+   "color": "#d9a62e"
   }
  ],
  "releases": [
@@ -111,7 +111,10 @@ window.TABLO_DATA = {
    "scoreEst": true,
    "scoreNote": "оценка по LMArena",
    "about": "Anthropic's first public model (API plus partners like Notion, Quora Poe, DuckDuckGo); Constitutional-AI-trained ChatGPT rival launched the same day as GPT-4.",
-   "source": "https://www.anthropic.com/news/introducing-claude"
+   "source": "https://www.anthropic.com/news/introducing-claude",
+   "family": [
+    "Claude Instant"
+   ]
   },
   {
    "company": "anthropic",
@@ -122,7 +125,9 @@ window.TABLO_DATA = {
    "scoreEst": true,
    "scoreNote": "оценка по Artificial Analysis (низкая точность)",
    "about": "Faster, cheaper sibling released alongside Claude 1, the start of Anthropic's multi-tier lineup (ancestor of the Haiku line).",
-   "source": "https://www.anthropic.com/news/introducing-claude"
+   "source": "https://www.anthropic.com/news/introducing-claude",
+   "defaultHidden": true,
+   "familyOf": "Claude 1"
   },
   {
    "company": "openai",
@@ -408,7 +413,10 @@ window.TABLO_DATA = {
    "tier": "flagship",
    "score": 126.9,
    "about": "First Claude to beat GPT-4 on most standard benchmarks; the Claude 3 family added image input and a 200K context.",
-   "source": "https://www.anthropic.com/news/claude-3-family"
+   "source": "https://www.anthropic.com/news/claude-3-family",
+   "family": [
+    "Claude 3 Sonnet"
+   ]
   },
   {
    "company": "anthropic",
@@ -417,7 +425,9 @@ window.TABLO_DATA = {
    "tier": "major",
    "score": 120.7,
    "about": "Balanced mid-tier Claude 3 model that powered the free claude.ai experience.",
-   "source": "https://www.anthropic.com/news/claude-3-family"
+   "source": "https://www.anthropic.com/news/claude-3-family",
+   "defaultHidden": true,
+   "familyOf": "Claude 3 Opus"
   },
   {
    "company": "anthropic",
@@ -647,7 +657,9 @@ window.TABLO_DATA = {
    "tier": "major",
    "score": 135.8,
    "about": "Быстрая и дешёвая reasoning-модель, сильна в математике и коде",
-   "source": "https://openai.com/index/openai-o1-mini-advancing-cost-efficient-reasoning/"
+   "source": "https://openai.com/index/openai-o1-mini-advancing-cost-efficient-reasoning/",
+   "defaultHidden": true,
+   "familyOf": "o1-preview"
   },
   {
    "company": "openai",
@@ -656,7 +668,10 @@ window.TABLO_DATA = {
    "tier": "flagship",
    "score": 134.8,
    "about": "Первая «рассуждающая» модель OpenAI (думает цепочкой мыслей перед ответом), проект Strawberry",
-   "source": "https://openai.com/index/introducing-openai-o1-preview/"
+   "source": "https://openai.com/index/introducing-openai-o1-preview/",
+   "family": [
+    "o1-mini"
+   ]
   },
   {
    "company": "alibaba",
@@ -969,7 +984,10 @@ window.TABLO_DATA = {
    "tier": "major",
    "score": 136.8,
    "about": "Модель для разработчиков только в API: контекст 1M токенов, сильнее в коде и следовании инструкциям",
-   "source": "https://openai.com/index/gpt-4-1/"
+   "source": "https://openai.com/index/gpt-4-1/",
+   "family": [
+    "GPT-4.1 mini"
+   ]
   },
   {
    "company": "openai",
@@ -978,7 +996,9 @@ window.TABLO_DATA = {
    "tier": "major",
    "score": 135.0,
    "about": "Уменьшенная GPT-4.1 (1M контекст); позже заменила GPT-4o mini в ChatGPT",
-   "source": "https://openai.com/index/gpt-4-1/"
+   "source": "https://openai.com/index/gpt-4-1/",
+   "defaultHidden": true,
+   "familyOf": "GPT-4.1"
   },
   {
    "company": "openai",
@@ -997,7 +1017,10 @@ window.TABLO_DATA = {
    "tier": "flagship",
    "score": 146.9,
    "about": "Флагманская reasoning-модель: впервые сама использует инструменты (поиск, Python, анализ картинок) в рассуждениях",
-   "source": "https://openai.com/index/introducing-o3-and-o4-mini/"
+   "source": "https://openai.com/index/introducing-o3-and-o4-mini/",
+   "family": [
+    "o4-mini"
+   ]
   },
   {
    "company": "openai",
@@ -1006,7 +1029,9 @@ window.TABLO_DATA = {
    "tier": "major",
    "score": 145.6,
    "about": "Быстрая и дешёвая reasoning-модель с инструментами, заменила o3-mini",
-   "source": "https://openai.com/index/introducing-o3-and-o4-mini/"
+   "source": "https://openai.com/index/introducing-o3-and-o4-mini/",
+   "defaultHidden": true,
+   "familyOf": "o3"
   },
   {
    "company": "google",
@@ -1077,7 +1102,10 @@ window.TABLO_DATA = {
    "tier": "flagship",
    "score": 142.7,
    "about": "Claude 4 generation: billed as the world's best coding model, able to work for hours on agentic tasks; first model shipped under ASL-3 safeguards.",
-   "source": "https://www.anthropic.com/news/claude-4"
+   "source": "https://www.anthropic.com/news/claude-4",
+   "family": [
+    "Claude Sonnet 4"
+   ]
   },
   {
    "company": "anthropic",
@@ -1086,7 +1114,9 @@ window.TABLO_DATA = {
    "tier": "major",
    "score": 141.7,
    "about": "Claude 4 mid-tier successor to 3.7 Sonnet, available to free users; chosen to power GitHub Copilot's new coding agent.",
-   "source": "https://www.anthropic.com/news/claude-4"
+   "source": "https://www.anthropic.com/news/claude-4",
+   "defaultHidden": true,
+   "familyOf": "Claude Opus 4"
   },
   {
    "company": "deepseek",
@@ -1227,7 +1257,10 @@ window.TABLO_DATA = {
    "score": 139.9,
    "openWeights": true,
    "about": "Первая open-weight LLM OpenAI со времён GPT-2 (Apache 2.0): MoE 117B (5.1B активных), уровень ~o4-mini",
-   "source": "https://openai.com/index/introducing-gpt-oss/"
+   "source": "https://openai.com/index/introducing-gpt-oss/",
+   "family": [
+    "gpt-oss-20b"
+   ]
   },
   {
    "company": "openai",
@@ -1237,7 +1270,9 @@ window.TABLO_DATA = {
    "score": 137.8,
    "openWeights": true,
    "about": "Малая открытая MoE-модель (21B, 3.6B активных), запускается локально в 16 ГБ памяти",
-   "source": "https://openai.com/index/introducing-gpt-oss/"
+   "source": "https://openai.com/index/introducing-gpt-oss/",
+   "defaultHidden": true,
+   "familyOf": "gpt-oss-120b"
   },
   {
    "company": "openai",
@@ -1246,7 +1281,11 @@ window.TABLO_DATA = {
    "tier": "flagship",
    "score": 150.0,
    "about": "Единая система с роутером между быстрым и «думающим» режимом; доступна всем, включая бесплатных пользователей",
-   "source": "https://openai.com/index/introducing-gpt-5/"
+   "source": "https://openai.com/index/introducing-gpt-5/",
+   "family": [
+    "GPT-5 Pro",
+    "GPT-5 mini"
+   ]
   },
   {
    "company": "openai",
@@ -1255,7 +1294,9 @@ window.TABLO_DATA = {
    "tier": "major",
    "score": 150.3,
    "about": "GPT-5 с расширенным параллельным рассуждением для подписчиков Pro (в API с 6 окт. 2025)",
-   "source": "https://openai.com/index/introducing-gpt-5/"
+   "source": "https://openai.com/index/introducing-gpt-5/",
+   "defaultHidden": true,
+   "familyOf": "GPT-5"
   },
   {
    "company": "openai",
@@ -1264,7 +1305,9 @@ window.TABLO_DATA = {
    "tier": "major",
    "score": 145.5,
    "about": "Уменьшенная GPT-5: в API и как запасная модель ChatGPT при исчерпании лимитов",
-   "source": "https://openai.com/index/introducing-gpt-5-for-developers/"
+   "source": "https://openai.com/index/introducing-gpt-5-for-developers/",
+   "defaultHidden": true,
+   "familyOf": "GPT-5"
   },
   {
    "company": "openai",
@@ -1503,7 +1546,10 @@ window.TABLO_DATA = {
    "score": 146.3,
    "openWeights": true,
    "about": "Official V3.2 with DSA: reasoning-first model built for agents (thinking with tool use), claimed GPT-5-level; MIT",
-   "source": "https://api-docs.deepseek.com/news/news251201"
+   "source": "https://api-docs.deepseek.com/news/news251201",
+   "family": [
+    "DeepSeek-V3.2-Speciale"
+   ]
   },
   {
    "company": "deepseek",
@@ -1515,7 +1561,9 @@ window.TABLO_DATA = {
    "scoreNote": "оценка по Artificial Analysis",
    "openWeights": true,
    "about": "Max-reasoning V3.2 variant (gold-level IMO 2025 / IOI 2025); temporary API endpoint plus open weights",
-   "source": "https://api-docs.deepseek.com/news/news251201"
+   "source": "https://api-docs.deepseek.com/news/news251201",
+   "defaultHidden": true,
+   "familyOf": "DeepSeek-V3.2"
   },
   {
    "company": "mistral",
@@ -2010,7 +2058,9 @@ window.TABLO_DATA = {
    "tier": "major",
    "score": 156.3,
    "about": "Быстрый и самый дешёвый уровень GPT-5.6; позже доступ расширен на бесплатных пользователей ChatGPT",
-   "source": "https://openai.com/index/gpt-5-6/"
+   "source": "https://openai.com/index/gpt-5-6/",
+   "defaultHidden": true,
+   "familyOf": "GPT-5.6 Sol"
   },
   {
    "company": "openai",
@@ -2019,7 +2069,11 @@ window.TABLO_DATA = {
    "tier": "flagship",
    "score": 162.0,
    "about": "Флагман нового семейства Sol/Terra/Luna; 26 июня — закрытое превью для ~20 партнёров по просьбе правительства США",
-   "source": "https://openai.com/index/gpt-5-6/"
+   "source": "https://openai.com/index/gpt-5-6/",
+   "family": [
+    "GPT-5.6 Terra",
+    "GPT-5.6 Luna"
+   ]
   },
   {
    "company": "openai",
@@ -2028,7 +2082,9 @@ window.TABLO_DATA = {
    "tier": "major",
    "score": 159.3,
    "about": "Сбалансированный уровень GPT-5.6: качество около GPT-5.5 примерно вдвое дешевле",
-   "source": "https://openai.com/index/gpt-5-6/"
+   "source": "https://openai.com/index/gpt-5-6/",
+   "defaultHidden": true,
+   "familyOf": "GPT-5.6 Sol"
   },
   {
    "company": "moonshot",
@@ -2248,7 +2304,9 @@ window.TABLO_DATA = {
    "tier": "major",
    "scoreNote": "вышла 22.09.2026 — замеров ещё нет",
    "about": "Быстрая и дешёвая модель поколения GPT-6 ($0.10/$0.50 за 1M токенов)",
-   "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+   "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+   "defaultHidden": true,
+   "familyOf": "GPT-6 Sol"
   },
   {
    "company": "openai",
@@ -2257,7 +2315,10 @@ window.TABLO_DATA = {
    "tier": "major",
    "scoreNote": "вышла 22.09.2026 — замеров ещё нет",
    "about": "Рабочая модель GPT-6 для кода и повседневных задач: вдвое меньше ошибок, чем у GPT-5.6 Sol, и вдвое дешевле",
-   "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+   "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+   "family": [
+    "GPT-6 Luna"
+   ]
   }
  ]
 };

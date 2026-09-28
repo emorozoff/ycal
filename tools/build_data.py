@@ -21,15 +21,15 @@ TODAY = '2026-09-23'
 ECI_LATEST = TODAY   # дата самого свежего замера в данных Epoch (уточняется при загрузке)
 
 COMPANIES = [
-    {'id': 'openai', 'name': 'OpenAI', 'products': 'ChatGPT, GPT, o-серия', 'legend': 'OpenAI · ChatGPT', 'color': '#19aa8e', 'main': True},
+    {'id': 'openai', 'name': 'OpenAI', 'products': 'ChatGPT, GPT, o-серия', 'legend': 'OpenAI · ChatGPT', 'color': '#3b8ef0', 'main': True},
     {'id': 'anthropic', 'name': 'Anthropic', 'products': 'Claude', 'legend': 'Anthropic · Claude', 'color': '#e0703c', 'main': True},
-    {'id': 'google', 'name': 'Google', 'products': 'Bard, PaLM, Gemini, Gemma', 'legend': 'Google · Gemini', 'color': '#4f8ef7'},
+    {'id': 'google', 'name': 'Google', 'products': 'Bard, PaLM, Gemini, Gemma', 'legend': 'Google · Gemini', 'color': '#b067e0'},
     {'id': 'xai', 'name': 'xAI', 'products': 'Grok', 'legend': 'xAI · Grok', 'color': '#dfe3e8'},
-    {'id': 'meta', 'name': 'Meta', 'products': 'Llama, Muse', 'legend': 'Meta · Llama', 'color': '#2fb7e0'},
-    {'id': 'deepseek', 'name': 'DeepSeek', 'products': 'V- и R-серии', 'legend': 'DeepSeek', 'color': '#7c6cf5'},
-    {'id': 'alibaba', 'name': 'Alibaba', 'products': 'Qwen, Tongyi', 'legend': 'Alibaba · Qwen', 'color': '#c07af2'},
-    {'id': 'moonshot', 'name': 'Moonshot AI', 'products': 'Kimi', 'legend': 'Moonshot · Kimi', 'color': '#f0659a'},
-    {'id': 'mistral', 'name': 'Mistral AI', 'products': 'Mistral, Mixtral, Magistral', 'legend': 'Mistral', 'color': '#f3b43c'},
+    {'id': 'meta', 'name': 'Meta', 'products': 'Llama, Muse', 'legend': 'Meta · Llama', 'color': '#3fae6a'},
+    {'id': 'deepseek', 'name': 'DeepSeek', 'products': 'V- и R-серии', 'legend': 'DeepSeek', 'color': '#2fb3c6'},
+    {'id': 'alibaba', 'name': 'Alibaba', 'products': 'Qwen, Tongyi', 'legend': 'Alibaba · Qwen', 'color': '#d65b9e'},
+    {'id': 'moonshot', 'name': 'Moonshot AI', 'products': 'Kimi', 'legend': 'Moonshot · Kimi', 'color': '#93b83a'},
+    {'id': 'mistral', 'name': 'Mistral AI', 'products': 'Mistral, Mixtral, Magistral', 'legend': 'Mistral', 'color': '#d9a62e'},
 ]
 
 
@@ -62,7 +62,7 @@ MAP = {
     'GPT-5.2-Codex': {'aa': 28.5, 'note': 'оценка по Artificial Analysis'},
     'GPT-5.3-Codex-Spark': {'none': True},
     'GPT-5.3 Instant': {'none': True},
-    'GPT-6 Sol': {'none': True, 'note': 'вышла 22.09.2026 — замеров ещё нет'},
+    'GPT-6 Sol': {'none': True, 'frontier': True, 'note': 'вышла 22.09.2026 — замеров ещё нет'},
     'GPT-6 Luna': {'none': True, 'note': 'вышла 22.09.2026 — замеров ещё нет'},
     'GPT-5 pro': {'name': 'GPT-5 Pro'},
     # ---------- Anthropic ----------
@@ -259,7 +259,31 @@ def main():
             item['about'] = r['note']
         if r.get('sources'):
             item['source'] = r['sources'][0]
+        if m.get('frontier'):
+            item['_frontier'] = True
         out.append(item)
+
+    # Один анонс — один столбик: если компания в один день выпустила несколько моделей (семейство),
+    # на табло остаётся только фронтир-модель, остальные скрыты по умолчанию (их можно включить в пульте).
+    tier_rank = {'flagship': 0, 'major': 1, 'minor': 2}
+    groups = {}
+    for i, x in enumerate(out):
+        if not x.get('defaultHidden'):
+            groups.setdefault((x['company'], x['date']), []).append((i, x))
+    grouped = 0
+    for members in groups.values():
+        if len(members) < 2:
+            continue
+        members.sort(key=lambda p: (not p[1].get('_frontier'), tier_rank.get(p[1]['tier'], 3),
+                                    -(p[1].get('score') if p[1].get('score') is not None else -1), p[0]))
+        head = members[0][1]
+        head['family'] = [x['name'] for _, x in members[1:]]
+        for _, x in members[1:]:
+            x['defaultHidden'] = True
+            x['familyOf'] = head['name']
+            grouped += 1
+    for x in out:
+        x.pop('_frontier', None)
 
     out.sort(key=lambda x: (x['date'], x['company'], x['name']))
     meta = {
@@ -279,6 +303,7 @@ def main():
     (ROOT / 'js' / 'data.js').write_text(js)
 
     shown = [x for x in out if not x.get('defaultHidden')]
+    print(f'в семействах спрятано: {grouped}')
     print(f'релизов: {len(out)}, видно по умолчанию: {len(shown)}, с оценкой ≈: {sum(1 for x in shown if x.get("scoreEst"))}, без индекса: {sum(1 for x in out if "score" not in x)}')
     from collections import Counter
     print('по компаниям (видно):', dict(Counter(x['company'] for x in shown)))

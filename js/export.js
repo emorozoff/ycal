@@ -27,6 +27,7 @@
       span: st.span, cam: 'follow', camLeft: null, enabled: st.enabled, hidden: st.hidden || {},
       focus: null, hover: null, labels: st.labels, scale: st.scale, frontier: st.frontier,
       heights: st.heights, others: st.others, labelCount: st.labelCount, playheadFrac: 0.8,
+      style: st.style, grid: st.grid,
     });
     function ctlAt(t) {
       const c = baseCtl();
@@ -71,6 +72,7 @@
         focus: a.focus, hover: a.hover,
         labels: a.o.labels, scale: a.o.scale, frontier: a.o.frontier, heights: a.o.heights,
         others: a.o.others, labelCount: a.o.labelCount, playheadFrac: 0.8,
+        style: a.o.style, grid: a.o.grid,
       };
     }
     return { ctlAt, duration };
@@ -78,13 +80,12 @@
 
   /** Последовательный источник кадров. Кадры надо запрашивать по порядку: next(i) для i = 0, 1, 2… */
   class FrameSource {
-    constructor(tl, track, { fps = 25, grid = 12, scale = 1, makeCanvas } = {}) {
+    constructor(tl, track, { fps = 25, scale = 1, makeCanvas } = {}) {
       this.tl = tl; this.track = track; this.fps = fps;
-      this.cols = 3840 / grid; this.rows = 2160 / grid;
-      this.pitch = Math.max(1, Math.round(grid * scale));
+      this.W = Math.round(3840 * scale); this.H = Math.round(2160 * scale);
       this.frames = Math.max(1, Math.round(track.duration * fps));
       const mk = makeCanvas || ((w, h) => { const c = document.createElement('canvas'); c.width = w; c.height = h; return c; });
-      this.canvas = mk(this.cols * this.pitch, this.rows * this.pitch);
+      this.canvas = mk(this.W, this.H);
       this.ctx = this.canvas.getContext('2d');
       this.sim = new T.Sim(tl);
       this.renderer = new T.Renderer(tl, mk);
@@ -98,14 +99,14 @@
       const c = Object.assign({}, c0, { snap: true });
       for (let d = tl.start; d < c0.now; d += 3) { c.now = d; sim.step(0.25, c); }
       c.now = c0.now;
-      for (let k = 0; k < 30; k++) { sim.step(0.1, c); this.renderer.draw(null, sim, c, this.cols, this.rows, this.pitch); }
+      for (let k = 0; k < 30; k++) { sim.step(0.1, c); this.renderer.draw(null, sim, c, this.W, this.H); }
     }
     next(paint = true) {
       this.i++;
       const t = this.i / this.fps;
       const c = this.track.ctlAt(t);
       this.sim.step(1 / this.fps, c);
-      this.renderer.draw(paint ? this.ctx : null, this.sim, c, this.cols, this.rows, this.pitch);
+      this.renderer.draw(paint ? this.ctx : null, this.sim, c, this.W, this.H);
       return this.canvas;
     }
   }
@@ -170,7 +171,7 @@
    */
   async function encodeMP4(tl, track, opts) {
     const fps = opts.fps || 25;
-    const src = new FrameSource(tl, track, { fps, grid: opts.grid, scale: opts.scale });
+    const src = new FrameSource(tl, track, { fps, scale: opts.scale });
     const width = src.canvas.width, height = src.canvas.height;
     const bitrate = Math.round((opts.bitrate || 32) * 1e6 * (opts.scale === 1 ? 1 : 0.35));
     const pick = await pickCodec(width, height, fps, bitrate);
@@ -214,18 +215,17 @@
   }
 
   /** Один кадр в PNG в полном 4K (для обложки или проверки). */
-  async function framePNG(tl, sim, ctl, grid) {
-    const cols = 3840 / grid, rows = 2160 / grid;
+  async function framePNG(tl, sim, ctl) {
     const r = new T.Renderer(tl);
     const c = document.createElement('canvas');
-    c.width = cols * grid; c.height = rows * grid;
+    c.width = 3840; c.height = 2160;
     // раскладка подписей зависит от предыдущих кадров — прогоняем пару раз на копии состояния
     const shadow = Object.assign(Object.create(Object.getPrototypeOf(sim)), sim, {
       rel: sim.rel.map((s) => Object.assign({}, s, { lab: 1 })),
     });
-    for (let k = 0; k < 3; k++) r.draw(null, shadow, ctl, cols, rows, grid);
+    for (let k = 0; k < 3; k++) r.draw(null, shadow, ctl, c.width, c.height);
     for (const s of shadow.rel) s.lab = s.labShown ? 1 : 0;
-    r.draw(c.getContext('2d'), shadow, ctl, cols, rows, grid);
+    r.draw(c.getContext('2d'), shadow, ctl, c.width, c.height);
     return new Promise((res) => c.toBlob(res, 'image/png'));
   }
 

@@ -14,12 +14,12 @@
   const SPEEDS = [0.1, 0.25, 0.5, 0.75, 1, 1.5, 2, 3, 4, 6, 8];
 
   // ---------- настройки (запоминаются в этом браузере) ----------
-  const STORE = 'tablo.settings.v1';
+  const STORE = 'tablo.settings.v2';
   const DEF = {
     enabled: Object.fromEntries(tl.companies.map((c) => [c.id, true])),
     hid: {},                   // ручные включения/выключения отдельных моделей
-    labels: true, labelCount: 16, scale: true, frontier: true, heights: 'score', others: 'muted',
-    grid: 12, wheel: 'time', finale: true, span: 420, speed: 1, exportScale: 1, bitrate: 32,
+    labels: true, labelCount: 12, scale: true, frontier: true, heights: 'score', others: 'muted',
+    style: 'segments', grid: 12, wheel: 'time', finale: true, span: 420, speed: 1, exportScale: 1, bitrate: 32,
   };
   const S = (() => {
     let s = {};
@@ -41,7 +41,7 @@
     now: tl.end, span: S.span, cam: 'follow', camLeft: null,
     enabled: S.enabled, hidden: hiddenMap(), focus: null, hover: null,
     labels: S.labels, labelCount: S.labelCount, scale: S.scale, frontier: S.frontier,
-    heights: S.heights, others: S.others, playheadFrac: 0.8, snap: true,
+    heights: S.heights, others: S.others, style: S.style, grid: S.grid, playheadFrac: 0.8, snap: true,
   };
   const isOn = (r) => ctl.enabled[r.company] !== false && !ctl.hidden[r.id];
   let pacing = new T.Pacing(tl, isOn);
@@ -54,14 +54,19 @@
   const stage = $('#stage');
   const canvas = $('#screen');
   const ctx = canvas.getContext('2d');
-  const view = { cols: 320, rows: 180, pitch: 4 };
   function fit() {
-    view.cols = 3840 / S.grid; view.rows = 2160 / S.grid;
     const rect = canvas.getBoundingClientRect();
     const dpr = window.devicePixelRatio || 1;
     const w = Math.max(320, rect.width * dpr);
-    view.pitch = clamp(Math.round(w / view.cols), 2, S.grid);
-    const W = view.cols * view.pitch, H = view.rows * view.pitch;
+    let W, H;
+    if (S.style === 'pixel') {
+      // в пиксельном стиле холст кратен клеткам, чтобы они были чёткими
+      const cols = 3840 / S.grid, rows = 2160 / S.grid;
+      const pitch = clamp(Math.round(w / cols), 2, S.grid);
+      W = cols * pitch; H = rows * pitch;
+    } else {
+      W = clamp(Math.round(w), 640, 3840); H = Math.round(W * 9 / 16);
+    }
     if (canvas.width !== W || canvas.height !== H) { canvas.width = W; canvas.height = H; }
   }
   new ResizeObserver(() => fit()).observe(stage);
@@ -156,7 +161,7 @@
       if (play.on) advance(dt);
       sim.step(dt, ctl);
       ctl.snap = false;
-      renderer.draw(ctx, sim, ctl, view.cols, view.rows, view.pitch);
+      renderer.draw(ctx, sim, ctl, canvas.width, canvas.height);
       if (rec.on) recSample(t);
       tick(t);
     }
@@ -166,9 +171,9 @@
   // ---------- мышь и сенсор на табло ----------
   let drag = null;
   const daysPerPx = () => sim.spanD / (canvas.getBoundingClientRect().width * 0.91);
-  function canvasPoint(e) {
+  function canvasPoint(e) {   // точка в единицах кадра 4K
     const r = canvas.getBoundingClientRect();
-    return [((e.clientX - r.left) / r.width) * canvas.width, ((e.clientY - r.top) / r.height) * canvas.height];
+    return [((e.clientX - r.left) / r.width) * T.UW, ((e.clientY - r.top) / r.height) * T.UH];
   }
   stage.addEventListener('pointerdown', (e) => {
     if (e.button !== 0) return;
@@ -427,7 +432,7 @@
   function setOpt(key, val) {
     S[key] = val; save();
     if (key in ctl) ctl[key] = val;
-    if (key === 'grid') fit();
+    if (key === 'grid' || key === 'style') fit();
     syncView();
   }
   function syncView() {
@@ -441,6 +446,7 @@
       const key = seg.dataset.opt;
       for (const b of seg.querySelectorAll('button')) b.setAttribute('aria-pressed', String(String(S[key]) === b.dataset.v));
     }
+    $('#gridOpt').hidden = S.style !== 'pixel';
   }
   $('#oLabels').addEventListener('change', (e) => setOpt('labels', e.target.checked));
   $('#oScale').addEventListener('change', (e) => setOpt('scale', e.target.checked));
@@ -512,15 +518,19 @@
     const enKey = tl.companies.map((c) => (ctl.enabled[c.id] === false ? 0 : 1)).join('');
     if (enKey !== rec.enKey) { rec.sets.push(Object.assign({}, ctl.enabled)); rec.enKey = enKey; }
     if (ctl.hidden !== rec.hidRef) { rec.hsets.push(Object.assign({}, ctl.hidden)); rec.hidRef = ctl.hidden; }
-    const optKey = [ctl.labels, ctl.scale, ctl.frontier, ctl.heights, ctl.others, ctl.labelCount].join('|');
-    if (optKey !== rec.optKey) { rec.optRef = { labels: ctl.labels, scale: ctl.scale, frontier: ctl.frontier, heights: ctl.heights, others: ctl.others, labelCount: ctl.labelCount }; rec.optKey = optKey; }
+    const optKey = [ctl.labels, ctl.scale, ctl.frontier, ctl.heights, ctl.others, ctl.labelCount, ctl.style, ctl.grid].join('|');
+    if (optKey !== rec.optKey) {
+      rec.optRef = { labels: ctl.labels, scale: ctl.scale, frontier: ctl.frontier, heights: ctl.heights, others: ctl.others,
+        labelCount: ctl.labelCount, style: ctl.style, grid: ctl.grid };
+      rec.optKey = optKey;
+    }
     rec.samples.push({ t: tt, now: ctl.now, span: ctl.span, cam: ctl.cam, camLeft: ctl.cam === 'free' ? ctl.camLeft : null, hard: !!ctl.hard,
       focus: ctl.focus, hover: ctl.hover, en: rec.sets.length - 1, hv: rec.hsets.length - 1, o: rec.optRef });
   }
 
   function autoSettings() {
     return { enabled: ctl.enabled, hidden: ctl.hidden, speed: play.speed, span: S.span, finale: S.finale, labels: S.labels, scale: S.scale,
-      frontier: S.frontier, heights: S.heights, others: S.others, labelCount: S.labelCount };
+      frontier: S.frontier, heights: S.heights, others: S.others, labelCount: S.labelCount, style: S.style, grid: S.grid };
   }
   function renderTakes() {
     const box = $('#takeList');
@@ -579,7 +589,7 @@
     bar.style.width = '0%'; txt.textContent = 'Готовлю кадры…';
     try {
       const res = await X.encodeMP4(tl, track, {
-        fps: 25, grid: S.grid, scale: S.exportScale, bitrate: S.bitrate, signal: abort.signal,
+        fps: 25, scale: S.exportScale, bitrate: S.bitrate, signal: abort.signal,
         onProgress: (i, n, info) => {
           bar.style.width = ((i / n) * 100).toFixed(1) + '%';
           txt.textContent = `Кадр ${i} из ${n} · ${info.codec} · осталось ~${fmtTime(info.eta || 0)}`;
@@ -602,7 +612,7 @@
   $('#bCancel').addEventListener('click', () => abort && abort.abort());
   $('#bPng').addEventListener('click', async () => {
     try {
-      const blob = await X.framePNG(tl, sim, ctl, S.grid);
+      const blob = await X.framePNG(tl, sim, ctl);
       const d = T.dateOf(sim.nowD).toISOString().slice(0, 10);
       await saveBlob(blob, `tablo-ii-${d}-4k.png`);
     } catch (e) { toast('Не получилось сохранить кадр'); }
